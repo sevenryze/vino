@@ -1,41 +1,6 @@
 2004-11-14  Žygimantas Beručka  <uid0@akl.lt>
 
-	* configure.in: Added "lt" (Lithuanian) to ALL_LINGUAS.
-
-2004-11-12  Mark McLoughlin  <mark@skynet.ie>
-
-	* icons/gnome-remote-desktop.png: new icon
-	from Jakub Steiner.
-
-2004-11-10  Mark McLoughlin  <mark@skynet.ie>
-
-	* icons/Makefile.am: install icon into hicolor
-	icon theme.
-
-2004-11-10  Mark McLoughlin  <mark@skynet.ie>
-
-	* autogen.sh: require automake 1.7.
-	
-	* configure.in: modernise.
-	
-	* server/Makefile.am: use DISTCLEANFILES.
-
-	* Makefile.am: add intltool stuff to $DISTCLEANFILES.
-	
-	* acconfig.h: remove, not needed.
-
-2004-11-09  Mark McLoughlin  <mark@skynet.ie>
-
-	* capplet/Makefile.am: install .desktop file
-	in $(datadir)/applications.
-	
-	* capplet/vino-preferences.desktop.in:
-	add OnlyShowIn=GNOME;
-
-2004-11-09  Mark McLoughlin  <mark@skynet.ie>
-
-	* configure.in: bump version to 2.9.1 - 2.8.x
-	development continues on the gnome-2-8 branch.
+	* configure.in: added lt (Lithuanian) to ALL_LINGUAS.
 
 2004-10-25  Sanlig Badral  <badral@openmn.org>
 	
