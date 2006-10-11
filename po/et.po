@@ -10,7 +10,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vino HEAD\n"
+"Project-Id-Version: Vino GNOME 2.16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-02-07 09:16+0100\n"
 "PO-Revision-Date: 2006-04-16 21:02+0300\n"
@@ -331,4 +331,3 @@ msgstr "Kaugtöölauaserveri käivitamine"
 #: ../session/vino-session.c:300
 msgid "Not starting remote desktop server"
 msgstr "Kaugtöölauaserverit ei käivitata"
-
