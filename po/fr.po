@@ -1,16 +1,16 @@
 # French translation of vino.
-# Copyright (C) 2004-2005 The Free Software Foundation, Inc.
+# Copyright (C) 2004-2006 The Free Software Foundation, Inc.
 # This file is distributed under the same license as the vino package.
 #
 # Audrey Simons <asimons@redhat.com>, 2004.
-# Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2005.
+# Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2005-2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: vino 2.11.93\n"
+"Project-Id-Version: vino 2.16.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-18 19:54+0100\n"
-"PO-Revision-Date: 2006-02-18 19:54+0100\n"
+"POT-Creation-Date: 2006-10-22 10:59+0200\n"
+"PO-Revision-Date: 2006-10-22 10:48+0200\n"
 "Last-Translator: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -119,12 +119,12 @@ msgstr "Couleur de l'URL"
 msgid "The color of the URL's label"
 msgstr "La couleur de l'étiquette de l'URL"
 
-#: ../server/vino-fb.c:954 ../server/vino-prompt.c:144
-#: ../server/vino-server.c:853
+#: ../server/vino-fb.c:984 ../server/vino-prompt.c:144
+#: ../server/vino-server.c:861
 msgid "Screen"
 msgstr "Écran"
 
-#: ../server/vino-fb.c:955
+#: ../server/vino-fb.c:985
 msgid "The screen to be monitored"
 msgstr "L'écran à contrôler"
 
@@ -197,55 +197,55 @@ msgstr "_Autoriser"
 msgid "_Refuse"
 msgstr "_Refuser"
 
-#: ../server/vino-server.c:854
+#: ../server/vino-server.c:862
 msgid "The screen for which to create a VNC server"
 msgstr "L'écran pour lequel créer un serveur VNC"
 
-#: ../server/vino-server.c:861
+#: ../server/vino-server.c:869
 msgid "On Hold"
 msgstr "En attente"
 
-#: ../server/vino-server.c:862
+#: ../server/vino-server.c:870
 msgid "Place all clients on hold"
 msgstr "Mettre tous les clients en attente"
 
-#: ../server/vino-server.c:869
+#: ../server/vino-server.c:877
 msgid "Prompt enabled"
 msgstr "Invite activée"
 
-#: ../server/vino-server.c:870
+#: ../server/vino-server.c:878
 msgid "Prompt the user about connection attempts"
 msgstr "Afficher à l'utilisateur les essais de connexions"
 
-#: ../server/vino-server.c:877
+#: ../server/vino-server.c:885
 msgid "View Only"
 msgstr "Vue seule"
 
-#: ../server/vino-server.c:878
+#: ../server/vino-server.c:886
 msgid "Disallow keyboard/pointer input from clients"
 msgstr "Refuser l'entrée clavier/pointeur aux clients"
 
-#: ../server/vino-server.c:885
+#: ../server/vino-server.c:893
 msgid "Require Encryption"
 msgstr "Requiert le chiffrement"
 
-#: ../server/vino-server.c:886
+#: ../server/vino-server.c:894
 msgid "Require clients to use encryption"
 msgstr "Requiert les clients d'utiliser le chiffrement"
 
-#: ../server/vino-server.c:893
+#: ../server/vino-server.c:901
 msgid "Authentication methods"
 msgstr "Méthodes d'authentification"
 
-#: ../server/vino-server.c:894
+#: ../server/vino-server.c:902
 msgid "The authentication methods this server should allow"
 msgstr "Les méthodes d'authentification autorisées par ce serveur"
 
-#: ../server/vino-server.c:902
+#: ../server/vino-server.c:910
 msgid "VNC Password"
 msgstr "Mot de passe VNC"
 
-#: ../server/vino-server.c:903
+#: ../server/vino-server.c:911
 msgid ""
 "The password (base64 encoded) used to authenticate types using the VncAuth "
 "method"
@@ -270,7 +270,7 @@ msgid ""
 "If true, allows remote access to the desktop via the RFB protocol. Users on "
 "remote machines may then connect to the desktop using a vncviewer."
 msgstr ""
-"Si vrai, permet l'accès à distance au bureau via le protocole RFB. Les "
+"Si VRAI, permet l'accès à distance au bureau via le protocole RFB. Les "
 "utilisateurs sur des ordinateurs à distance peuvent alors se connecter au "
 "bureau à l'aide de vncviewer."
 
@@ -280,7 +280,7 @@ msgid ""
 "user on the host machine approves the connection. Recommended especially "
 "when access is not password protected."
 msgstr ""
-"Si vrai, les utilisateurs à distance accédant au bureau sont refusés tout "
+"Si VRAI, les utilisateurs à distance accédant au bureau sont refusés tout "
 "accès jusqu'à ce que l'utilisateur sur l'ordinateur hôte approuve la "
 "connexion. Recommandé particulièrement lorsque l'accès n'est pas protégé par "
 "un mot de passe."
@@ -290,7 +290,7 @@ msgid ""
 "If true, remote users accessing the desktop are only allowed to view the "
 "desktop. Remote user's will not be able to use the mouse or keyboard."
 msgstr ""
-"Si vrai, les utilisateurs à distance accédant au bureau sont uniquement "
+"Si VRAI, les utilisateurs à distance accédant au bureau sont uniquement "
 "autorisés à voir le bureau. Ils ne peuvent utiliser ni la souris ni le "
 "clavier."
 
@@ -300,7 +300,7 @@ msgid ""
 "encryption. It is highly recommended that you use a client which supports "
 "encryption unless the intervening network is trusted."
 msgstr ""
-"Si vrai, les utilisateurs distants accédant au bureau doivent pouvoir "
+"Si VRAI, les utilisateurs distants accédant au bureau doivent pouvoir "
 "supporter le chiffrement. Il est hautement recommandé que vous utilisiez un "
 "client qui supporte le chiffrement à moins que le réseau en question soit de "
 "confiance."
