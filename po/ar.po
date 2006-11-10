@@ -1,20 +1,23 @@
-# translation of vino.po to Arabic
+# translation of vino.gnome-2-16.po to Arabic
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
 # Ayman Hourieh <aymanh@gmail.com>, 2004.
 # Djihed Afifi <djihed@gmail.com>, 2006.
-#
+# Khaled Hosny <khaledhosny@eglug.org>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: vino\n"
+"Project-Id-Version: vino.gnome-2-16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-30 00:54+0000\n"
-"PO-Revision-Date: 2006-10-05 21:07-0000\n"
-"Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
-"Language-Team: Arabic <support@arabeyes.org>\n"
+"PO-Revision-Date: 2006-11-10 06:29+0200\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"Language-Team: Arabic <support@eglug.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.2\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : 3\n\n"
 
 #: ../capplet/vino-preferences.c:784
 msgid "Send this command by email"
@@ -130,7 +133,7 @@ msgstr "الشّاشة المراقَبة"
 msgid ""
 "Your XServer does not support the XTest extension - remote desktop access "
 "will be view-only\n"
-msgstr "لايدعم نادل X الامتداد XTest - سيكون سطح المكتب البعيد للعرض فقط\n"
+msgstr "لايدعم خادم X الامتداد XTest - سيكون سطح المكتب البعيد للعرض فقط\n"
 
 #.
 #. * Translators: translate "vino-mdns:showusername" to
@@ -190,7 +193,7 @@ msgstr "_رفض"
 
 #: ../server/vino-server.c:862
 msgid "The screen for which to create a VNC server"
-msgstr "الشّاشة التي سيُنشأ من أجلها نادل VNC"
+msgstr "الشّاشة التي سيُنشأ من أجلها خادم VNC"
 
 #: ../server/vino-server.c:869
 msgid "On Hold"
@@ -230,7 +233,7 @@ msgstr "طرق التّوثّق"
 
 #: ../server/vino-server.c:902
 msgid "The authentication methods this server should allow"
-msgstr "طرق التّوثّق التي على هذا النادل السّماح بها"
+msgstr "طرق التّوثّق التي على هذا الخادم السّماح بها"
 
 #: ../server/vino-server.c:910
 msgid "VNC Password"
@@ -340,17 +343,17 @@ msgstr ""
 
 #: ../server/vino-shell.c:76
 msgid "Remote Desktop server already running; exiting ...\n"
-msgstr "نادل سطح المكتب البعيد يعمل حالياً، خروج...\n"
+msgstr "خادم سطح المكتب البعيد يعمل حالياً، خروج...\n"
 
 #: ../server/vino-shell.c:79
 msgid ""
 "Problem registering the remote desktop server with bonobo-activation; "
 "exiting ...\n"
-msgstr "مشكلة في تسجيل نادل سطح المكتب البعيد بتنشيط بونوبو، خروج ...\n"
+msgstr "مشكلة في تسجيل خادم سطح المكتب البعيد بتنشيط بونوبو، خروج ...\n"
 
 #: ../session/vino-session.c:133
 msgid "Remote desktop server died, restarting\n"
-msgstr "توقّف نادل سطح المكتب، إعادة التّشغيل\n"
+msgstr "توقّف خادم سطح المكتب، إعادة التّشغيل\n"
 
 #: ../session/vino-session.c:154
 #, c-format
@@ -364,12 +367,13 @@ msgstr "فشل تنشيط %s: خطأ مجهول\n"
 
 #: ../session/vino-session.c:231
 msgid "Failed to activate remote desktop server: tried too many times\n"
-msgstr "فشل تنشيط نادل سطح المكتب البعيد، حاولت عدداً كبيراً من المرّات\n"
+msgstr "فشل تنشيط خادم سطح المكتب البعيد، حاولت عدداً كبيراً من المرّات\n"
 
 #: ../session/vino-session.c:295
 msgid "Starting remote desktop server"
-msgstr "بدء نادل سطح المكتب البعيد"
+msgstr "بدء خادم سطح المكتب البعيد"
 
 #: ../session/vino-session.c:300
 msgid "Not starting remote desktop server"
-msgstr "عدم بدء نادل سطح المكتب البعيد"
+msgstr "عدم بدء خادم سطح المكتب البعيد"
+
