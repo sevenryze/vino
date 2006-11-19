@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vino\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-05 21:45+0100\n"
+"POT-Creation-Date: 2006-11-12 16:38+0100\n"
 "PO-Revision-Date: 2004-08-14 10:09+0100\n"
 "Last-Translator: Gnome PL Team <translators@gnomepl.org>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../capplet/vino-preferences.c:807
+#: ../capplet/vino-preferences.c:784
 msgid "Send this command by email"
 msgstr "Wysłanie polecenia poprzez e-mail"
 
-#: ../capplet/vino-preferences.c:842
+#: ../capplet/vino-preferences.c:819
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
@@ -119,12 +119,12 @@ msgstr "Kolor adresu URL"
 msgid "The color of the URL's label"
 msgstr "Kolor etykiety adresu URL"
 
-#: ../server/vino-fb.c:954 ../server/vino-prompt.c:144
-#: ../server/vino-server.c:853
+#: ../server/vino-fb.c:984 ../server/vino-prompt.c:144
+#: ../server/vino-server.c:861
 msgid "Screen"
 msgstr "Ekran"
 
-#: ../server/vino-fb.c:955
+#: ../server/vino-fb.c:985
 msgid "The screen to be monitored"
 msgstr "Monitorowany ekran"
 
@@ -196,55 +196,55 @@ msgstr "_Zezwól"
 msgid "_Refuse"
 msgstr "_Odmów"
 
-#: ../server/vino-server.c:854
+#: ../server/vino-server.c:862
 msgid "The screen for which to create a VNC server"
 msgstr "Ekran dla którego utworzony zostanie serwer VNC"
 
-#: ../server/vino-server.c:861
+#: ../server/vino-server.c:869
 msgid "On Hold"
 msgstr "Wstrzymanie"
 
-#: ../server/vino-server.c:862
+#: ../server/vino-server.c:870
 msgid "Place all clients on hold"
 msgstr "Wstrzymuje wszystkich klientów"
 
-#: ../server/vino-server.c:869
+#: ../server/vino-server.c:877
 msgid "Prompt enabled"
 msgstr "Pytanie"
 
-#: ../server/vino-server.c:870
+#: ../server/vino-server.c:878
 msgid "Prompt the user about connection attempts"
 msgstr "Pytanie użytkownika o próby połączeń"
 
-#: ../server/vino-server.c:877
+#: ../server/vino-server.c:885
 msgid "View Only"
 msgstr "Podgląd"
 
-#: ../server/vino-server.c:878
+#: ../server/vino-server.c:886
 msgid "Disallow keyboard/pointer input from clients"
 msgstr "Zabronienie klientom kontroli klawiatury/myszy"
 
-#: ../server/vino-server.c:885
+#: ../server/vino-server.c:893
 msgid "Require Encryption"
 msgstr "Szyfrowanie"
 
-#: ../server/vino-server.c:886
+#: ../server/vino-server.c:894
 msgid "Require clients to use encryption"
 msgstr "Wymaganie od klientów szyfrowania"
 
-#: ../server/vino-server.c:893
+#: ../server/vino-server.c:901
 msgid "Authentication methods"
 msgstr "Metody uwierzytelniania"
 
-#: ../server/vino-server.c:894
+#: ../server/vino-server.c:902
 msgid "The authentication methods this server should allow"
 msgstr "Metody uwierzytelniania dopuszczane przez serwer"
 
-#: ../server/vino-server.c:902
+#: ../server/vino-server.c:910
 msgid "VNC Password"
 msgstr "Hasło VNC"
 
-#: ../server/vino-server.c:903
+#: ../server/vino-server.c:911
 msgid ""
 "The password (base64 encoded) used to authenticate types using the VncAuth "
 "method"
