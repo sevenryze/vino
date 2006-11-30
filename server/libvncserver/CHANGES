@@ -30,6 +30,8 @@
    be prompted on whether to allow authenticated clients to
    connect. A second level of authentication.
 
+ + Added rfbSetDesktopName()
+
  + Removed defaultNewClientHook and made accept new clients
    by default.
 
