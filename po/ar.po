@@ -1,4 +1,4 @@
-# translation of vino.gnome-2-16.po to Arabic
+# translation of vino.gnome-2-16.ar.po to Arabic
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
@@ -7,21 +7,22 @@
 # Khaled Hosny <khaledhosny@eglug.org>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: vino.gnome-2-16\n"
+"Project-Id-Version: vino.gnome-2-16.ar\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-30 00:54+0000\n"
-"PO-Revision-Date: 2006-11-10 06:29+0200\n"
+"PO-Revision-Date: 2006-11-25 15:29+0200\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
-"Language-Team: Arabic <support@eglug.org>\n"
+"Language-Team: Arabic <support@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : 3\n\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : n>=3 && n<=10 ? 2 : 3\n"
+"\n"
 
 #: ../capplet/vino-preferences.c:784
 msgid "Send this command by email"
-msgstr "إرسال هذا الأمر بالبريد الإلكتروني"
+msgstr "أرسل هذا الأمر بالبريد الإلكتروني"
 
 #: ../capplet/vino-preferences.c:819
 #, c-format
@@ -38,7 +39,7 @@ msgstr "سطح مكتب بعيد"
 
 #: ../capplet/vino-preferences.desktop.in.in.h:2
 msgid "Set your remote desktop access preferences"
-msgstr "إعداد تفضيلات الوصول لسطح المكتب البعيد"
+msgstr "اضبط تفضيلات الوصول لسطح المكتب البعيد"
 
 #: ../capplet/vino-preferences.glade.h:1
 msgid "    "
@@ -62,11 +63,11 @@ msgstr "<b>المشاركة</b>"
 
 #: ../capplet/vino-preferences.glade.h:6
 msgid "A_sk you for confirmation"
-msgstr "ال_سّؤال عن التّأكيد"
+msgstr "ا_سأل للتأكيدد"
 
 #: ../capplet/vino-preferences.glade.h:7
 msgid "Allow other users to _view your desktop"
-msgstr "السّماح للمستخدمين الآخرين ب_عرض سطح مكتبك"
+msgstr "اسمحح للمستخدمين الآخرين ب_عرض سطح مكتبك"
 
 #: ../capplet/vino-preferences.glade.h:8
 msgid "Remote Desktop Preferences"
@@ -86,15 +87,15 @@ msgstr "عندما يحاول مستخدم عرض أو التّحكم بسطح �
 
 #: ../capplet/vino-preferences.glade.h:12
 msgid "_Allow other users to control your desktop"
-msgstr "_السّماح للمستخدمين الآخرين بالتّحكّم بسطح مكتبك."
+msgstr "ا_سمحح للمستخدمين الآخرين بالتّحكّم بسطح مكتبك."
 
 #: ../capplet/vino-preferences.glade.h:13
 msgid "_Password:"
-msgstr "_كلمة المرور:"
+msgstr "_كلمة السر:"
 
 #: ../capplet/vino-preferences.glade.h:14
 msgid "_Require the user to enter this password:"
-msgstr "إ_دخال كلمة المرور هذه مطلوب من المستخدم:"
+msgstr "أ_دخل كلمة السر هذه مطلوب من المستخدم:"
 
 #: ../capplet/vino-url.c:158
 msgid "Address"
@@ -156,7 +157,7 @@ msgstr "سطح المكتب البعيد ل %s"
 
 #: ../server/vino-prompt.c:145
 msgid "The screen on which to display the prompt"
-msgstr "الشّاشة التي ستعرض عليها المساءلة"
+msgstr "الشّاشة التي سيعرض عليها المحثّ"
 
 #: ../server/vino-prompt.c:390
 #, c-format
@@ -185,11 +186,11 @@ msgstr "السّؤال"
 
 #: ../server/vino-prompt.glade.h:5 ../server/vino-util.c:63
 msgid "_Allow"
-msgstr "_سماح"
+msgstr "ا_سمح"
 
 #: ../server/vino-prompt.glade.h:6 ../server/vino-util.c:64
 msgid "_Refuse"
-msgstr "_رفض"
+msgstr "ا_رفض"
 
 #: ../server/vino-server.c:862
 msgid "The screen for which to create a VNC server"
@@ -201,23 +202,23 @@ msgstr "تحت الانتظار"
 
 #: ../server/vino-server.c:870
 msgid "Place all clients on hold"
-msgstr "وضع كلّ العملاء تحت الانتظار"
+msgstr "ضع كلّ العملاء تحت الانتظار"
 
 #: ../server/vino-server.c:877
 msgid "Prompt enabled"
-msgstr "المساءلة ممكّنة"
+msgstr "المحثّ ممكّن"
 
 #: ../server/vino-server.c:878
 msgid "Prompt the user about connection attempts"
-msgstr "مساءلة المستخدم حول محاولات الاتّصال"
+msgstr "اخبر المستخدم حول محاولات الاتّصال"
 
 #: ../server/vino-server.c:885
 msgid "View Only"
-msgstr "عرض فقط"
+msgstr "اعرض فقط"
 
 #: ../server/vino-server.c:886
 msgid "Disallow keyboard/pointer input from clients"
-msgstr "عدم السّماح لدخل لوحة المفاتيح و المؤشّر من العملاء"
+msgstr "لا تسمح بدخل لوحة المفاتيح و المؤشّر من العملاء"
 
 #: ../server/vino-server.c:893
 msgid "Require Encryption"
@@ -237,14 +238,14 @@ msgstr "طرق التّوثّق التي على هذا الخادم السّما
 
 #: ../server/vino-server.c:910
 msgid "VNC Password"
-msgstr "كلمة مرور VNC"
+msgstr "كلمة سر VNC"
 
 #: ../server/vino-server.c:911
 msgid ""
 "The password (base64 encoded) used to authenticate types using the VncAuth "
 "method"
 msgstr ""
-"كلمة المرور (بترميز قاعدة 64) المستخدمة للتّوثّق من الانواع باستخدام طريقة "
+"كلمة السر (بترميز قاعدة 64) المستخدمة للتّوثّق من الانواع باستخدام طريقة "
 "توثّق VNC."
 
 #: ../server/vino-server.schemas.in.h:1
@@ -257,7 +258,7 @@ msgstr "عنوان البريد الإلكتروني الذي سيتمّ إرس�
 
 #: ../server/vino-server.schemas.in.h:3
 msgid "Enable remote desktop access"
-msgstr "تمكين وصول سطح المكتب البعيد"
+msgstr "مكّن وصول سطح المكتب البعيد"
 
 #: ../server/vino-server.schemas.in.h:4
 msgid ""
@@ -275,7 +276,7 @@ msgid ""
 msgstr ""
 "إذا ضبط لـtrue، لن يسمح للمستخدمين البعيدين بالوصول إلى سطح المكتب حتى يوافق "
 "المستخدم على الجهاز المضيف على الاتّصال. ينصح به خاصة عندما لا يكون الوصول "
-"محمياً بكلمة مرور."
+"محمياً بكلمة سر."
 
 #: ../server/vino-server.schemas.in.h:6
 msgid ""
@@ -304,20 +305,20 @@ msgid ""
 msgstr ""
 "يعرض قائمة بطرق التّوثّق الممكن للمستخدمين البعيدين استخدامها للوصول لسطح "
 "المكتب. هناك طريقتان ممكنتان للتّوثّق، \"vnc\" التي تسائل المستخدم البعيد عن "
-"كلمة مرور (تحدّد كلمة المرور بمفتاح vnc_password( قبل الاتّصال، و \"none\" "
+"كلمة سر (تحدّد كلمة السر بمفتاح vnc_password( قبل الاتّصال، و \"none\" "
 "التي تسمح لأي مستخدم بعيد بالاتّصال."
 
 #: ../server/vino-server.schemas.in.h:9
 msgid "Only allow remote users to view the desktop"
-msgstr "السّماح للمستخدمين البعيدين بعرض سطح المكتب فقط"
+msgstr "اسمحح للمستخدمين البعيدين بعرض سطح المكتب فقط"
 
 #: ../server/vino-server.schemas.in.h:10
 msgid "Password required for \"vnc\" authentication"
-msgstr "كلمة المرور المطلوبة لتوثّق \"vnc\""
+msgstr "كلمة السر مطلوبة لتوثّق \"vnc\""
 
 #: ../server/vino-server.schemas.in.h:11
 msgid "Prompt the user before completing a connection"
-msgstr "سؤال المستخدم قبل إكمال اتصال"
+msgstr "اسأل المستخدم قبل إكمال اتصال"
 
 #: ../server/vino-server.schemas.in.h:12
 msgid "Require encryption"
@@ -329,8 +330,8 @@ msgid ""
 "authentication method is used. The password specified by the key is base64 "
 "encoded."
 msgstr ""
-"كلمة المرور التي سيُساءل المستخدم عنها إذا استخدمت طريقة توثّق \"vnc\". كلمة "
-"المرور المحدّدة بالمفتاح مرمّزة بترميز قاعدة 64."
+"كلمة السر التي سيُساءل المستخدم عنها إذا استخدمت طريقة توثّق \"vnc\". كلمة "
+"السر المحدّدة بالمفتاح مرمّزة بترميز قاعدة 64."
 
 #: ../server/vino-server.schemas.in.h:14
 msgid ""
@@ -375,5 +376,5 @@ msgstr "بدء خادم سطح المكتب البعيد"
 
 #: ../session/vino-session.c:300
 msgid "Not starting remote desktop server"
-msgstr "عدم بدء خادم سطح المكتب البعيد"
+msgstr "لا تبدء خادم سطح المكتب البعيد"
 
