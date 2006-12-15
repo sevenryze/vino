@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: vino.gnome-2-16.ar\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-30 00:54+0000\n"
-"PO-Revision-Date: 2006-11-25 15:29+0200\n"
+"PO-Revision-Date: 2006-12-02 21:31+0200\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
@@ -63,11 +63,11 @@ msgstr "<b>المشاركة</b>"
 
 #: ../capplet/vino-preferences.glade.h:6
 msgid "A_sk you for confirmation"
-msgstr "ا_سأل للتأكيدد"
+msgstr "ا_سأل للتأكيد"
 
 #: ../capplet/vino-preferences.glade.h:7
 msgid "Allow other users to _view your desktop"
-msgstr "اسمحح للمستخدمين الآخرين ب_عرض سطح مكتبك"
+msgstr "اسمح للمستخدمين الآخرين ب_عرض سطح مكتبك"
 
 #: ../capplet/vino-preferences.glade.h:8
 msgid "Remote Desktop Preferences"
@@ -87,7 +87,7 @@ msgstr "عندما يحاول مستخدم عرض أو التّحكم بسطح �
 
 #: ../capplet/vino-preferences.glade.h:12
 msgid "_Allow other users to control your desktop"
-msgstr "ا_سمحح للمستخدمين الآخرين بالتّحكّم بسطح مكتبك."
+msgstr "ا_سمح للمستخدمين الآخرين بالتّحكّم بسطح مكتبك."
 
 #: ../capplet/vino-preferences.glade.h:13
 msgid "_Password:"
@@ -95,7 +95,7 @@ msgstr "_كلمة السر:"
 
 #: ../capplet/vino-preferences.glade.h:14
 msgid "_Require the user to enter this password:"
-msgstr "أ_دخل كلمة السر هذه مطلوب من المستخدم:"
+msgstr "إ_دخال كلمة السر هذه مطلوب من المستخدم:"
 
 #: ../capplet/vino-url.c:158
 msgid "Address"
@@ -310,7 +310,7 @@ msgstr ""
 
 #: ../server/vino-server.schemas.in.h:9
 msgid "Only allow remote users to view the desktop"
-msgstr "اسمحح للمستخدمين البعيدين بعرض سطح المكتب فقط"
+msgstr "اسمح للمستخدمين البعيدين بعرض سطح المكتب فقط"
 
 #: ../server/vino-server.schemas.in.h:10
 msgid "Password required for \"vnc\" authentication"
