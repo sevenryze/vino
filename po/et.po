@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Vino GNOME 2.20\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-08-16 11:07+0100\n"
-"PO-Revision-Date: 2007-08-12 08:30+0300\n"
+"PO-Revision-Date: 2007-11-17 11:40+0200\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgstr "Tõrge siiniga ühendumisel: %s\n"
 
 #: ../capplet/vino-preferences.c:936
 msgid "Send this command by email"
-msgstr "Käsu saatmine e-postiga"
+msgstr "Selle käsu saatmine e-postiga"
 
 #: ../capplet/vino-preferences.c:971
 #, c-format
@@ -179,11 +179,11 @@ msgstr "_Luba"
 
 #: ../server/vino-prompt.glade.h:6 ../server/vino-util.c:64
 msgid "_Refuse"
-msgstr "_Keeldu"
+msgstr "_Keela"
 
 #: ../server/vino-server.schemas.in.h:1
 msgid "Allowed authentication methods"
-msgstr "Lubatud autentiseerimismeetodid"
+msgstr "Lubatud autentimismeetodid"
 
 #: ../server/vino-server.schemas.in.h:2
 msgid "Alternative port number"
@@ -237,7 +237,7 @@ msgstr ""
 #: ../server/vino-server.schemas.in.h:9
 msgid "If true, screen will be locked after the last remote client disconnect."
 msgstr ""
-"Kui määratud, siis pärast viimase kaugkliendi lahtiühendamist ekraan "
+"Kui märgitud, siis pärast viimase kaugkliendi lahtiühendamist ekraan "
 "lukustatakse."
 
 #: ../server/vino-server.schemas.in.h:10
@@ -270,8 +270,8 @@ msgid ""
 "vnc_password key) before connecting and \"none\" which allows any remote "
 "user to connect."
 msgstr ""
-"Nimekiri autentiseerimismeetoditest mille abil kaugtöölaua kasutajad saavad "
-"juurdepääsu töölauale. On kaks võimalikku autentiseerimismeetodit; \"vnc\" "
+"Nimekiri autentimismeetoditest, mille abil kaugtöölaua kasutajad saavad "
+"juurdepääsu töölauale. On kaks võimalikku autentimismeetodit; \"vnc\" "
 "küsub kaugtöölaua kasutajalt enne ühenduse loomist parooli (parooli saab "
 "määrata võtmega \"vnc_password\") ja \"none\", mis lubab igal kaugtöölaua "
 "kasutajal ühenduse luua."
@@ -298,7 +298,7 @@ msgstr "Kasutajalt kinnituse küsimine enne ühendamise lõpuleviimist"
 
 #: ../server/vino-server.schemas.in.h:19
 msgid "Require encryption"
-msgstr "Nõua krüpteerimist"
+msgstr "Krüptimise nõudmine"
 
 #: ../server/vino-server.schemas.in.h:20
 msgid ""
@@ -306,7 +306,7 @@ msgid ""
 "authentication method is used. The password specified by the key is base64 "
 "encoded."
 msgstr ""
-"\"vnc\" autentiseerimismeetodi korral kaugtöölaua kasutajailt küsitav "
+"\"vnc\" autentimismeetodi korral kaugtöölaua kasutajailt küsitav "
 "salasõna. Võtme poolt määratud salasõna on kodeeritud base64 algoritmiga."
 
 #: ../server/vino-server.schemas.in.h:21
@@ -444,7 +444,7 @@ msgstr "Katkesta %s"
 
 #: ../server/vino-status-icon.c:416
 msgid "_Help"
-msgstr "_Abi"
+msgstr "A_bi"
 
 #: ../server/vino-status-icon.c:424
 msgid "_About"
