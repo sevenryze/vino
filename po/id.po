@@ -8,20 +8,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vino HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-16 09:00+0200\n"
-"PO-Revision-Date: 2004-10-11 22:14+0700\n"
+"POT-Creation-Date: 2007-04-11 03:34+0100\n"
+"PO-Revision-Date: 2007-12-10 11:57+0700\n"
 "Last-Translator: Mohammad DAMT <mdamt@bisnisweb.com>\n"
 "Language-Team: Indonesian <l10n@gnome.linux.or.id>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=1; plural=0;"
 
-#: ../capplet/vino-preferences.c:761
+#: ../capplet/vino-preferences.c:635 ../capplet/vino-preferences.c:670
+#: ../server/vino-dbus-listener.c:324
+#, c-format
+msgid "Failed to open connection to bus: %s\n"
+msgstr "Gagal membuka sambukan ke bus: %s\n"
+
+#: ../capplet/vino-preferences.c:880
 msgid "Send this command by email"
 msgstr "Kirim perintah ini melalui email"
 
-#: ../capplet/vino-preferences.c:796 ../server/vino-status-icon.c:185
+#: ../capplet/vino-preferences.c:915
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
@@ -82,16 +88,22 @@ msgstr "_Kata Sandi:"
 msgid "_Require the user to enter this password:"
 msgstr "Ha_rus mengetikkan kata sandi:"
 
-#: ../server/vino-fb.c:984 ../server/vino-prompt.c:143
-#: ../server/vino-server.c:987
-msgid "Screen"
-msgstr "Layar"
+#: ../server/vino-dbus-listener.c:180 ../server/vino-dbus-listener.c:210
+#, c-format
+msgid "Out of memory handling '%s' message"
+msgstr "Pesan kehabisan memory '%s'"
 
-#: ../server/vino-fb.c:985
-msgid "The screen to be monitored"
-msgstr "Layar yang hendak dipantau"
+#: ../server/vino-dbus-listener.c:284
+#, c-format
+msgid "Out of memory registering object path '%s'"
+msgstr "Kehabisan memory mendaftarkan jalan objek '%s'"
 
-#: ../server/vino-main.c:80
+#: ../server/vino-dbus-listener.c:357
+#, c-format
+msgid "Failed to acquire D-Bus name '%s'\n"
+msgstr "Gagal mendapatkan nama D-Bus '%s'\n"
+
+#: ../server/vino-main.c:83
 msgid ""
 "Your XServer does not support the XTest extension - remote desktop access "
 "will be view-only\n"
@@ -118,11 +130,15 @@ msgstr ""
 msgid "%s's remote desktop"
 msgstr "Layar %s"
 
-#: ../server/vino-prompt.c:144
+#: ../server/vino-prompt.c:142
+msgid "Screen"
+msgstr "Layar"
+
+#: ../server/vino-prompt.c:143
 msgid "The screen on which to display the prompt"
 msgstr "Layar tempat menampilkan prompt"
 
-#: ../server/vino-prompt.c:361
+#: ../server/vino-prompt.c:343
 #, c-format
 msgid ""
 "A user on the computer '%s' is trying to remotely view or control your "
@@ -150,101 +166,21 @@ msgstr "Beri izin?"
 msgid "Question"
 msgstr "Pertanyaan"
 
-#: ../server/vino-prompt.glade.h:5 ../server/vino-util.c:62
+#: ../server/vino-prompt.glade.h:5 ../server/vino-util.c:63
 msgid "_Allow"
 msgstr "Izink_an"
 
-#: ../server/vino-prompt.glade.h:6 ../server/vino-util.c:63
+#: ../server/vino-prompt.glade.h:6 ../server/vino-util.c:64
 msgid "_Refuse"
 msgstr "_Tolak"
-
-#: ../server/vino-server.c:988
-msgid "The screen for which to create a VNC server"
-msgstr "Layar untuk server VNC"
-
-#: ../server/vino-server.c:995
-msgid "On Hold"
-msgstr "Tunggu Dulu"
-
-#: ../server/vino-server.c:996
-msgid "Place all clients on hold"
-msgstr "Masukkan semua klien ke daftar tunggu"
-
-#: ../server/vino-server.c:1003
-msgid "Prompt enabled"
-msgstr "Prompt aktif"
-
-#: ../server/vino-server.c:1004
-msgid "Prompt the user about connection attempts"
-msgstr "Prompt pemakai saat ada yang mengakses desktop"
-
-#: ../server/vino-server.c:1011
-msgid "View Only"
-msgstr "Lihat Saja"
-
-#: ../server/vino-server.c:1012
-msgid "Disallow keyboard/pointer input from clients"
-msgstr "Matikan input keyboard/mouse dari kliem"
-
-#: ../server/vino-server.c:1019
-msgid "Local Only"
-msgstr ""
-
-#: ../server/vino-server.c:1020 ../server/vino-server.schemas.in.h:13
-msgid "Only allow local connections"
-msgstr ""
-
-#: ../server/vino-server.c:1027
-msgid "Require Encryption"
-msgstr "Pilihan Enkripsi"
-
-#: ../server/vino-server.c:1028
-msgid "Require clients to use encryption"
-msgstr "Mengharuskan klien menggunakan enkripsi"
-
-#: ../server/vino-server.c:1035
-msgid "Authentication methods"
-msgstr "Metode otentikasi"
-
-#: ../server/vino-server.c:1036
-msgid "The authentication methods this server should allow"
-msgstr "Metode otentikasi yang digunakan server"
-
-#: ../server/vino-server.c:1044
-msgid "VNC Password"
-msgstr "Kata Sandi VNC"
-
-#: ../server/vino-server.c:1045
-msgid ""
-"The password (base64 encoded) used to authenticate types using the VncAuth "
-"method"
-msgstr ""
-"Kata sandi (diacak dengan metode base64) digunakan pada metode otentikasi "
-"VncAuth"
-
-#: ../server/vino-server.c:1052
-msgid "Use an alternative port"
-msgstr "Gunakan port lain"
-
-#: ../server/vino-server.c:1053
-msgid "Listen on the port specified by the 'alternative-port' property"
-msgstr "Jalankan pada port seperti yang ditetapkan pada 'alternative-port'"
-
-#: ../server/vino-server.c:1060 ../server/vino-server.schemas.in.h:2
-msgid "Alternative port number"
-msgstr "Nomor port alternatif"
-
-#: ../server/vino-server.c:1061
-msgid ""
-"Listen on the specified port number if the 'use-alternative-port' property "
-"is TRUE"
-msgstr ""
-"Jalankan pada nomor port yang ditetapkan bila 'use-alternative-port' "
-"diset TRUE"
 
 #: ../server/vino-server.schemas.in.h:1
 msgid "Allowed authentication methods"
 msgstr "Metode otentikasi yang tersedia"
+
+#: ../server/vino-server.schemas.in.h:2
+msgid "Alternative port number"
+msgstr "Nomor port alternatif"
 
 #: ../server/vino-server.schemas.in.h:3
 msgid "E-mail address to which the remote desktop URL should be sent"
@@ -297,8 +233,8 @@ msgid ""
 "If true, the server will listen another port, instead of default (5900). The "
 "port must be specified in 'alternative_port' key."
 msgstr ""
-"Jika aktif, server akan jalan pada port lain dan bukan pada port bawaan (5900) "
-"Port lain ini harus diset pada kunci 'alternative_port'."
+"Jika aktif, server akan jalan pada port lain dan bukan pada port bawaan "
+"(5900) Port lain ini harus diset pada kunci 'alternative_port'."
 
 #: ../server/vino-server.schemas.in.h:10
 msgid ""
@@ -306,6 +242,10 @@ msgid ""
 "connections will be rejected. Set this option to true if you wish to "
 "exclusively use a tunneling mechanism to access the server, such as ssh."
 msgstr ""
+"Jika benar, server akan hanya menerima sambungan dari localhost dan "
+"sambungan jaringan akan ditolak. Atur pilihan ini ke benar jika anda "
+"ingin menggunakan mekanisme terowongan secara ekslusif untuk mengakses "
+"server, seperti ssh."
 
 #: ../server/vino-server.schemas.in.h:11
 msgid "Listen an alternative port"
@@ -323,6 +263,10 @@ msgstr ""
 "Ada dua metode yang umum digunakan, yaitu: \"vnc\" bila ingin menggunakan "
 "kata sandi (kata sandi ditentukan menggunakan kunci vnc_password) dan "
 "\"tidak ada\" bila tidak ingin menggunakan sandi."
+
+#: ../server/vino-server.schemas.in.h:13
+msgid "Only allow local connections"
+msgstr "Hanya memperbolehkan sambungan lokal"
 
 #: ../server/vino-server.schemas.in.h:14
 msgid "Only allow remote users to view the desktop"
@@ -354,6 +298,8 @@ msgid ""
 "The port which the server will listen to if the 'use_alternative_port' key "
 "is set to true. Valid values are in the range from 5000 to 50000."
 msgstr ""
+"Port yang didengar server jika kunci 'use_alternative_port' diatur ke benar. "
+"Nilai yang benar dari 5000 ke 50000."
 
 #: ../server/vino-server.schemas.in.h:20
 msgid ""
@@ -377,126 +323,134 @@ msgstr ""
 "Ada kegagalan mendaftarkan diri ke server desktop remote menggunakan bonobo-"
 "activation; keluar saja...\n"
 
-#: ../server/vino-status-icon.c:151
+#: ../server/vino-status-icon.c:204
 #, c-format
 msgid ""
 "There was an error displaying preferences:\n"
-"%s"
+" %s"
 msgstr ""
-"Ada kesalahan menampilkan layar pengaturan:\n"
-"%s"
+"Ada kesalahan menampilkan pengaturan:\n"
+" %s"
 
-#: ../server/vino-status-icon.c:216
-msgid "Licensed under the GNU General Public License Version 2"
-msgstr "Diterbitkan di bawah lisensi GNU General Public License versi 2"
-
-#: ../server/vino-status-icon.c:217
+#: ../server/vino-status-icon.c:212
+#, c-format
 msgid ""
+"There was an error displaying help:\n"
+" %s"
+msgstr ""
+"Ada kesalahan menampilkan bantuan: \n"
+" %s"
+
+#: ../server/vino-status-icon.c:235
+msgid ""
+"Licensed under the GNU General Public License Version 2\n"
+"\n"
 "Vino is free software; you can redistribute it and/or\n"
 "modify it under the terms of the GNU General Public License\n"
 "as published by the Free Software Foundation; either version 2\n"
-"of the License, or (at your option) any later version."
-msgstr ""
-"Vino adalah perangkat lunak bebas. Anda dapat menyebarkannya dan/atau\n"
-"memodifikasinya di bawah aturan main GNU General Public License\n"
-"sebagaimana yang diterbitkan oleh Free Software Foundation, dalam\n"
-"versi 2 atau yang lebih baru."
-
-#: ../server/vino-status-icon.c:221
-msgid ""
+"of the License, or (at your option) any later version.\n"
+"\n"
 "Vino is distributed in the hope that it will be useful,\n"
 "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details."
-msgstr ""
-"Vino disebarkan dengan harapan dapat berguna,\n"
-"namun dengan catatan bahwa Vino TIDAK MEMILIKI JAMINAN\n"
-"akan LAYAK JUAL atau COCOK UNTUK KEPERLUAN TERTENTU. Silakan lihat\n"
-"GNU General Public License untuk lebih jelasnya."
-
-#: ../server/vino-status-icon.c:225
-msgid ""
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n"
+"GNU General Public License for more details.\n"
+"\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program; if not, write to the Free Software\n"
 "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n"
-"02110-1301, USA."
+"02110-1301, USA.\n"
 msgstr ""
-"Salinan GNU General Public License juga disertakan dalam\n"
-"program ini. Jika Anda tidak menemukannya silakan tulis surat\n"
-"ke Free Software Foundation, Inc., 51 Franklin Street, Fifth\n"
-"Floor, Boston, MA 02110-1301, USA."
 
-#: ../server/vino-status-icon.c:230
+#. Translators comment: put your own name here to appear in the about dialog.
+#: ../server/vino-status-icon.c:250
 msgid "translator-credits"
-msgstr "Mohammad DAMT <mdamt@gnome.org>\n"
+msgstr ""
+"Mohammad DAMT <mdamt@gnome.org>\n"
 "GNOME Indonesia http://id.gnome.org"
 
-#: ../server/vino-status-icon.c:243
-msgid "GNOME Remote Access"
-msgstr "Akses Jarak Jauh GNOME"
+#: ../server/vino-status-icon.c:256 ../server/vino-status-icon.c:566
+msgid "GNOME Remote Desktop"
+msgstr "Desktop Jauh GNOME"
 
-#. "website", "www",
-#: ../server/vino-status-icon.c:248
-msgid "Shares your desktop with others"
-msgstr "Bolehkan orang lain mengakses ke layar Anda"
+#: ../server/vino-status-icon.c:257
+msgid "Share your desktop with other users"
+msgstr "Berbagi desktop anda dengan yang lain"
 
-#: ../server/vino-status-icon.c:266
-msgid "Are you sure you want to disconnect the remote machine?"
-msgstr "Benar ingin memutuskan hubungan dengan mesin ini?"
+#: ../server/vino-status-icon.c:320
+#, c-format
+msgid "Are you sure you want to disconnect '%s'?"
+msgstr "Benar ingin memutuskan hubungan dengan '%s'?"
 
-#: ../server/vino-status-icon.c:269
-msgid "GNOME Remote Access - Confirmation"
-msgstr "Akses Jarak Jauh GNOME - Konfirmasi"
+#: ../server/vino-status-icon.c:322
+#, c-format
+msgid "The remote user from '%s' will be disconnected. Are you sure?"
+msgstr "Pengguna lain dari mesin '%s' akan diputuskan. Yakin?"
 
-#: ../server/vino-status-icon.c:277
-msgid "Leave as it is"
-msgstr "Jangan dirubah-rubah"
+#: ../server/vino-status-icon.c:327
+msgid "Are you sure you want to disconnect all clients?"
+msgstr "Benar ingin memutuskan hubungan seluruh pelanggan?"
 
-#: ../server/vino-status-icon.c:278
+#: ../server/vino-status-icon.c:328
+msgid "All remote users will be disconnected. Are you sure?"
+msgstr "Pengguna jauh lain akan diputuskan. Yakin?"
+
+#: ../server/vino-status-icon.c:340
 msgid "Disconnect"
 msgstr "Putuskan hubungan"
 
-#: ../server/vino-status-icon.c:282
-#, c-format
-msgid ""
-"The remote user from the machine '%s' will be disconnected. Are you sure?"
-msgstr ""
-"Pengguna lain dari mesin '%s' akan diputuskan. Benar ingin melakukan ini?"
-
-#. Preferences
-#: ../server/vino-status-icon.c:319
+#: ../server/vino-status-icon.c:365
 msgid "_Preferences"
 msgstr "_Pengaturan"
 
-#. Information about connected clients
-#: ../server/vino-status-icon.c:336
-msgid "Connected machines, click to disconnect"
-msgstr "Mesin yang tersambung, klik untuk memutuskan sambungan"
-
-#: ../server/vino-status-icon.c:354
-msgid " is watching your desktop"
-msgstr " sedang melihat layar Anda"
-
-#: ../server/vino-status-icon.c:356
-msgid " is controlling your desktop"
-msgstr " sedang mengendalikan layar Anda"
-
-#. Help
 #: ../server/vino-status-icon.c:377
+msgid "Disconnect all"
+msgstr "Putuskan semua"
+
+#: ../server/vino-status-icon.c:399
+#, c-format
+msgid "Disconnect %s"
+msgstr "Putuskan %s"
+
+#: ../server/vino-status-icon.c:416
 msgid "_Help"
 msgstr "Ba_ntuan"
 
-#. About
-#: ../server/vino-status-icon.c:385
+#: ../server/vino-status-icon.c:424
 msgid "_About"
 msgstr "Tent_ang program ini"
 
-#. Set its tooltip, based on number of connected clients
-#: ../server/vino-status-icon.c:415
+#: ../server/vino-status-icon.c:458
 #, c-format
 msgid "One person is connected"
 msgid_plural "%d people are connected"
 msgstr[0] "Ada %d orang yang tersambung"
+
+#: ../server/vino-status-icon.c:568
+msgid "Error initializing libnotify\n"
+msgstr "Error mengenali libnotify\n"
+
+#: ../server/vino-status-icon.c:582
+msgid "Another user is viewing your desktop"
+msgstr "Pengguna lain sedang melihat desktop anda"
+
+#: ../server/vino-status-icon.c:583
+#, c-format
+msgid "A user on the computer '%s' is remotely viewing your desktop."
+msgstr "Pemakai komputer '%s' sedang melihat desktop Anda dari jauh."
+
+#: ../server/vino-status-icon.c:588
+msgid "Another user is controlling your desktop"
+msgstr "Pengguna lain sedang mengendalikan desktop Anda"
+
+#: ../server/vino-status-icon.c:589
+#, c-format
+msgid "A user on the computer '%s' is remotely controlling your desktop."
+msgstr "Pemakai komputer '%s' sedang mengendalikan desktop Anda."
+
+#: ../server/vino-status-icon.c:611
+#, c-format
+msgid "Error while displaying notification bubble: %s\n"
+msgstr "Gagal ketika menampilkan pemberitahuan: %s\n"
 
 #: ../session/vino-session.c:133
 msgid "Remote desktop server died, restarting\n"
@@ -524,6 +478,116 @@ msgstr "Menjalankan server desktop remote"
 #: ../session/vino-session.c:300
 msgid "Not starting remote desktop server"
 msgstr "Server desktop remote tidak dijalankan"
+
+#~ msgid "The screen to be monitored"
+#~ msgstr "Layar yang hendak dipantau"
+
+#~ msgid "The screen for which to create a VNC server"
+#~ msgstr "Layar untuk server VNC"
+
+#~ msgid "On Hold"
+#~ msgstr "Tunggu Dulu"
+
+#~ msgid "Place all clients on hold"
+#~ msgstr "Masukkan semua klien ke daftar tunggu"
+
+#~ msgid "Prompt enabled"
+#~ msgstr "Prompt aktif"
+
+#~ msgid "Prompt the user about connection attempts"
+#~ msgstr "Prompt pemakai saat ada yang mengakses desktop"
+
+#~ msgid "View Only"
+#~ msgstr "Lihat Saja"
+
+#~ msgid "Disallow keyboard/pointer input from clients"
+#~ msgstr "Matikan input keyboard/mouse dari kliem"
+
+#~ msgid "Require Encryption"
+#~ msgstr "Pilihan Enkripsi"
+
+#~ msgid "Require clients to use encryption"
+#~ msgstr "Mengharuskan klien menggunakan enkripsi"
+
+#~ msgid "Authentication methods"
+#~ msgstr "Metode otentikasi"
+
+#~ msgid "The authentication methods this server should allow"
+#~ msgstr "Metode otentikasi yang digunakan server"
+
+#~ msgid "VNC Password"
+#~ msgstr "Kata Sandi VNC"
+
+#~ msgid ""
+#~ "The password (base64 encoded) used to authenticate types using the "
+#~ "VncAuth method"
+#~ msgstr ""
+#~ "Kata sandi (diacak dengan metode base64) digunakan pada metode otentikasi "
+#~ "VncAuth"
+
+#~ msgid "Use an alternative port"
+#~ msgstr "Gunakan port lain"
+
+#~ msgid "Listen on the port specified by the 'alternative-port' property"
+#~ msgstr "Jalankan pada port seperti yang ditetapkan pada 'alternative-port'"
+
+#~ msgid ""
+#~ "Listen on the specified port number if the 'use-alternative-port' "
+#~ "property is TRUE"
+#~ msgstr ""
+#~ "Jalankan pada nomor port yang ditetapkan bila 'use-alternative-port' "
+#~ "diset TRUE"
+
+#~ msgid "Licensed under the GNU General Public License Version 2"
+#~ msgstr "Diterbitkan di bawah lisensi GNU General Public License versi 2"
+
+#~ msgid ""
+#~ "Vino is free software; you can redistribute it and/or\n"
+#~ "modify it under the terms of the GNU General Public License\n"
+#~ "as published by the Free Software Foundation; either version 2\n"
+#~ "of the License, or (at your option) any later version."
+#~ msgstr ""
+#~ "Vino adalah perangkat lunak bebas. Anda dapat menyebarkannya dan/atau\n"
+#~ "memodifikasinya di bawah aturan main GNU General Public License\n"
+#~ "sebagaimana yang diterbitkan oleh Free Software Foundation, dalam\n"
+#~ "versi 2 atau yang lebih baru."
+
+#~ msgid ""
+#~ "Vino is distributed in the hope that it will be useful,\n"
+#~ "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+#~ "GNU General Public License for more details."
+#~ msgstr ""
+#~ "Vino disebarkan dengan harapan dapat berguna,\n"
+#~ "namun dengan catatan bahwa Vino TIDAK MEMILIKI JAMINAN\n"
+#~ "akan LAYAK JUAL atau COCOK UNTUK KEPERLUAN TERTENTU. Silakan lihat\n"
+#~ "GNU General Public License untuk lebih jelasnya."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License\n"
+#~ "along with this program; if not, write to the Free Software\n"
+#~ "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n"
+#~ "02110-1301, USA."
+#~ msgstr ""
+#~ "Salinan GNU General Public License juga disertakan dalam\n"
+#~ "program ini. Jika Anda tidak menemukannya silakan tulis surat\n"
+#~ "ke Free Software Foundation, Inc., 51 Franklin Street, Fifth\n"
+#~ "Floor, Boston, MA 02110-1301, USA."
+
+#~ msgid "GNOME Remote Access"
+#~ msgstr "Akses Jarak Jauh GNOME"
+
+#~ msgid "GNOME Remote Access - Confirmation"
+#~ msgstr "Akses Jarak Jauh GNOME - Konfirmasi"
+
+#~ msgid "Leave as it is"
+#~ msgstr "Jangan dirubah-rubah"
+
+#~ msgid "Connected machines, click to disconnect"
+#~ msgstr "Mesin yang tersambung, klik untuk memutuskan sambungan"
+
+#~ msgid " is watching your desktop"
+#~ msgstr " sedang melihat layar Anda"
 
 #~ msgid "    "
 #~ msgstr "    "
