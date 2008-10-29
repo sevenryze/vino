@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vino.HEAD.hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-05 12:25+0000\n"
-"PO-Revision-Date: 2008-09-19 04:10+0200\n"
+"POT-Creation-Date: 2008-10-22 03:52+0000\n"
+"PO-Revision-Date: 2008-10-29 15:30+0100\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <gnome@fsf.hu>\n"
 "MIME-Version: 1.0\n"
@@ -18,18 +18,11 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
-#: ../capplet/vino-preferences.c:1097 ../capplet/vino-preferences.c:1132
-#: ../capplet/vino-preferences.c:1190 ../server/vino-dbus-listener.c:374
-#: ../server/vino-server.c:151
-#, c-format
-msgid "Failed to open connection to bus: %s\n"
-msgstr "A kapcsolat megnyitása meghiúsult a buszhoz: %s\n"
-
-#: ../capplet/vino-preferences.c:1399
+#: ../capplet/vino-preferences.c:1375
 msgid "Send this command by email"
 msgstr "Ezen parancs küldése e-mailben"
 
-#: ../capplet/vino-preferences.c:1437
+#: ../capplet/vino-preferences.c:1413
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
@@ -37,6 +30,12 @@ msgid ""
 msgstr ""
 "Hiba történt a súgó megjelenítése közben:\n"
 "%s"
+
+#: ../capplet/vino-preferences.c:1474 ../server/vino-dbus-listener.c:411
+#: ../server/vino-server.c:151
+#, c-format
+msgid "Failed to open connection to bus: %s\n"
+msgstr "A kapcsolat megnyitása meghiúsult a buszhoz: %s\n"
 
 #: ../capplet/vino-preferences.desktop.in.in.h:1
 #: ../server/vino-server.desktop.in.in.h:2
@@ -85,7 +84,7 @@ msgstr "_Háttérkép kikapcsolása ha kapcsolódott"
 
 #: ../capplet/vino-preferences.glade.h:10
 msgid "Disable the wallpaper when successfull connection"
-msgstr "Háttérkép kikapcsolása sikerek kapcsolódáskor"
+msgstr "Háttérkép kikapcsolása sikeres kapcsolódáskor"
 
 #: ../capplet/vino-preferences.glade.h:11
 msgid "General"
@@ -104,7 +103,9 @@ msgstr "A távoli felhasználók képesek irányítani az egeret és a billenty�
 msgid ""
 "Remote users' VNC clients accessing the desktop are required to support "
 "encryption"
-msgstr "A távoli felhasználók az asztalt elérő VNC kliensének támogatnia kell a titkosítást"
+msgstr ""
+"A távoli felhasználók az asztalt elérő VNC kliensének támogatnia kell a "
+"titkosítást"
 
 #: ../capplet/vino-preferences.glade.h:16
 msgid "Screen will be locked after the last remote client disconnect"
@@ -128,7 +129,8 @@ msgstr "A felhasználók a következő paranccsal láthatják az asztalát:"
 
 #: ../capplet/vino-preferences.glade.h:21
 msgid "When a user tries to view or control your desktop:"
-msgstr "Ha egy felhasználó megpróbálja megnézni vagy irányítani az Ön asztalát:"
+msgstr ""
+"Ha egy felhasználó megpróbálja megnézni vagy irányítani az Ön asztalát:"
 
 #. tooltip in preferences applet
 #: ../capplet/vino-preferences.glade.h:23
@@ -171,23 +173,23 @@ msgstr "A felhasználónak meg kell adnia ezt a _jelszót:"
 msgid "_Use an alternative port:"
 msgstr "Alternatív _port figyelése:"
 
-#: ../server/vino-dbus-listener.c:188 ../server/vino-dbus-listener.c:218
-#: ../server/vino-dbus-listener.c:249
+#: ../server/vino-dbus-listener.c:190 ../server/vino-dbus-listener.c:220
+#: ../server/vino-dbus-listener.c:251
 #, c-format
 msgid "Out of memory handling '%s' message"
 msgstr "Elfogyott a memória a(z) „%s” üzenet kezelése során"
 
-#: ../server/vino-dbus-listener.c:334
+#: ../server/vino-dbus-listener.c:364
 #, c-format
 msgid "Out of memory registering object path '%s'"
 msgstr "Elfogyott a memória a(z) „%s” objektumútvonal regisztrációja során"
 
-#: ../server/vino-dbus-listener.c:411
+#: ../server/vino-dbus-listener.c:448
 #, c-format
 msgid "Failed to acquire D-Bus name '%s'\n"
 msgstr "A(z) „%s” D-Bus név beszerzése meghiúsult\n"
 
-#: ../server/vino-dbus-listener.c:419
+#: ../server/vino-dbus-listener.c:456
 msgid "Remote Desktop server already running; exiting ...\n"
 msgstr "A távoliasztal-kiszolgáló már fut, kilépés…\n"
 
@@ -200,8 +202,8 @@ msgid ""
 "Your XServer does not support the XTest extension - remote desktop access "
 "will be view-only\n"
 msgstr ""
-"Az Ön X kiszolgálója nem támogatja az XTest kiterjesztést - a távoli "
-"asztal csak látható lesz\n"
+"Az Ön X kiszolgálója nem támogatja az XTest kiterjesztést - a távoli asztal "
+"csak látható lesz\n"
 
 #.
 #. * Translators: translate "vino-mdns:showusername" to
@@ -242,8 +244,7 @@ msgstr ""
 #: ../server/vino-prompt.glade.h:1
 msgid "<big><b>Another user is trying to view your desktop.</b></big>"
 msgstr ""
-"<big><b>Egy másik felhasználó megpróbálja megnézni az Ön asztalát.</b></"
-"big>"
+"<big><b>Egy másik felhasználó megpróbálja megnézni az Ön asztalát.</b></big>"
 
 #: ../server/vino-prompt.glade.h:2
 msgid ""
@@ -294,9 +295,9 @@ msgid ""
 "If true, allows remote access to the desktop via the RFB protocol. Users on "
 "remote machines may then connect to the desktop using a vncviewer."
 msgstr ""
-"Engedélyezi-e az asztalhoz való hozzáférést RFB protokollon keresztül? "
-"Ekkor távoli gépek felhasználói egy vnc megjelenítő programmal "
-"kapcsolódhatnak az asztalához."
+"Engedélyezi-e az asztalhoz való hozzáférést RFB protokollon keresztül? Ekkor "
+"távoli gépek felhasználói egy vnc megjelenítő programmal kapcsolódhatnak az "
+"asztalához."
 
 #: ../server/vino-server.schemas.in.h:6
 msgid ""
@@ -305,9 +306,8 @@ msgid ""
 "when access is not password protected."
 msgstr ""
 "Ha ez igazra van állítva, akkor a távoli felhasználók hozzáférése az "
-"asztalhoz nem engedélyezett, amíg a kiszolgáló gép felhasználója nem "
-"hagyja azt jóvá. Különösen akkor javasolt, ha a hozzáférés nincs jelszóval "
-"védve."
+"asztalhoz nem engedélyezett, amíg a kiszolgáló gép felhasználója nem hagyja "
+"azt jóvá. Különösen akkor javasolt, ha a hozzáférés nincs jelszóval védve."
 
 #: ../server/vino-server.schemas.in.h:7
 msgid ""
@@ -432,9 +432,9 @@ msgid ""
 "be sent if the user clicks on the URL in the Remote Desktop preferences "
 "dialog."
 msgstr ""
-"Ez a kulcs megadja azt az e-mail címet, amelyre a távoli asztal URL "
-"címe el lesz küldve, ha a felhasználó az URL címre kattint a Távoli "
-"asztal beállításai párbeszédablakban."
+"Ez a kulcs megadja azt az e-mail címet, amelyre a távoli asztal URL címe el "
+"lesz küldve, ha a felhasználó az URL címre kattint a Távoli asztal "
+"beállításai párbeszédablakban."
 
 #: ../server/vino-server.schemas.in.h:24
 msgid "When the status icon should be shown"
@@ -442,7 +442,9 @@ msgstr "Mikor jelenjen meg az állapotikon"
 
 #: ../server/vino-server.schemas.in.h:25
 msgid "When true, disable the background on receive valid session"
-msgstr "Ha ez igazra van állítva, akkor a háttér letiltásra kerül érvényes munkamenet esetén"
+msgstr ""
+"Ha ez igazra van állítva, akkor a háttér letiltásra kerül érvényes "
+"munkamenet esetén"
 
 #: ../server/vino-status-icon.c:102
 msgid "Desktop sharing is enabled"
@@ -504,7 +506,8 @@ msgstr ""
 "részletekért tanulmányozza a GNU GPL licencet.\n"
 "\n"
 "A Vino programhoz a GNU General Public License egy példánya is jár, ha nem\n"
-"kapta meg, írjon a Free Software Foundation Inc.-nek. Levélcímük: 51 Franklin\n"
+"kapta meg, írjon a Free Software Foundation Inc.-nek. Levélcímük: 51 "
+"Franklin\n"
 "St, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 
 #. Translators comment: put your own name here to appear in the about dialog.
@@ -576,8 +579,7 @@ msgstr "Egy másik felhasználó nézi az asztalát"
 #, c-format
 msgid "A user on the computer '%s' is remotely viewing your desktop."
 msgstr ""
-"A(z) „%s” távoli számítógép egy felhasználója távolról nézi az Ön "
-"asztalát."
+"A(z) „%s” távoli számítógép egy felhasználója távolról nézi az Ön asztalát."
 
 #: ../server/vino-status-icon.c:629
 msgid "Another user is controlling your desktop"
@@ -600,7 +602,9 @@ msgstr "Hiba az értesítési buborék megjelenítése közben: %s\n"
 msgid ""
 "ERROR: Maximum length of password is %d characters. Please, re-enter the "
 "password.\n"
-msgstr "HIBA: A jelszó legfeljebb %d karakter hosszú lehet. Adja meg újra a jelszót.\n"
+msgstr ""
+"HIBA: A jelszó legfeljebb %d karakter hosszú lehet. Adja meg újra a "
+"jelszót.\n"
 
 #: ../tools/vino-passwd.c:145
 #, c-format
@@ -639,8 +643,11 @@ msgid "- Updates Vino password"
 msgstr "– Frissíti a Vino jelszavát"
 
 #: ../tools/vino-passwd.c:195
-msgid "Run 'vino-passwd --help' to see a full list of available command line options"
-msgstr "Az elérhető parancssori kapcsolók listájáért adja ki a „vino-passwd --help” parancsot"
+msgid ""
+"Run 'vino-passwd --help' to see a full list of available command line options"
+msgstr ""
+"Az elérhető parancssori kapcsolók listájáért adja ki a „vino-passwd --help” "
+"parancsot"
 
 #: ../tools/vino-passwd.c:202
 #, c-format
@@ -651,4 +658,3 @@ msgstr "VINO %s verzió\n"
 #, c-format
 msgid "ERROR: You do not have enough permissions to change Vino password.\n"
 msgstr "HIBA: Nincs megfelelő jogosultsága a Vino jelszavának módosításához.\n"
-
