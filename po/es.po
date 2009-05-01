@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vino.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=vino&component=general\n"
-"POT-Creation-Date: 2009-02-14 13:06+0000\n"
-"PO-Revision-Date: 2009-03-07 17:19+0100\n"
+"product=vino&component=Preferences Dialog\n"
+"POT-Creation-Date: 2009-04-21 13:20+0000\n"
+"PO-Revision-Date: 2009-05-01 14:39+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -37,7 +37,7 @@ msgstr "_Copiar la dirección al portapapeles"
 msgid "There was an error showing the URL \"%s\""
 msgstr "Hubo un error al mostrar el URL «%s»"
 
-#: ../capplet/vino-preferences.c:198 ../capplet/vino-preferences.c:954
+#: ../capplet/vino-preferences.c:198 ../capplet/vino-preferences.c:989
 msgid "Checking the connectivity of this machine..."
 msgstr "Comprobando la conectividad de este equipo…"
 
@@ -50,20 +50,20 @@ msgstr ""
 "Hubo un error al mostrar la ayuda:\n"
 "%s"
 
-#: ../capplet/vino-preferences.c:839
+#: ../capplet/vino-preferences.c:828
 msgid "Your desktop is only reachable over the local network."
 msgstr "Su escritorio sólo es accesible a través de la red local."
 
-#: ../capplet/vino-preferences.c:840 ../capplet/vino-preferences.c:890
+#: ../capplet/vino-preferences.c:851 ../capplet/vino-preferences.c:922
 #, c-format
 msgid "Others can access your computer using the address %s."
 msgstr "Otros podrán acceder a su equipo usando la dirección %s."
 
-#: ../capplet/vino-preferences.c:940
+#: ../capplet/vino-preferences.c:975
 msgid "Nobody can access your desktop."
 msgstr "Nadie puede acceder a su escritorio."
 
-#: ../capplet/vino-preferences.c:1081 ../server/vino-dbus-listener.c:501
+#: ../capplet/vino-preferences.c:1116 ../server/vino-dbus-listener.c:506
 #: ../server/vino-server.c:156 ../server/vino-server.c:187
 #, c-format
 msgid "Failed to open connection to bus: %s\n"
@@ -151,23 +151,23 @@ msgstr "_Requerir que el usuario introduzca una contraseña:"
 msgid "_You must confirm each access to this machine"
 msgstr "_Debe confirmar cada acceso a este equipo"
 
-#: ../server/vino-dbus-listener.c:281 ../server/vino-dbus-listener.c:311
-#: ../server/vino-dbus-listener.c:352
+#: ../server/vino-dbus-listener.c:283 ../server/vino-dbus-listener.c:313
+#: ../server/vino-dbus-listener.c:357
 #, c-format
 msgid "Out of memory handling '%s' message"
 msgstr "Se agotó la memoria manejando el mensaje «%s»"
 
-#: ../server/vino-dbus-listener.c:458
+#: ../server/vino-dbus-listener.c:463
 #, c-format
 msgid "Out of memory registering object path '%s'"
 msgstr "Se agotó la memoria registrando la ruta al objeto «%s»"
 
-#: ../server/vino-dbus-listener.c:537
+#: ../server/vino-dbus-listener.c:542
 #, c-format
 msgid "Failed to acquire D-Bus name '%s'\n"
 msgstr "Falló al adquirir el nombre D-Bus «%s»\n"
 
-#: ../server/vino-dbus-listener.c:545
+#: ../server/vino-dbus-listener.c:550
 msgid "Remote Desktop server already running; exiting ...\n"
 msgstr "El servidor de Escritorio Remoto ya está en ejecución; saliendo …\n"
 
@@ -530,7 +530,7 @@ msgstr "Desconectar"
 
 #: ../server/vino-status-icon.c:384
 msgid "_Preferences"
-msgstr "_Preferencias"
+msgstr "Prefere_ncias"
 
 #: ../server/vino-status-icon.c:399
 msgid "Disconnect all"
