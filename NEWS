@@ -1,3 +1,31 @@
+Vino 2.26.2
+===========
+
+  Fixes
+
+	+ #581204, Use g_timeout_add_seconds (Javier Jardón)
+	+ #582843, Fix build in FreeBSD (Alexis Ballier)
+	+ #533613, Added an option to disable XDamage extension. In some
+	environments the XDamage extension does not work properly on 3D desktops.
+	This adds a boolean gconf key 'disable_xdamage'. If it is set to
+	TRUE, Vino willl not use it. (Jonh Wendell)
+	+ Minor tweaks.
+
+  Translations
+
+	+ Christian Kirbach (de)
+	+ Claude Paroz (fr)
+	+ Gabor Kelemen (hu)
+	+ Gil Forcada (ca)
+	+ Ihar Hrachyshka (be)
+	+ Jonh Wendell (pt_BR)
+	+ Jorge Gonzalez (es)
+	+ Luca Ferretti (it)
+	+ Marios Zindilis (el)
+	+ Matej Urban (sl)
+	+ Mattias Põldaru (et)
+	+ Runa Bhattacharjee (bn_IN)
+
 Vino 2.26.1
 ===========
 
