@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: vino\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 00:04+0100\n"
-"PO-Revision-Date: 2011-03-08 22:54+0100\n"
+"PO-Revision-Date: 2011-04-05 23:06+0200\n"
 "Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../capplet/vino-preferences.c:278
 msgid "Checking the connectivity of this machine..."
-msgstr "S'està comprovant la connectivitat d'aquest màquina..."
+msgstr "S'està comprovant la connectivitat d'aquesta màquina..."
 
 #: ../capplet/vino-preferences.c:298
 msgid "Your desktop is only reachable over the local network."
@@ -159,7 +159,7 @@ msgid ""
 "If true, we will use UPNP protocol to automatically forward the port used by "
 "vino in the router."
 msgstr ""
-"Si s'habilita, s'utilitzarà el protocol UPnP per a reenviar automàticament "
+"Si s'habilita, s'utilitzarà el protocol UPnP per reenviar automàticament "
 "el port utilitzat pel Vino a l'encaminador."
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:14
@@ -262,7 +262,7 @@ msgstr "Si s'hauria d'inhabilitar l'extensió XDamage de l'X.org"
 #: ../common/org.gnome.Vino.gschema.xml.in.h:29
 msgid "Whether we should use UPNP to forward the port in routers"
 msgstr ""
-"Indica si s'hauria d'utilitzar l'UPnP per a reenviar el port a l'encaminador"
+"Indica si s'hauria d'utilitzar l'UPnP per reenviar el port a l'encaminador"
 
 #: ../capplet/vino-preferences.ui.h:1
 msgid "Al_ways display an icon"
@@ -306,7 +306,7 @@ msgstr "_Permet que altres usuaris controlin l'escriptori"
 
 #: ../capplet/vino-preferences.ui.h:11
 msgid "_Configure network automatically to accept connections"
-msgstr "_Configura automàticament la xarxa per a acceptar connexions"
+msgstr "_Configura automàticament la xarxa per acceptar connexions"
 
 #: ../capplet/vino-preferences.ui.h:12
 msgid "_Never display an icon"
@@ -405,7 +405,7 @@ msgstr "- Servidor VNC per al GNOME"
 msgid ""
 "Run 'vino-server --help' to see a full list of available command line options"
 msgstr ""
-"Executeu «vino-server --help» per a veure una llista completa de les opcions "
+"Executeu «vino-server --help» per veure una llista completa de les opcions "
 "disponibles de la línia d'ordres"
 
 #: ../server/vino-main.c:226
@@ -665,7 +665,7 @@ msgstr "«%s» està controlant el vostre escriptori remotament."
 #: ../server/vino-tube-server.c:312
 #, c-format
 msgid "Waiting for '%s' to connect to the screen."
-msgstr "S'està esperant «%s» per a connectar a la pantalla."
+msgstr "S'està esperant «%s» per connectar a la pantalla."
 
 #: ../server/vino-util.c:140
 msgid "An error has occurred:"
@@ -731,7 +731,7 @@ msgstr "- Actualitza la contrasenya del Vino"
 msgid ""
 "Run 'vino-passwd --help' to see a full list of available command line options"
 msgstr ""
-"Executeu «vino-passwd --help» per a veure una llista completa de les opcions "
+"Executeu «vino-passwd --help» per veure una llista completa de les opcions "
 "disponibles de la línia d'ordres"
 
 #: ../tools/vino-passwd.c:215
@@ -743,7 +743,7 @@ msgstr "Vino versió %s\n"
 #, c-format
 msgid "ERROR: You do not have enough permissions to change Vino password.\n"
 msgstr ""
-"ERROR: No teniu suficients permisos per a canviar la contrasenya del Vino.\n"
+"S'ha produït un error: no teniu suficients permisos per canviar la contrasenya del Vino.\n"
 
 #~ msgid "_Send address by email"
 #~ msgstr "_Envia l'adreça per correu"
