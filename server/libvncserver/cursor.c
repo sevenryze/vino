@@ -522,7 +522,7 @@ void rfbSetCursorPosition(rfbScreenInfoPtr screen, rfbClientPtr client, int x, i
     rfbClientIteratorPtr iterator;
     rfbClientPtr cl;
 
-    if (x == screen->cursorX || y == screen->cursorY)
+    if (x == screen->cursorX && y == screen->cursorY)
 	return;
 
     LOCK(screen->cursorMutex);
