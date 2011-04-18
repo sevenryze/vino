@@ -244,7 +244,7 @@ vino_status_icon_about (VinoStatusIcon *icon)
 
   g_return_if_fail (VINO_IS_STATUS_ICON (icon));
 
-  const char *authors[] = {
+  static const gchar * const authors[] = {
     "Mark McLoughlin <mark@skynet.ie>",
     "Calum Benson <calum.benson@sun.com>",
     "Federico Mena Quintero <federico@ximian.com>",
@@ -253,8 +253,14 @@ vino_status_icon_about (VinoStatusIcon *icon)
     "Steven Zhang <steven.zhang@sun.com>",
     "Srirama Sharma <srirama.sharma@wipro.com>",
     "Jonh Wendell <wendell@bani.com.br>",
+    "David King <amigadave@amigadave.com>",
     NULL
   };
+  static const gchar copyright[] = \
+    "Copyright © 2004–2011 Mark McLoughlin\n" \
+    "Copyright © 2006–2011 Jonh Wendell\n" \
+    "Copyright © 2011 David King";
+
   char *license;
   char *translators;
 
@@ -284,6 +290,7 @@ vino_status_icon_about (VinoStatusIcon *icon)
                          "website",            PACKAGE_URL,
                          "license",            license,
                          "authors",            authors,
+                         "copyright",          copyright,
                          "translator-credits", translators,
                          "logo-icon-name",     "preferences-desktop-remote-desktop",
                          NULL);
