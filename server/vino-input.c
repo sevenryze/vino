@@ -819,18 +819,39 @@ vino_input_handle_pointer_event (GdkScreen *screen,
 				 guint16    y)
 {
 #ifdef VINO_HAVE_XTEST
+  GdkDisplay *gdkdisplay;
   Display *xdisplay;
   guint8   prev_mask = global_input_data.button_mask;
   int      i;
+  gboolean generate_motion_event = FALSE;
 
-  xdisplay = GDK_DISPLAY_XDISPLAY (gdk_screen_get_display (screen));
+  gdkdisplay = gdk_screen_get_display (screen);
+  xdisplay = GDK_DISPLAY_XDISPLAY (gdkdisplay);
 
-  XTestFakeMotionEvent (xdisplay,
-			gdk_screen_get_number (screen),
-			x, y,
-			CurrentTime);
-  
-  dprintf (INPUT, "Injected motion event: %d, %d\n", x, y);
+  /* Only generate a motion event if the pointer has moved. See GNOME bug
+   * #564520. */
+  if(button_mask != prev_mask)
+  {
+    int curr_x, curr_y;
+    GdkDevice *pointer;
+
+    pointer = gdk_device_manager_get_client_pointer(
+      gdk_display_get_device_manager(gdkdisplay));
+    gdk_device_get_position(pointer, NULL, &curr_x, &curr_y);
+    if(x != curr_x || y != curr_y)
+      generate_motion_event = TRUE;
+  }
+  else
+  {
+    generate_motion_event = TRUE;
+  }
+
+  if(generate_motion_event)
+  {
+    XTestFakeMotionEvent(xdisplay, gdk_screen_get_number(screen), x, y,
+      CurrentTime);
+    dprintf (INPUT, "Injected motion event: %d, %d\n", x, y);
+  }
 
   for (i = 0; i < global_input_data.n_pointer_buttons; i++)
     {
