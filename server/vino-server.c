@@ -39,7 +39,7 @@
 #include <sys/poll.h>
 #include <gtk/gtk.h>
 
-#ifdef VINO_ENABLE_KEYRING
+#ifdef VINO_HAVE_GNOME_KEYRING
 #include <gnome-keyring.h>
 #endif
 
@@ -674,7 +674,7 @@ vino_server_defer_client_auth (VinoServer *server,
 static char *
 vino_server_get_password_from_keyring (VinoServer *server)
 {
-#ifdef VINO_ENABLE_KEYRING
+#ifdef VINO_HAVE_GNOME_KEYRING
   GnomeKeyringNetworkPasswordData *found_item;
   GnomeKeyringResult               result;
   GList                           *matches;
@@ -1718,14 +1718,14 @@ vino_server_update_security_types (VinoServer *server)
   rfbClearSecurityTypes (server->priv->rfb_screen);
   rfbClearAuthTypes (server->priv->rfb_screen);
 
-#ifdef HAVE_GNUTLS
+#ifdef VINO_HAVE_GNUTLS
   rfbAddSecurityType (server->priv->rfb_screen, rfbTLS);
 #endif
       
   if (server->priv->auth_methods & VINO_AUTH_VNC)
     {
       rfbAddAuthType (server->priv->rfb_screen, rfbVncAuth);
-#ifdef HAVE_GNUTLS
+#ifdef VINO_HAVE_GNUTLS
       if (!server->priv->require_encryption)
 #endif
 	rfbAddSecurityType (server->priv->rfb_screen, rfbVncAuth);
@@ -1734,7 +1734,7 @@ vino_server_update_security_types (VinoServer *server)
   if (server->priv->auth_methods & VINO_AUTH_NONE)
     {
       rfbAddAuthType (server->priv->rfb_screen, rfbNoAuth);
-#ifdef HAVE_GNUTLS
+#ifdef VINO_HAVE_GNUTLS
       if (!server->priv->require_encryption)
 #endif
 	rfbAddSecurityType (server->priv->rfb_screen, rfbNoAuth);

@@ -134,7 +134,7 @@ typedef struct _rfbScreenInfo
     int authTypes[RFB_MAX_N_AUTH_TYPES];
     int nAuthTypes;
     PasswordCheckProcPtr passwordCheck;
-#ifdef HAVE_GNUTLS
+#ifdef VINO_HAVE_GNUTLS
     gnutls_anon_server_credentials anonCredentials;
     gnutls_dh_params dhParams;
 #endif
@@ -211,7 +211,7 @@ typedef struct _rfbClientRec {
     ClientGoneHookPtr clientGoneHook;
 
     SOCKET sock;
-#ifdef HAVE_GNUTLS
+#ifdef VINO_HAVE_GNUTLS
     gnutls_session tlsSession;
     rfbBool useTLS;
 #endif
@@ -220,7 +220,7 @@ typedef struct _rfbClientRec {
     enum {
         RFB_PROTOCOL_VERSION,   /* establishing protocol version */
         RFB_SECURITY_TYPE,      /* negotiating security type */
-#ifdef HAVE_GNUTLS
+#ifdef VINO_HAVE_GNUTLS
 	RFB_TLS_HANDSHAKE,      /* completing the TLS handshake */
 #endif
 	RFB_AUTH_TYPE,          /* negotiating authentication type */
@@ -466,7 +466,7 @@ extern void rfbAuthCleanupClient(rfbClientPtr cl);
 extern void rfbAuthProcessSecurityTypeMessage(rfbClientPtr cl);
 extern void rfbAuthProcessAuthTypeMessage(rfbClientPtr cl);
 extern void rfbAuthProcessClientMessage(rfbClientPtr cl);
-#ifdef HAVE_GNUTLS
+#ifdef VINO_HAVE_GNUTLS
 extern void rfbAuthProcessTLSHandshake(rfbClientPtr cl);
 #endif
 extern void rfbAuthPasswordChecked(rfbClientPtr cl, enum rfbNewClientAction result);

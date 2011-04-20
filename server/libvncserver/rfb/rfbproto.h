@@ -281,7 +281,7 @@ typedef struct {
 #define rfbVncAuth        2
 
 /* Allocated security type for TLS */
-#ifdef HAVE_GNUTLS
+#ifdef VINO_HAVE_GNUTLS
 #define rfbTLS            18
 #endif
 

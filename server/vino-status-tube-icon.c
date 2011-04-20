@@ -24,7 +24,7 @@
 #include <string.h>
 #include <gtk/gtk.h>
 #include <gio/gdesktopappinfo.h>
-#ifdef VINO_ENABLE_LIBNOTIFY
+#ifdef VINO_HAVE_LIBNOTIFY
 #include <glib/gi18n.h>
 #include <libnotify/notify.h>
 #endif
@@ -40,7 +40,7 @@ struct _VinoStatusTubeIconPrivate
   GtkWidget *disconnect_dialog;
   VinoStatusTubeIconVisibility visibility;
 
-#ifdef VINO_ENABLE_LIBNOTIFY
+#ifdef VINO_HAVE_LIBNOTIFY
   NotifyNotification *new_client_notification;
 #endif
 };
@@ -59,7 +59,7 @@ vino_status_tube_icon_finalize (GObject *object)
 {
   VinoStatusTubeIcon *icon = VINO_STATUS_TUBE_ICON (object);
 
-#ifdef VINO_ENABLE_LIBNOTIFY
+#ifdef VINO_HAVE_LIBNOTIFY
   if (icon->priv->new_client_notification != NULL)
     {
       notify_notification_close (icon->priv->new_client_notification, NULL);
@@ -107,7 +107,7 @@ static void
 vino_status_tube_icon_init (VinoStatusTubeIcon *icon)
 {
   icon->priv = G_TYPE_INSTANCE_GET_PRIVATE (icon, VINO_TYPE_STATUS_TUBE_ICON, VinoStatusTubeIconPrivate);
-#ifdef VINO_ENABLE_LIBNOTIFY
+#ifdef VINO_HAVE_LIBNOTIFY
   icon->priv->new_client_notification = NULL;
 #endif
 }
@@ -375,7 +375,7 @@ vino_status_tube_icon_set_visibility (VinoStatusTubeIcon *icon,
     }
 }
 
-#ifdef VINO_ENABLE_LIBNOTIFY
+#ifdef VINO_HAVE_LIBNOTIFY
 static void
 vino_status_tube_icon_show_invalidated_notif_closed
     (VinoStatusTubeIcon *icon)
@@ -389,7 +389,7 @@ void
 vino_status_tube_icon_show_notif (VinoStatusTubeIcon *icon,
     const gchar *summary, const gchar *body, gboolean invalidated)
 {
-#ifdef VINO_ENABLE_LIBNOTIFY
+#ifdef VINO_HAVE_LIBNOTIFY
 #define NOTIFICATION_TIMEOUT 5
 
   GError *error;
@@ -414,7 +414,7 @@ vino_status_tube_icon_show_notif (VinoStatusTubeIcon *icon,
       filename = "stock_person";
 
   icon->priv->new_client_notification =
-#ifdef VINO_HAS_LIBNOTIFY_0_7
+#ifdef VINO_HAVE_LIBNOTIFY_0_7
       notify_notification_new (summary, body, filename);
 #else
       notify_notification_new_with_status_icon (summary, body,
@@ -441,6 +441,6 @@ vino_status_tube_icon_show_notif (VinoStatusTubeIcon *icon,
 #else
   if (invalidated)
     vino_tube_server_fire_closed (icon->priv->server);
-#endif /* VINO_ENABLE_LIBNOTIFY */
+#endif /* VINO_HAVE_LIBNOTIFY */
 }
 

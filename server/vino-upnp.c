@@ -30,7 +30,7 @@
 #include "miniupnp/miniupnpc.h"
 #include "miniupnp/upnpcommands.h"
 
-#ifdef VINO_ENABLE_NETWORKMANAGER
+#ifdef VINO_HAVE_NETWORKMANAGER
 #include <NetworkManager/NetworkManager.h>
 #endif
 
@@ -45,7 +45,7 @@ struct _VinoUpnpPrivate
   gboolean         have_igd;
   int              port;
   int              internal_port;
-#ifdef VINO_ENABLE_NETWORKMANAGER
+#ifdef VINO_HAVE_NETWORKMANAGER
   GDBusConnection *bus;
   GDBusProxy      *proxy_nm, *proxy_name;
 #endif
@@ -132,7 +132,7 @@ vino_upnp_dispose (GObject *object)
 
   vino_upnp_remove_port (upnp);
 
-#ifdef VINO_ENABLE_NETWORKMANAGER
+#ifdef VINO_HAVE_NETWORKMANAGER
   if (upnp->priv->proxy_nm)
     {
       g_object_unref (upnp->priv->proxy_nm);
@@ -166,7 +166,7 @@ vino_upnp_class_init (VinoUpnpClass *klass)
   g_type_class_add_private (gobject_class, sizeof (VinoUpnpPrivate));
 }
 
-#ifdef VINO_ENABLE_NETWORKMANAGER
+#ifdef VINO_HAVE_NETWORKMANAGER
 static void setup_network_monitor (VinoUpnp *upnp);
 #endif
 
@@ -181,7 +181,7 @@ vino_upnp_init (VinoUpnp *upnp)
   upnp->priv->port = -1;
   upnp->priv->internal_port = -1;
 
-#ifdef VINO_ENABLE_NETWORKMANAGER
+#ifdef VINO_HAVE_NETWORKMANAGER
   upnp->priv->proxy_nm = NULL;
   upnp->priv->proxy_name = NULL;
   upnp->priv->bus = NULL;
@@ -333,7 +333,7 @@ vino_upnp_get_external_port (VinoUpnp *upnp)
   return upnp->priv->port;
 }
 
-#ifdef VINO_ENABLE_NETWORKMANAGER
+#ifdef VINO_HAVE_NETWORKMANAGER
 static gboolean
 redo_forward (gpointer data)
 {
@@ -403,4 +403,4 @@ setup_network_monitor (VinoUpnp *upnp)
                             NM_DBUS_SERVICE, NM_DBUS_PATH, NM_DBUS_INTERFACE,
                             NULL, proxy_created, g_object_ref (upnp));
 }
-#endif /* HAVE_NETWORKMANAGER */
+#endif /* VINO_HAVE_NETWORKMANAGER */

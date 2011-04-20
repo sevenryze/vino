@@ -375,7 +375,7 @@ rfbProcessClientMessage(rfbClientPtr cl)
     case RFB_SECURITY_TYPE:
 	rfbAuthProcessSecurityTypeMessage(cl);
 	return;
-#ifdef HAVE_GNUTLS
+#ifdef VINO_HAVE_GNUTLS
     case RFB_TLS_HANDSHAKE:
 	rfbAuthProcessTLSHandshake(cl);
 	return;

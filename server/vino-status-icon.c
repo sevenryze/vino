@@ -26,7 +26,7 @@
 #include <gtk/gtk.h>
 #include <gio/gdesktopappinfo.h>
 #include <string.h>
-#ifdef VINO_ENABLE_LIBNOTIFY
+#ifdef VINO_HAVE_LIBNOTIFY
 #include <libnotify/notify.h>
 #endif
 
@@ -42,7 +42,7 @@ struct _VinoStatusIconPrivate
   GtkWidget  *disconnect_dialog;
   VinoStatusIconVisibility visibility;
 
-#ifdef VINO_ENABLE_LIBNOTIFY
+#ifdef VINO_HAVE_LIBNOTIFY
   NotifyNotification *new_client_notification;
 #endif
 };
@@ -69,7 +69,7 @@ vino_status_icon_finalize (GObject *object)
 {
   VinoStatusIcon *icon = VINO_STATUS_ICON (object);
 
-#ifdef VINO_ENABLE_LIBNOTIFY
+#ifdef VINO_HAVE_LIBNOTIFY
   if (icon->priv->new_client_notification)
     g_object_unref (icon->priv->new_client_notification);
   icon->priv->new_client_notification = NULL;
@@ -571,19 +571,19 @@ vino_status_icon_class_init (VinoStatusIconClass *klass)
   g_type_class_add_private (gobject_class, sizeof (VinoStatusIconPrivate));
 }
 
-#ifdef VINO_ENABLE_LIBNOTIFY
+#ifdef VINO_HAVE_LIBNOTIFY
 static void
 vino_status_handle_new_client_notification_closed (VinoStatusIcon *icon)
 {
   g_object_unref (icon->priv->new_client_notification);
   icon->priv->new_client_notification = NULL;
 }
-#endif /* VINO_ENABLE_LIBNOTIFY */
+#endif /* VINO_HAVE_LIBNOTIFY */
 
 static gboolean
 vino_status_icon_show_new_client_notification (gpointer user_data)
 {
-#ifdef VINO_ENABLE_LIBNOTIFY
+#ifdef VINO_HAVE_LIBNOTIFY
 #define NOTIFICATION_TIMEOUT 5
 
   GError     *error;
@@ -638,7 +638,7 @@ vino_status_icon_show_new_client_notification (gpointer user_data)
     }
 
   icon->priv->new_client_notification =
-#ifdef VINO_HAS_LIBNOTIFY_0_7
+#ifdef VINO_HAVE_LIBNOTIFY_0_7
     notify_notification_new (summary,
                              body,
                              "preferences-desktop-remote-desktop");
@@ -669,7 +669,7 @@ vino_status_icon_show_new_client_notification (gpointer user_data)
   g_free (user_data);
 
 #undef NOTIFICATION_TIMEOUT
-#endif /* VINO_ENABLE_LIBNOTIFY */
+#endif /* VINO_HAVE_LIBNOTIFY */
 
   return FALSE;
 }

@@ -36,7 +36,7 @@
 #include "vino-dbus-listener.h"
 #include "eggsmclient.h"
 
-#ifdef HAVE_GNUTLS
+#ifdef VINO_HAVE_GNUTLS
 #include <gnutls/gnutls.h>
 
 # ifdef GNOME_ENABLE_DEBUG
@@ -47,7 +47,7 @@ vino_debug_gnutls (int         level,
   fputs (str, stderr);
 }
 # endif
-#endif /* HAVE_GNUTLS */
+#endif /* VINO_HAVE_GNUTLS */
 
 typedef struct
 {
@@ -228,13 +228,13 @@ main (int argc, char **argv)
 
 #ifdef GNOME_ENABLE_DEBUG
   vino_setup_debug_flags ();
-# ifdef HAVE_GNUTLS
+# ifdef VINO_HAVE_GNUTLS
   if (_vino_debug_flags & VINO_DEBUG_TLS)
     {
       gnutls_global_set_log_level (10);
       gnutls_global_set_log_function (vino_debug_gnutls);
     }
-# endif /* HAVE_GNUTLS */
+# endif /* VINO_HAVE_GNUTLS */
 #endif
 
   /* Session management */

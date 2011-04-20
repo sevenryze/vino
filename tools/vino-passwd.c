@@ -37,7 +37,7 @@
 #include <glib/gi18n.h>
 #include <gio/gio.h>
 
-#ifdef VINO_ENABLE_KEYRING
+#ifdef VINO_HAVE_GNOME_KEYRING
 #include <gnome-keyring.h>
 #endif
 
@@ -48,7 +48,7 @@
 static gboolean
 vino_passwd_set_password_in_keyring (const char *password)
 {
-#ifdef VINO_ENABLE_KEYRING
+#ifdef VINO_HAVE_GNOME_KEYRING
   GnomeKeyringResult result;
   guint32            item_id;
 
