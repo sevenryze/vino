@@ -1,3 +1,27 @@
+Vino 3.0.1
+==========
+
+David King (2):
+      Post-release version bump to 3.0.1
+      Update copyright information in about dialog
+      Update NEWS for 3.0.1 release
+
+Jordi Mallach (1):
+      Fix defines to match configure script output
+
+Jordi Serratosa (1):
+      [l10n]Fixes on Catalan translation
+
+Oliver Gerlich (2):
+      Fix cursor update logic, bug 617436
+      Only send a motion event when the pointer moved
+
+Theppitak Karoonboonyanan (1):
+      Updated Thai translation.
+
+Thorsten Glaser (1):
+      Bind both an IPv4 and an IPv6 socket
+
 Vino 3.0.0
 ==========
 
