@@ -1,3 +1,23 @@
+Vino 2.28.3
+===========
+
+  Fixes:
+
+	- Avoid out-of-bounds memory accesses.
+
+
+Translations:
+
+	+ Andika Triwidada (id)
+	+ Carles Ferrando (ca@valencia)
+	+ Leonid Kanter (ru)
+	+ Luca Ferretti (it)
+	+ Matej Urbančič (sl)
+	+ Priit Laes (et)
+	+ Sira Nokyoongtong (th)
+	+ Theppitak Karoonboonyanan (th)
+	+ Thomas Thurman (en@shaw)
+
 Vino 2.28.2
 ===========
 
