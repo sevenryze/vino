@@ -1,3 +1,17 @@
+Vino 3.0.2
+==========
+
+Abduxukur Abdurixit (1):
+      Added UG translation
+
+David King (2):
+      Post-release version bump to 3.0.2
+      Avoid out-of-bounds memory accesses
+      Update NEWS for 3.0.2 release
+
+Muhammet Kara (1):
+      Updated Turkish translation
+
 Vino 3.0.1
 ==========
 
