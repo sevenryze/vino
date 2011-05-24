@@ -235,8 +235,6 @@ AS_IF([test "x$have_jpeg" = "xyes"],
     [AC_MSG_ERROR([jpeg support requested but not found])])])
 
 # Internationalization
-AM_GNU_GETTEXT([external])
-AM_GNU_GETTEXT_VERSION([0.17])
 AC_SUBST([GETTEXT_PACKAGE],[$PACKAGE_TARNAME])
 AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], ["$GETTEXT_PACKAGE"], [gettext package])
 IT_PROG_INTLTOOL([0.40.0])
