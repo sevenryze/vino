@@ -24,7 +24,7 @@
 #include "vino-dbus-listener.h"
 #include "vino-dbus.h"
 
-#ifdef VINO_HAVE_TELEPATHY_GLUB
+#ifdef VINO_HAVE_TELEPATHY_GLIB
 #include "vino-tube-servers-manager.h"
 #endif
 
@@ -45,7 +45,7 @@ struct _VinoDBusListener
 
   VinoServer      *server;
 
-#ifdef VINO_HAVE_TELEPATHY_GLUB
+#ifdef VINO_HAVE_TELEPATHY_GLIB
   VinoTubeServersManager *manager;
 #endif
 };
@@ -67,7 +67,7 @@ vino_dbus_listener_finalize (GObject *object)
     g_object_unref (listener->server);
 
 
-#ifdef VINO_HAVE_TELEPATHY_GLUB
+#ifdef VINO_HAVE_TELEPATHY_GLIB
   if (listener->manager != NULL)
     {
       g_object_unref (listener->manager);
@@ -82,7 +82,7 @@ vino_dbus_listener_finalize (GObject *object)
 static void
 vino_dbus_listener_init (VinoDBusListener *listener)
 {
-#ifdef VINO_HAVE_TELEPATHY_GLUB
+#ifdef VINO_HAVE_TELEPATHY_GLIB
   listener->manager = vino_tube_servers_manager_new ();
 #endif
 }
