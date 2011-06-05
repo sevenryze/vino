@@ -196,7 +196,6 @@ handle_channels_cb (TpSimpleHandler *handler,
 
   server = g_object_new (VINO_TYPE_TUBE_SERVER,
       "display-status-icon",  0,
-      "use-dbus-listener",    0,
       "prompt-enabled",       0,
       "view-only",            0,
       "network-interface",    network_interface,
