@@ -297,6 +297,9 @@ gsettings_SCHEMAS = $(gsettings_in_file:.xml.in=.xml)
 @INTLTOOL_XML_NOMERGE_RULE@
 @GSETTINGS_RULES@
 
+convertdir = $(datadir)/GConf/gsettings
+dist_convert_DATA = common/org.gnome.Vino.convert
+
 if MAINTAINER_MODE
 dist-hook: dist-changelog
 else
