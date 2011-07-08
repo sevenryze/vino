@@ -493,7 +493,12 @@ main (int argc, char **argv)
   app = vino_preferences_new ();
   status = g_application_run (G_APPLICATION(app), argc, argv);
   g_object_unref (app);
+/* g_settings_sync() is not required with GApplication in recent versions of
+ * Gio, bug 653914. */
+#if GLIB_CHECK_VERSION (2, 29, 2)
+#else
   g_settings_sync ();
+#endif
 
   return status;
 }
