@@ -11,10 +11,11 @@ Bastien Nocera (1):
 Carles Ferrando (1):
       [l10n]Updated Catalan (Valencian) translation
 
-David King (3):
+David King (4):
       Remove gettext macros from configure.ac
       Post-release version bump to 3.0.3
       Only call g_settings_sync() when necessary
+      Update NEWS for 3.0.3 release
 
 Sjoerd Simons (2):
       Fix _TELEPATHY_GLIB mistyped as _TELEPATHY_GLUB
