@@ -1,3 +1,25 @@
+Vino 3.0.3
+==========
+
+Abduxukur Abdurixit (2):
+      Added UG translation
+      Added UG translation
+
+Bastien Nocera (1):
+      Add GConf to GSettings convert file, bug 654901
+
+Carles Ferrando (1):
+      [l10n]Updated Catalan (Valencian) translation
+
+David King (3):
+      Remove gettext macros from configure.ac
+      Post-release version bump to 3.0.3
+      Only call g_settings_sync() when necessary
+
+Sjoerd Simons (2):
+      Fix _TELEPATHY_GLIB mistyped as _TELEPATHY_GLUB
+      Do not set non-existent use-dbus-listener property
+
 Vino 3.0.2
 ==========
 
