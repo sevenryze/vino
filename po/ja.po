@@ -1,18 +1,20 @@
 # Japanese messsage catalogue for vino
-# Copyright (C) 2004-2010 THE vino'S COPYRIGHT HOLDER
+# Copyright (C) 2004-2011 THE vino'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the vino package.
 # Satoru SATOH <ss@gnome.gr.jp>, 2004-2006.
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2006-2009.
 # Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010.
+# Jiro Matsuzawa <jmatsuzawa@src.gnome.org>, 2011.
+# Hideki Yamane <henrich@debian.org>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: vino master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=vino&keywords=I18N+L10N&component=Preferences Dialog\n"
-"POT-Creation-Date: 2011-09-08 19:23+0000\n"
-"PO-Revision-Date: 2011-09-11 08:48+0900\n"
-"Last-Translator: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=vino&k"
+"eywords=I18N+L10N&component=Preferences Dialog\n"
+"POT-Creation-Date: 2011-10-24 16:04+0000\n"
+"PO-Revision-Date: 2011-10-30 07:05+0900\n"
+"Last-Translator: Hideki Yamane <henrich@debian.org>\n"
 "Language-Team: Japanese <translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +24,7 @@ msgstr ""
 #: ../capplet/vino-message-box.c:55
 #, c-format
 msgid "There was an error showing the URL \"%s\""
-msgstr "\"%s\" という UL を表示する際にエラーが発生しました"
+msgstr "\"%s\" という URL を表示する際にエラーが発生しました"
 
 #: ../capplet/vino-preferences.c:245
 #, c-format
@@ -61,10 +63,8 @@ msgstr "リモートからデスクトップを表示する方法を選択した
 
 #: ../capplet/vino-preferences.desktop.in.in.h:2
 #: ../server/vino-server.desktop.in.in.h:1
-#, fuzzy
-#| msgid "Desktop sharing is enabled"
 msgid "Desktop Sharing"
-msgstr "デスクトップの共有が可能になりました"
+msgstr "デスクトップの共有"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:1
 msgid "Allowed authentication methods"
@@ -79,10 +79,8 @@ msgid "E-mail address to which the remote desktop URL should be sent"
 msgstr "リモート・デスクトップ URL の送信先メールアドレス"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:4
-#, fuzzy
-#| msgid "Only allow remote users to view the desktop"
 msgid "Enable remote access to the desktop"
-msgstr "デスクトップの表示のみ許可するかどうか"
+msgstr "デスクトップへのリモートアクセスを有効にする"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:5
 msgid ""
@@ -96,17 +94,12 @@ msgstr ""
 "してください (例: eth0、wifi0、lo 等)。"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:6
-#, fuzzy
-#| msgid ""
-#| "If true, allows remote access to the desktop via the RFB protocol. Users "
-#| "on remote machines may then connect to the desktop using a vncviewer."
 msgid ""
 "If true, allows remote access to the desktop via the RFB protocol. Users on "
 "remote machines may then connect to the desktop using a VNC viewer."
 msgstr ""
-"TRUE にすると、RFB プロトコルを介したリモート・デスクトップのアクセスを許可し"
-"ます。リモート・マシンのユーザーは vncviewer を使ってデスクトップに接続できま"
-"す。"
+"TRUE にすると、RFB プロトコルを介したリモート・デスクトップのアクセスを許可します。リモート・マシンのユーザーは VNC "
+"ビューワーを使ってデスクトップに接続できます。"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:7
 msgid ""
@@ -144,23 +137,19 @@ msgstr ""
 "します。"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:11
-#, fuzzy
-#| msgid ""
-#| "If true, the server will listen to another port, instead of the default "
-#| "(5900). The port must be specified in the 'alternative_port' key."
 msgid ""
 "If true, the server will listen to another port, instead of the default "
 "(5900). The port must be specified in the 'alternative-port' key."
 msgstr ""
-"true にすると、サーバーはデフォルトのポート (5900番) ではなく、もう一つ別の"
-"ポートを監視します。このポートは 'alternative_port' キーで指定してください。"
+"true にすると、サーバーはデフォルトのポート (5900番) ではなく、別のポートを監視します。このポートは 'alternative-port' "
+"キーで指定してください。"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:12
 msgid ""
 "If true, we will not use the XDamage extension of X.org. This extension does "
 "not work properly on some video drivers when using 3D effects. Disabling it "
 "will make vino work on these environments with a slower rendering as side "
-"effect."
+"ef fect."
 msgstr ""
 "TRUE にすると、X.org の XDamage 拡張機能を使用しなくなります。ビデオ・ドライ"
 "バーの中には 3D 機能を使用中に、この拡張機能が正しく動作しないものがありま"
@@ -176,19 +165,10 @@ msgstr ""
 "トを自動的にフォワードします。"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:14
-#, fuzzy
-#| msgid "Listen an alternative port"
 msgid "Listen on an alternative port"
 msgstr "別のポートを監視するかどうか"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:15
-#, fuzzy
-#| msgid ""
-#| "Lists the authentication methods with which remote users may access the "
-#| "desktop. There are two possible authentication methods; \"vnc\" causes "
-#| "the remote user to be prompted for a password (the password is specified "
-#| "by the vnc_password key) before connecting and \"none\" which allows any "
-#| "remote user to connect."
 msgid ""
 "Lists the authentication methods with which remote users may access the "
 "desktop. There are two possible authentication methods; \"vnc\" causes the "
@@ -196,9 +176,8 @@ msgid ""
 "vnc-password key) before connecting and \"none\" which allows any remote "
 "user to connect."
 msgstr ""
-"リモートのユーザーがデスクトップにアクセスする際の認証方法のリストです。指定"
-"可能な値: \"vnc\" (接続する前に vnc_password キーで指定したパスワードの入力を"
-"リモートのユーザーに要求する)、\"none\" (誰でも認証なしで接続できる)"
+"リモートのユーザーがデスクトップにアクセスする際の認証方法のリストです。指定可能な値: \"vnc\" (接続する前に vnc-password "
+"キーで指定したパスワードの入力をリモートのユーザーに要求する)、\"none\" (誰でも認証なしで接続できる)"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:16
 msgid "Lock the screen when last user disconnect"
@@ -225,31 +204,20 @@ msgid "Require encryption"
 msgstr "暗号化するかどうか"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:22
-#, fuzzy
-#| msgid ""
-#| "The password which the remote user will be prompted for if the \"vnc\" "
-#| "authentication method is used. The password specified by the key is "
-#| "base64 encoded."
 msgid ""
 "The password which the remote user will be prompted for if the \"vnc\" "
 "authentication method is used. The password specified by the key is base64 "
 "encoded. The special value of 'keyring' (which is not valid base64) means "
 "that the password is stored in the GNOME keyring."
 msgstr ""
-"\"vnc\" の認証モードでリモート・ユーザーに要求するパスワードを指定します。こ"
-"の内容は base64 エンコードされます。"
+"\"vnc\" の認証モードでリモート・ユーザーに要求するパスワードを指定します。この内容は base64 エンコードされます。(正しい base64 "
+"ではない) 'keyring' という特別な値は、GNOME キーリングに保存されているパスワードを意味します。"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:23
-#, fuzzy
-#| msgid ""
-#| "The port which the server will listen to if the 'use_alternative_port' "
-#| "key is set to true. Valid values are in the range from 5000 to 50000."
 msgid ""
 "The port which the server will listen to if the 'use-alternative-port' key "
 "is set to true. Valid values are in the range from 5000 to 50000."
-msgstr ""
-"'use_alternative_port' キーが TRUE の場合に、サーバーが監視するポート番号 "
-"(5000〜50000) です。"
+msgstr "'use-alternative-port' キーが TRUE の場合に、サーバーが監視するポート番号 (5000〜50000) です。"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:24
 msgid ""
@@ -263,18 +231,11 @@ msgstr ""
 "る; これがデフォルトの設定)、\"never\" (アイコンは表示しない)"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:25
-#, fuzzy
-#| msgid ""
-#| "This key specifies the e-mail address to which the remote desktop URL "
-#| "should be sent if the user clicks on the URL in the Remote Desktop "
-#| "preferences dialog."
 msgid ""
 "This key specifies the e-mail address to which the remote desktop URL should "
 "be sent if the user clicks on the URL in the Desktop Sharing preferences "
 "dialog."
-msgstr ""
-"リモート・デスクトップの設定ダイアログに表示されている URL をクリックして、そ"
-"れを E-メールで送信する宛先を指定します。"
+msgstr "デスクトップ共有の設定ダイアログに表示されている URL をクリックして、それをメールで送信する宛先を指定します。"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:26
 msgid "When the status icon should be shown"
@@ -294,7 +255,7 @@ msgstr "UPnP を使ってポートをフォワードするかどうか"
 
 #: ../capplet/vino-preferences.ui.h:1
 msgid "Al_ways"
-msgstr ""
+msgstr "常に行う(_W)"
 
 #: ../capplet/vino-preferences.ui.h:2
 msgid "Allow other users to _view your desktop"
@@ -302,13 +263,11 @@ msgstr "他のユーザーが自分のデスクトップを表示できる(_V)"
 
 #: ../capplet/vino-preferences.ui.h:3
 msgid "Automatically _configure UPnP router to open and forward ports"
-msgstr ""
+msgstr "UPnP ルーターがポートを開放／転送するように自動的に設定する(_C)"
 
 #: ../capplet/vino-preferences.ui.h:4
-#, fuzzy
-#| msgid "Remote Desktop Preferences"
 msgid "Desktop Sharing Preferences"
-msgstr "リモート・デスクトップの設定"
+msgstr "デスクトップ共有の設定"
 
 #: ../capplet/vino-preferences.ui.h:5
 msgid "Remote users are able to control your mouse and keyboard"
@@ -324,10 +283,8 @@ msgid "Sharing"
 msgstr "共有"
 
 #: ../capplet/vino-preferences.ui.h:8
-#, fuzzy
-#| msgid "Notification Area"
 msgid "Show Notification Area Icon"
-msgstr "通知領域"
+msgstr "通知領域のアイコンを表示"
 
 #: ../capplet/vino-preferences.ui.h:9
 msgid "Some of these preferences are locked down"
@@ -345,16 +302,15 @@ msgstr "お使いのデスクトップを他のユーザーと共有します"
 msgid "_Allow other users to control your desktop"
 msgstr "他のユーザーがデスクトップを操作できる(_A)"
 
+# FIXME-trans: 要確認
 #: ../capplet/vino-preferences.ui.h:13
+#, fuzzy
 msgid "_Never"
-msgstr ""
+msgstr "行わない(_N)"
 
 #: ../capplet/vino-preferences.ui.h:14
-#, fuzzy
-#| msgid "One person is connected"
-#| msgid_plural "%d people are connected"
 msgid "_Only when someone is connected"
-msgstr " %d人のユーザーが接続しています"
+msgstr "誰かが接続している時のみ(_O)"
 
 #: ../capplet/vino-preferences.ui.h:15
 msgid "_Require the user to enter this password:"
@@ -452,10 +408,8 @@ msgstr ""
 "表示されます"
 
 #: ../server/vino-main.c:226
-#, fuzzy
-#| msgid "GNOME Remote Desktop Server"
 msgid "GNOME Desktop Sharing"
-msgstr "GNOME リモート・デスクトップのサーバー"
+msgstr "GNOME デスクトップ共有"
 
 #.
 #. * Translators: translate "vino-mdns:showusername" to
@@ -477,10 +431,9 @@ msgid "%s's remote desktop on %s"
 msgstr "%s@%s さんのリモート・デスクトップ"
 
 #: ../server/vino-prefs.c:109
-#, fuzzy, c-format
-#| msgid "Received signal %d, exiting...\n"
+#, c-format, c-format
 msgid "Received signal %d, exiting."
-msgstr "シグナル %d を受け取ったので終了します...\n"
+msgstr "シグナル %d を受け取ったので終了します。"
 
 #: ../server/vino-prompt.c:141
 msgid "Screen"
@@ -533,21 +486,18 @@ msgid "Failed to open connection to bus: %s\n"
 msgstr "バスへの接続を開けませんでした: %s\n"
 
 #: ../server/vino-server.desktop.in.in.h:2
-#, fuzzy
-#| msgid "GNOME Remote Desktop Server"
 msgid "GNOME Desktop Sharing Server"
-msgstr "GNOME リモート・デスクトップのサーバー"
+msgstr "GNOME デスクトップ共有サーバー"
 
 #: ../server/vino-status-icon.c:103 ../server/vino-status-tube-icon.c:96
 msgid "Desktop sharing is enabled"
 msgstr "デスクトップの共有が可能になりました"
 
 #: ../server/vino-status-icon.c:111
-#, fuzzy, c-format
-#| msgid "Another user is viewing your desktop"
+#, c-format, c-format
 msgid "One person is viewing your desktop"
 msgid_plural "%d people are viewing your desktop"
-msgstr[0] "他のユーザーがデスクトップを参照しています"
+msgstr[0] "%d 人のユーザーがあなたのデスクトップを参照しています"
 
 #: ../server/vino-status-icon.c:212 ../server/vino-status-tube-icon.c:180
 msgid "Error displaying preferences"
@@ -598,6 +548,7 @@ msgstr ""
 "Satoru SATOH <ss@gnome.gr.jp>\n"
 "相花 毅 <takeshi.aihana@gmail.com>\n"
 "草野 貴之 <AE5T-KSN@asahi-net.or.jp>\n"
+"やまねひでき <henrich@debian.org>\n"
 "日本GNOMEユーザー会 <http://www.gnome.gr.jp/>"
 
 #: ../server/vino-status-icon.c:288
@@ -620,7 +571,7 @@ msgstr "本当にすべてのクライアントとの接続を閉じますか?"
 
 #: ../server/vino-status-icon.c:366
 msgid "All remote users will be disconnected. Are you sure?"
-msgstr "すべてのリモート・ユーザーとの接続閉じます。よろしいですか?"
+msgstr "すべてのリモート・ユーザーとの接続を閉じます。よろしいですか?"
 
 #: ../server/vino-status-icon.c:378 ../server/vino-status-tube-icon.c:246
 msgid "Disconnect"
@@ -835,3 +786,4 @@ msgstr ""
 
 #~ msgid "_Copy address to clipboard"
 #~ msgstr "アドレスをクリップボードへコピーする(_C)"
+
