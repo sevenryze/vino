@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the vino package.
 # Josep Puigdemont i Casamajó <josep.puigdemont@gmail.com>, 2004-2007.
 # Joan Duran <jodufi@gmail.com>, 2008-2012.
+# Jordi Serratosa <jordis@softcatala.cat>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: vino\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-16 00:18+0100\n"
+"POT-Creation-Date: 2012-04-10 23:34+0200\n"
 "PO-Revision-Date: 2012-03-06 23:02+0100\n"
 "Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
@@ -192,7 +193,7 @@ msgstr ""
 #: ../common/org.gnome.Vino.gschema.xml.in.h:19
 msgid "E-mail address to which the remote desktop URL should be sent"
 msgstr ""
-"Adreça de correu a la qual s'hauria d'enviar l'URL de l'escriptori remot"
+"Adreça electrònica a la qual s'hauria d'enviar l'URL de l'escriptori remot"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:20
 msgid ""
@@ -200,9 +201,9 @@ msgid ""
 "be sent if the user clicks on the URL in the Desktop Sharing preferences "
 "dialog."
 msgstr ""
-"Esta clau especifica l'adreça de correu a la qual s'hauria d'enviar l'URL de "
-"l'escriptori remot, si l'usuari fa clic a l'URL en el diàleg de preferències "
-"de compartició de l'escriptori."
+"Esta clau especifica l'adreça electrònica a la qual s'hauria d'enviar l'URL "
+"de l'escriptori remot, si l'usuari fa clic a l'URL en el diàleg de "
+"preferències de compartició de l'escriptori."
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:21
 msgid "Lock the screen when last user disconnect"
@@ -703,7 +704,7 @@ msgid_plural ""
 "ERROR: Maximum length of password is %d characters. Please, re-enter the "
 "password."
 msgstr[0] ""
-"ERROR: La longitud màxima de la contrasenya és de %d caràcter. Torneu a "
+"ERROR: La longitud màxima de la contrasenya és d'%d caràcter. Torneu a "
 "introduir la contrasenya."
 msgstr[1] ""
 "ERROR: La longitud màxima de la contrasenya és de %d caràcters. Torneu a "
