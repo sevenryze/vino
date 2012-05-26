@@ -9,15 +9,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: vino\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-03 15:15+0100\n"
-"PO-Revision-Date: 2012-02-10 11:44+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=vino&keywords=I18N+L10N&component=Preferences Dialog\n"
+"POT-Creation-Date: 2012-05-14 19:05+0000\n"
+"PO-Revision-Date: 2012-05-26 01:31+0200\n"
 "Last-Translator: Claudio Arseni <claudio.arseni@ubuntu.com>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
-"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #: ../capplet/vino-message-box.c:55
@@ -57,42 +58,20 @@ msgid "Nobody can access your desktop."
 msgstr "Nessuno può accedere a questo desktop."
 
 #: ../capplet/vino-preferences.desktop.in.in.h:1
-msgid "Choose how other users can remotely view your desktop"
-msgstr ""
-"Indica come gli altri utenti possano visualizzare questo desktop da remoto"
-
-#: ../capplet/vino-preferences.desktop.in.in.h:2
 #: ../server/vino-server.desktop.in.in.h:1
 msgid "Desktop Sharing"
 msgstr "Condivisione desktop"
 
+#: ../capplet/vino-preferences.desktop.in.in.h:2
+msgid "Choose how other users can remotely view your desktop"
+msgstr ""
+"Indica come gli altri utenti possano visualizzare questo desktop da remoto"
+
 #: ../common/org.gnome.Vino.gschema.xml.in.h:1
-msgid "Allowed authentication methods"
-msgstr "Metodi d'autenticazione consentiti"
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:2
-msgid "Alternative port number"
-msgstr "Numero porta alternativo"
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:3
-msgid "E-mail address to which the remote desktop URL should be sent"
-msgstr "Indirizzo email al quale inviare l'URL del desktop remoto"
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:4
 msgid "Enable remote access to the desktop"
 msgstr "Abilita l'accesso remoto al desktop"
 
-#: ../common/org.gnome.Vino.gschema.xml.in.h:5
-msgid ""
-"If not set, the server will listen on all network interfaces. Set this if "
-"you want that accept connections only from some specific network interface. "
-"eg: eth0, wifi0, lo, ..."
-msgstr ""
-"Se non impostata, il server resta in ascolto su tutte le interfacce di rete. "
-"Impostare per accettare le connessioni solo da alcune interfacce specifiche "
-"come: eth0, wifi0, lo..."
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:6
+#: ../common/org.gnome.Vino.gschema.xml.in.h:2
 msgid ""
 "If true, allows remote access to the desktop via the RFB protocol. Users on "
 "remote machines may then connect to the desktop using a VNC viewer."
@@ -101,7 +80,11 @@ msgstr ""
 "protocollo RFB. Gli utenti su macchine remote possono connettersi tramite un "
 "visualizzatore VNC."
 
-#: ../common/org.gnome.Vino.gschema.xml.in.h:7
+#: ../common/org.gnome.Vino.gschema.xml.in.h:3
+msgid "Prompt the user before completing a connection"
+msgstr "Chiede all'utente prima di completare una connessione"
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:4
 msgid ""
 "If true, remote users accessing the desktop are not allowed access until the "
 "user on the host machine approves the connection. Recommended especially "
@@ -111,7 +94,11 @@ msgstr ""
 "possono farlo finché l'utente sull'host non approva la connessione. "
 "Raccomandato in special modo quando l'accesso non è protetto da password."
 
-#: ../common/org.gnome.Vino.gschema.xml.in.h:8
+#: ../common/org.gnome.Vino.gschema.xml.in.h:5
+msgid "Only allow remote users to view the desktop"
+msgstr "Consente agli utenti remoti solamente di vedere il desktop"
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:6
 msgid ""
 "If true, remote users accessing the desktop are only allowed to view the "
 "desktop. Remote users will not be able to use the mouse or keyboard."
@@ -120,7 +107,50 @@ msgstr ""
 "solo la visualizzazione del desktop. Tali utenti non potranno usare il mouse "
 "o la tastiera."
 
+#: ../common/org.gnome.Vino.gschema.xml.in.h:7
+msgid "Network interface for listening"
+msgstr "Interfaccia di rete per l'ascolto"
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:8
+msgid ""
+"If not set, the server will listen on all network interfaces. Set this if "
+"you want that accept connections only from some specific network interface. "
+"eg: eth0, wifi0, lo, ..."
+msgstr ""
+"Se non impostata, il server resta in ascolto su tutte le interfacce di rete. "
+"Impostare per accettare le connessioni solo da alcune interfacce specifiche "
+"come: eth0, wifi0, lo..."
+
 #: ../common/org.gnome.Vino.gschema.xml.in.h:9
+msgid "Listen on an alternative port"
+msgstr "Ascolta su una porta alternativa"
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:10
+msgid ""
+"If true, the server will listen to another port, instead of the default "
+"(5900). The port must be specified in the 'alternative-port' key."
+msgstr ""
+"Se impostata a VERO, il server resta in ascolto su una porta diversa da "
+"quella predefinita (5900). La porta deve essere specificata nella chiave "
+"\"alternative-port\"."
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:11
+msgid "Alternative port number"
+msgstr "Numero porta alternativo"
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:12
+msgid ""
+"The port which the server will listen to if the 'use-alternative-port' key "
+"is set to true. Valid values are in the range from 5000 to 50000."
+msgstr ""
+"La porta su cui il server starà in ascolto se la chiave \"use-alternative-"
+"port\" è impostata a VERO. I valori ammessi vanno da 5000 a 50000."
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:13
+msgid "Require encryption"
+msgstr "Richiedi cifratura"
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:14
 msgid ""
 "If true, remote users accessing the desktop are required to support "
 "encryption. It is highly recommended that you use a client which supports "
@@ -130,50 +160,9 @@ msgstr ""
 "supportare la cifratura. È caldamente consigliato usare un client che "
 "supporti la cifratura, a meno che non ci si trovi su una rete fidata."
 
-#: ../common/org.gnome.Vino.gschema.xml.in.h:10
-msgid "If true, screen will be locked after the last remote client disconnect."
-msgstr ""
-"Se impostata a VERO, lo schermo viene bloccato dopo la disconnessione "
-"dell'ultimo client remoto."
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:11
-msgid ""
-"If true, the server will listen to another port, instead of the default "
-"(5900). The port must be specified in the 'alternative-port' key."
-msgstr ""
-"Se impostata a VERO, il server resta in ascolto su una porta diversa da "
-"quella predefinita (5900). La porta deve essere specificata nella chiave "
-"\"alternative-port\"."
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:12
-msgid ""
-"If true, we will not use the XDamage extension of X.org. This extension does "
-"not work properly on some video drivers when using 3D effects. Disabling it "
-"will make vino work on these environments with a slower rendering as side "
-"effect."
-msgstr ""
-"Se impostata a VERO, non viene utilizzata l'estensione XDamage di X.org. "
-"Questa estensione non funziona correttamente con alcuni driver video quando "
-"si usano gli effetti 3D. Disabilitandola è possibile far funzionare vino in "
-"tali ambienti, anche se con un rendering più lento."
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:13
-msgid "If true, we will notify, when the user connects to the system."
-msgstr ""
-"Se impostata a VERO, viene inviata una notifica quando l'utente si connette "
-"al sistema."
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:14
-msgid ""
-"If true, we will use UPNP protocol to automatically forward the port used by "
-"vino in the router."
-msgstr ""
-"Se impostata a VERO, viene utilizzato il protocollo UPNP per inoltrare "
-"automaticamente la porta usata nel router dal programma."
-
 #: ../common/org.gnome.Vino.gschema.xml.in.h:15
-msgid "Listen on an alternative port"
-msgstr "Ascolta su una porta alternativa"
+msgid "Allowed authentication methods"
+msgstr "Metodi d'autenticazione consentiti"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:16
 msgid ""
@@ -190,34 +179,10 @@ msgstr ""
 "di connettersi."
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:17
-msgid "Lock the screen when last user disconnect"
-msgstr "Blocca lo schermo alla disconnessione dell'ultimo utente"
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:18
-msgid "Network interface for listening"
-msgstr "Interfaccia di rete per l'ascolto"
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:19
-msgid "Notify on connect"
-msgstr "Notifica alla connessione"
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:20
-msgid "Only allow remote users to view the desktop"
-msgstr "Consente agli utenti remoti solamente di vedere il desktop"
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:21
 msgid "Password required for \"vnc\" authentication"
 msgstr "Password richiesta per l'autenticazione \"vnc\""
 
-#: ../common/org.gnome.Vino.gschema.xml.in.h:22
-msgid "Prompt the user before completing a connection"
-msgstr "Chiede all'utente prima di completare una connessione"
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:23
-msgid "Require encryption"
-msgstr "Richiedi cifratura"
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:24
+#: ../common/org.gnome.Vino.gschema.xml.in.h:18
 msgid ""
 "The password which the remote user will be prompted for if the \"vnc\" "
 "authentication method is used. The password specified by the key is base64 "
@@ -229,15 +194,35 @@ msgstr ""
 "in base64. Il valore speciale di \"keyring\" (che non è codificati in base64 "
 "valido) indica che la password è archiviata nel \"portachiavi GNOME\"."
 
-#: ../common/org.gnome.Vino.gschema.xml.in.h:25
-msgid ""
-"The port which the server will listen to if the 'use-alternative-port' key "
-"is set to true. Valid values are in the range from 5000 to 50000."
-msgstr ""
-"La porta su cui il server starà in ascolto se la chiave \"use-alternative-"
-"port\" è impostata a VERO. I valori ammessi vanno da 5000 a 50000."
+#: ../common/org.gnome.Vino.gschema.xml.in.h:19
+msgid "E-mail address to which the remote desktop URL should be sent"
+msgstr "Indirizzo email al quale inviare l'URL del desktop remoto"
 
-#: ../common/org.gnome.Vino.gschema.xml.in.h:26
+#: ../common/org.gnome.Vino.gschema.xml.in.h:20
+msgid ""
+"This key specifies the e-mail address to which the remote desktop URL should "
+"be sent if the user clicks on the URL in the Desktop Sharing preferences "
+"dialog."
+msgstr ""
+"Questa chiave specifica l'indirizzo email al quale verrà mandato l'URL del "
+"desktop remoto se l'utente fa clic sull'URL nel dialogo delle preferenze di "
+"condivisione del desktop."
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:21
+msgid "Lock the screen when last user disconnect"
+msgstr "Blocca lo schermo alla disconnessione dell'ultimo utente"
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:22
+msgid "If true, screen will be locked after the last remote client disconnect."
+msgstr ""
+"Se impostata a VERO, lo schermo viene bloccato dopo la disconnessione "
+"dell'ultimo client remoto."
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:23
+msgid "When the status icon should be shown"
+msgstr "Quando mostrare l'icona di stato"
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:24
 msgid ""
 "This key controls the behavior of the status icon. There are three options: "
 "\"always\" - The icon will be always there; \"client\" - You will see the "
@@ -249,102 +234,118 @@ msgstr ""
 "\" (l'icona è visibile solo se qualcuno è connesso; questo è il "
 "comportamento predefinito), \"never\" (l'icona non è mai mostrata)."
 
-#: ../common/org.gnome.Vino.gschema.xml.in.h:27
-msgid ""
-"This key specifies the e-mail address to which the remote desktop URL should "
-"be sent if the user clicks on the URL in the Desktop Sharing preferences "
-"dialog."
-msgstr ""
-"Questa chiave specifica l'indirizzo email al quale verrà mandato l'URL del "
-"desktop remoto se l'utente fa clic sull'URL nel dialogo delle preferenze di "
-"condivisione del desktop."
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:28
-msgid "When the status icon should be shown"
-msgstr "Quando mostrare l'icona di stato"
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:29
+#: ../common/org.gnome.Vino.gschema.xml.in.h:25
 msgid "When true, disable the background on receive valid session"
 msgstr "Se VERO, disabilita lo sfondo alla ricezione di una sessione valida"
 
-#: ../common/org.gnome.Vino.gschema.xml.in.h:30
-msgid "Whether we should disable the XDamage extension of X.org"
-msgstr "Indica se disabilitare l'estensione XDamage di X.org"
-
-#: ../common/org.gnome.Vino.gschema.xml.in.h:31
+#: ../common/org.gnome.Vino.gschema.xml.in.h:26
 msgid "Whether we should use UPNP to forward the port in routers"
 msgstr "Indica se usare UPNP per inoltrare la porta nei router"
 
+#: ../common/org.gnome.Vino.gschema.xml.in.h:27
+msgid ""
+"If true, we will use UPNP protocol to automatically forward the port used by "
+"vino in the router."
+msgstr ""
+"Se impostata a VERO, viene utilizzato il protocollo UPNP per inoltrare "
+"automaticamente la porta usata nel router dal programma."
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:28
+msgid "Whether we should disable the XDamage extension of X.org"
+msgstr "Indica se disabilitare l'estensione XDamage di X.org"
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:29
+msgid ""
+"If true, we will not use the XDamage extension of X.org. This extension does "
+"not work properly on some video drivers when using 3D effects. Disabling it "
+"will make vino work on these environments with a slower rendering as side "
+"effect."
+msgstr ""
+"Se impostata a VERO, non viene utilizzata l'estensione XDamage di X.org. "
+"Questa estensione non funziona correttamente con alcuni driver video quando "
+"si usano gli effetti 3D. Disabilitandola è possibile far funzionare vino in "
+"tali ambienti, anche se con un rendering più lento."
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:30
+msgid "Notify on connect"
+msgstr "Notifica alla connessione"
+
+#: ../common/org.gnome.Vino.gschema.xml.in.h:31
+msgid "If true, we will notify, when the user connects to the system."
+msgstr ""
+"Se impostata a VERO, viene inviata una notifica quando l'utente si connette "
+"al sistema."
+
 #: ../capplet/vino-preferences.ui.h:1
-msgid "Al_ways"
-msgstr "Sem_pre"
+msgid "Desktop Sharing Preferences"
+msgstr "Preferenze di Condivisione desktop"
 
 #: ../capplet/vino-preferences.ui.h:2
+msgid "Sharing"
+msgstr "Condivisione"
+
+#: ../capplet/vino-preferences.ui.h:3
+msgid "Some of these preferences are locked down"
+msgstr "Alcune di queste preferenze sono bloccate"
+
+#: ../capplet/vino-preferences.ui.h:4
 msgid "Allow other users to _view your desktop"
 msgstr "C_onsentire agli altri utenti di visualizzare questo desktop"
 
-#: ../capplet/vino-preferences.ui.h:3
-msgid "Automatically _configure UPnP router to open and forward ports"
-msgstr ""
-"_Configurare automaticamente il router UPnP per aprire e instradare le porte"
-
-#: ../capplet/vino-preferences.ui.h:4
-msgid "Desktop Sharing Preferences"
-msgstr "Preferenze per la condivione del desktop"
-
 # (ndt) suggerimento
 #: ../capplet/vino-preferences.ui.h:5
+msgid "Your desktop will be shared"
+msgstr "Se selezionata, questo desktop sarà condiviso"
+
+#: ../capplet/vino-preferences.ui.h:6
+msgid "_Allow other users to control your desktop"
+msgstr "Co_nsentire agli altri utenti di controllare questo desktop"
+
+# (ndt) suggerimento
+#: ../capplet/vino-preferences.ui.h:7
 msgid "Remote users are able to control your mouse and keyboard"
 msgstr ""
 "Se selezionata, gli utenti remoti possono controllare il mouse e la tastiera "
 "locali"
 
-#: ../capplet/vino-preferences.ui.h:6
+#: ../capplet/vino-preferences.ui.h:8
 msgid "Security"
 msgstr "Sicurezza"
 
-#: ../capplet/vino-preferences.ui.h:7
-msgid "Sharing"
-msgstr "Condivisione"
-
-#: ../capplet/vino-preferences.ui.h:8
-msgid "Show Notification Area Icon"
-msgstr "Mostra icona nell'area di notifica"
-
+# (ndt) opzione
 #: ../capplet/vino-preferences.ui.h:9
-msgid "Some of these preferences are locked down"
-msgstr "Alcune di queste preferenze sono bloccate"
+msgid "_You must confirm each access to this machine"
+msgstr "Con_fermare ogni accesso alla macchina"
 
-# (ndt) suggerimento
 #: ../capplet/vino-preferences.ui.h:10
-msgid "The router must have the UPnP feature enabled"
-msgstr "Il router deve avere la funzionalità UPnP abilitata"
-
-# (ndt) suggerimento
-#: ../capplet/vino-preferences.ui.h:11
-msgid "Your desktop will be shared"
-msgstr "Se selezionata, questo desktop sarà condiviso"
-
-#: ../capplet/vino-preferences.ui.h:12
-msgid "_Allow other users to control your desktop"
-msgstr "Co_nsentire agli altri utenti di controllare questo desktop"
-
-#: ../capplet/vino-preferences.ui.h:13
-msgid "_Never"
-msgstr "_Mai"
-
-#: ../capplet/vino-preferences.ui.h:14
-msgid "_Only when someone is connected"
-msgstr "S_olo quando qualcuno è connesso"
-
-#: ../capplet/vino-preferences.ui.h:15
 msgid "_Require the user to enter this password:"
 msgstr "_Richiedere all'utente di inserire questa password:"
 
-# (ndt) opzione
+#: ../capplet/vino-preferences.ui.h:11
+msgid "Automatically _configure UPnP router to open and forward ports"
+msgstr ""
+"_Configurare automaticamente il router UPnP per aprire e instradare le porte"
+
+# (ndt) suggerimento
+#: ../capplet/vino-preferences.ui.h:12
+msgid "The router must have the UPnP feature enabled"
+msgstr "Il router deve avere la funzionalità UPnP abilitata"
+
+#: ../capplet/vino-preferences.ui.h:13
+msgid "Show Notification Area Icon"
+msgstr "Mostra icona nell'area di notifica"
+
+#: ../capplet/vino-preferences.ui.h:14
+msgid "Al_ways"
+msgstr "Sem_pre"
+
+#: ../capplet/vino-preferences.ui.h:15
+msgid "_Only when someone is connected"
+msgstr "S_olo quando qualcuno è connesso"
+
 #: ../capplet/vino-preferences.ui.h:16
-msgid "_You must confirm each access to this machine"
-msgstr "Con_fermare ogni accesso alla macchina"
+msgid "_Never"
+msgstr "_Mai"
 
 #: ../server/smclient/eggdesktopfile.c:165
 #, c-format
@@ -436,7 +437,7 @@ msgstr ""
 
 #: ../server/vino-main.c:226
 msgid "GNOME Desktop Sharing"
-msgstr "Condivisione del desktp GNOME"
+msgstr "Condivisione desktop per GNOME"
 
 #.
 #. * Translators: translate "vino-mdns:showusername" to
@@ -480,6 +481,14 @@ msgstr ""
 "remoto questo desktop."
 
 #: ../server/vino-prompt.ui.h:1
+msgid "Question"
+msgstr "Domanda"
+
+#: ../server/vino-prompt.ui.h:2
+msgid "Another user is trying to view your desktop."
+msgstr "Un altro utente sta tentando di visualizzare questo desktop."
+
+#: ../server/vino-prompt.ui.h:3
 msgid ""
 "A user on another computer is trying to remotely view or control your "
 "desktop."
@@ -487,25 +496,17 @@ msgstr ""
 "Un utente di un altro computer sta tentando di visualizzare o controllare da "
 "remoto questo desktop."
 
-#: ../server/vino-prompt.ui.h:2
-msgid "Another user is trying to view your desktop."
-msgstr "Un altro utente sta tentando di visualizzare questo desktop."
-
-#: ../server/vino-prompt.ui.h:3
+#: ../server/vino-prompt.ui.h:4
 msgid "Do you want to allow them to do so?"
 msgstr "Consentire di farlo?"
 
-#: ../server/vino-prompt.ui.h:4
-msgid "Question"
-msgstr "Domanda"
-
-#: ../server/vino-prompt.ui.h:5 ../server/vino-util.c:89
-msgid "_Allow"
-msgstr "_Consenti"
-
-#: ../server/vino-prompt.ui.h:6 ../server/vino-util.c:90
+#: ../server/vino-prompt.ui.h:5 ../server/vino-util.c:90
 msgid "_Refuse"
 msgstr "_Rifiuta"
+
+#: ../server/vino-prompt.ui.h:6 ../server/vino-util.c:89
+msgid "_Allow"
+msgstr "_Consenti"
 
 #: ../server/vino-server.c:158 ../server/vino-server.c:181
 #, c-format
@@ -514,7 +515,7 @@ msgstr "Apertura connessione al bus non riuscita: %s\n"
 
 #: ../server/vino-server.desktop.in.in.h:2
 msgid "GNOME Desktop Sharing Server"
-msgstr "Server per la condivisione del desktop GNOME"
+msgstr "Server di condivisione desktop per GNOME"
 
 #: ../server/vino-status-icon.c:103 ../server/vino-status-tube-icon.c:96
 msgid "Desktop sharing is enabled"
@@ -643,8 +644,7 @@ msgstr "Un altro utente sta visualizzando questo desktop"
 #: ../server/vino-status-icon.c:628
 #, c-format
 msgid "A user on the computer '%s' is remotely viewing your desktop."
-msgstr ""
-"Un utente del computer «%s» sta visualizzando da remoto questo desktop."
+msgstr "Un utente del computer «%s» sta visualizzando da remoto questo desktop."
 
 #. Translators: %s is a hostname
 #: ../server/vino-status-icon.c:634
