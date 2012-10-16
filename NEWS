@@ -1,3 +1,22 @@
+Vino 3.6.1
+==========
+
+Alexandre Rostovtsev (1):
+      Consistently use SECRET_DEPS, not LIBSECRET_DEPS
+
+David King (2):
+      Update NEWS for 3.6.1 release
+      Post-release version bump to 3.6.1
+
+Ihar Hrachyshka (1):
+      Updated Belarusian translation.
+
+Khoem Sokhem (1):
+      [l10n] Added Khmer translation
+
+Rūdolfs Mazurs (1):
+      Updated Latvian translation
+
 Vino 3.6.0
 ==========
 
