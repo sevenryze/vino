@@ -618,7 +618,7 @@ int ReceiveData(int socket, char * data, int length, int timeout)
 	return n;
 }
 
-int
+static int
 UPNPIGD_IsConnected(struct UPNPUrls * urls, struct IGDdatas * data)
 {
 	char status[64];
