@@ -647,6 +647,9 @@ rfbProcessClientNormalMessage(rfbClientPtr cl)
 	cl->useCopyRect = FALSE;
 	cl->enableLastRectEncoding = FALSE;
         cl->useNewFBSize = FALSE;
+#ifdef VINO_HAVE_JPEG
+        cl->tightQualityLevel = -1;
+#endif
 
         for (i = 0; i < msg.se.nEncodings; i++) {
             if ((n = ReadExact(cl, (char *)&enc, 4)) <= 0) {
