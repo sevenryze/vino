@@ -1,3 +1,22 @@
+Vino 3.6.2
+==========
+
+David King (2):
+      Update NEWS for 3.6.2 release
+      Post-release version bump to 3.6.2
+
+Richard Stanislavský (1):
+      Updated slovak translation
+
+Ryan Lortie (1):
+      Fixups for -Wmissing-prototypes with miniupnp
+
+Wolfgang Stoeggl (1):
+      Updated German translation
+
+ozu17928 (1):
+      Set quality level if JPEG support is enabled
+
 Vino 3.6.1
 ==========
 
