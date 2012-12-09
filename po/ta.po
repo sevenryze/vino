@@ -12,15 +12,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vino.master.ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-02 12:30+0530\n"
-"PO-Revision-Date: 2012-09-02 12:33+0530\n"
-"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
-"Language-Team: American English <kde-i18n-doc@kde.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2012-12-09 14:18+0530\n"
+"PO-Revision-Date: 2012-12-09 14:38+0530\n"
+"Last-Translator: Dr.T.Vasudevan <drtvasudevan@gmail.com>\n"
+"Language-Team: American English <gnome-tamil-translation@googlegroups.com>\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\\n"
 "\n"
 "\n"
@@ -62,81 +62,312 @@ msgid "Nobody can access your desktop."
 msgstr "உங்கள் பணிமேடையை யாரும் அணுக முடியாது."
 
 #: ../capplet/vino-preferences.desktop.in.in.h:1
-msgid "Choose how other users can remotely view your desktop"
-msgstr "மற்ற பயனீட்டாளர் உங்கள் பணிமேடையை பார்க்க தேர்ந்தெடுக்கவும்"
-
-#: ../capplet/vino-preferences.desktop.in.in.h:2
 #: ../server/vino-server.desktop.in.in.h:1
 msgid "Desktop Sharing"
 msgstr "மேல்மேசை பகிர்வு "
+
+#: ../capplet/vino-preferences.desktop.in.in.h:2
+msgid "Choose how other users can remotely view your desktop"
+msgstr "மற்ற பயனீட்டாளர் உங்கள் பணிமேடையை பார்க்க தேர்ந்தெடுக்கவும்"
 
 #: ../common/vino-keyring.c:54 ../tools/vino-passwd.c:54
 msgid "Remote desktop sharing password"
 msgstr "தொலை மேல்மேசை பகிர்வு கடவுச்சொல்"
 
+#: ../common/org.gnome.Vino.gschema.xml.h:1
+msgid "Enable remote access to the desktop"
+msgstr " மேல்மேசை தொலை அணுகலுக்கு செயலாக்கு"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:2
+msgid ""
+"If true, allows remote access to the desktop via the RFB protocol. Users on "
+"remote machines may then connect to the desktop using a VNC viewer."
+msgstr ""
+"உண்மையெனில், RFB நெறிமுறைபடி மேல்மேசையை அனுக அனுமதிக்கிறது. அதன் பின் தொலை "
+"கணினி "
+"பயனர்கள்  vncviewer வழியாக மேல்மேசையை இணைக்க முடியும்"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:3
+msgid "Prompt the user before completing a connection"
+msgstr "இணைப்பை முடிக்க பயனருக்கு நினைவூட்டு"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:4
+msgid ""
+"If true, remote users accessing the desktop are not allowed access until the "
+"user on the host machine approves the connection. Recommended especially "
+"when access is not password protected."
+msgstr ""
+"உண்மையெனில், தொலை பயனர் மேல் மேசையை பார்க்க அனுமதி இல்லை. பயனர் அனுமதிக்கும் "
+"வரை "
+"காத்திருக்க வேண்டும்."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:5
+msgid "Only allow remote users to view the desktop"
+msgstr "பயனர் மேல்மேசையை மட்டும் பார்க்க அனுமதி"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:6
+msgid ""
+"If true, remote users accessing the desktop are only allowed to view the "
+"desktop. Remote users will not be able to use the mouse or keyboard."
+msgstr ""
+"உண்மையானால் மேல்மேசையை அணுகும்  தொலை பயனர்கள் மேல்மேசையை பார்க்க மட்டுமே "
+"அனுமதிக்கப் "
+"படுவார்கள். அவர்கள் சொடுக்கியையோ விசைப் பலகையையோ பயன்படுத்த இயலாது."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:7
+msgid "Network interface for listening"
+msgstr "கேட்பதற்கு பிணைய முகப்பு"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:8
+msgid ""
+"If not set, the server will listen on all network interfaces.\n"
+"\n"
+"Set this if you want that accept connections only from some specific network "
+"interface. eg: eth0, wifi0, lo, ..."
+msgstr ""
+"அமைக்கவில்லையானால் சேவையகம் எல்லா  வலைப்பின்னல் இடையகங்களிலும்செவிசாய்க்கும். "
+"குறிப்பிட்ட \n"
+"\n"
+"குறிப்பிட்ட வலைப்பின்னல் இடைமுகத்துக்கு மட்டும் செவிசாய்க்க இதை அமைக்கவும்.  "
+"எ-டு: eth0, wifi0, lo, ..."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:11
+msgid "Listen on an alternative port"
+msgstr "மாற்று துறையில் செவி சாய்க்கவும்"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:12
+msgid ""
+"If true, the server will listen to another port, instead of the default "
+"(5900). The port must be specified in the 'alternative-port' key."
+msgstr ""
+"உண்மையானால் சேவையகம் (5900) முன்னிருப்பை விட்டு வேறு ஒரு துறையில் செவி "
+"சாய்க்கும். அந்த "
+"துறையை 'alternative-port'  விசையில் குறிப்பிட வேண்டும்."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:13
+msgid "Alternative port number"
+msgstr "மாற்று துறை எண்"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:14
+msgid ""
+"The port which the server will listen to if the 'use-alternative-port' key "
+"is set to true. Valid values are in the range from 5000 to 50000."
+msgstr ""
+"'use-alternative-port' விசை உண்மை என அமைத்த போது சேவையகம் செவி சாய்க்கும் "
+"துறை. "
+"செல்லுபடியாகும் மதிப்புகள் 5000 முதல் 50000."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:15
+msgid "Require encryption"
+msgstr "குறிமுறையாக்கம் தேவை"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:16
+msgid ""
+"If true, remote users accessing the desktop are required to support "
+"encryption. It is highly recommended that you use a client which supports "
+"encryption unless the intervening network is trusted."
+msgstr ""
+"உண்மையானால் மேல்மேசையை அணுகும்  தொலை பயனர்கள் குறியாக்கத்தை ஆதரிக்க வேண்டுமென "
+"கட்டாயப்படுத்தப்படுவார்கள். இடைமறிக்கும் பிணையத்தை முழுதும் நம்பினால் ஒழிய "
+"குறியாக்கத்தை "
+"ஆதரிக்கும் சார்ந்தோனை பயன்படுத்த வேண்டும் என பலமாக பரிந்துரைக்கப் படுகிறது."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:17
+msgid "Allowed authentication methods"
+msgstr "அனுமதி முறைமையை அனுமதி"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:18
+msgid ""
+"Lists the authentication methods with which remote users may access the "
+"desktop.\n"
+"\n"
+"There are two possible authentication methods; \"vnc\" causes the remote "
+"user to be prompted for a password (the password is specified by the vnc-"
+"password key) before connecting and \"none\" which allows any remote user to "
+"connect."
+msgstr ""
+"தொலைநிலை பயனர்கள் டெஸ்க்டாப்பை அணுக பயன்படுத்தக்கூடிய அங்கீகரிப்பு முறைகளைப் "
+"பட்டியலிடும்.\n"
+"\n"
+"இரண்டு அங்கீகரிப்பு முறைகளுக்கு சாத்தியமுள்ளது; \"vnc\" முறையில் தொலைநிலை "
+"பயனர் இணைக்கும் முன்பு "
+"அவரிடம் கடவுச்சொல் கேட்கப்படும் (இந்தக் கடவுச்சொல் vnc-"
+"கடவுச்சொல் விசையால் குறிப்பிடப்படும்), \"none\" என்பது எந்த தொலைநிலை பயனரும் "
+"இணைக்க அனுமதிக்கும்."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:21
+msgid "Password required for \"vnc\" authentication"
+msgstr "\"vnc\" அனுமதிக்கான கடவுச்சொல் தேவை"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:22
+msgid ""
+"The password which the remote user will be prompted for if the \"vnc\" "
+"authentication method is used. The password specified by the key is base64 "
+"encoded.\n"
+"\n"
+"The special value of 'keyring' (which is not valid base64) means that the "
+"password is stored in the GNOME keyring."
+msgstr ""
+"\"vnc\" அங்கீகரிப்பு முறை பயன்படுத்தப்பட்டால் பயனரிடம் கேட்கப்படும் "
+"கடவுச்சொல். விசையால் "
+"குறிப்பிடப்படும் கடவுச்சொல்லானது base64 "
+"குறியாக்கம் செய்யப்பட்டதாகும்.\n"
+"\n"
+"'keyring' இன் சிறப்பு மதிப்பு (base64 செல்லுபடியாகாதது) என்பது கடவுச்சொல் "
+"GNOME கீரிங்கில் "
+"சேமிக்கப்படுகிறது என்பதைக் குறிக்கிறது."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:25
+msgid "E-mail address to which the remote desktop URL should be sent"
+msgstr "தொலை கணினி URL அனுப்பவ் வேண்டிய மின்னஞ்சல் முகவரி "
+
+#: ../common/org.gnome.Vino.gschema.xml.h:26
+msgid ""
+"This key specifies the e-mail address to which the remote desktop URL should "
+"be sent if the user clicks on the URL in the Desktop Sharing preferences "
+"dialog."
+msgstr ""
+"பயனர் URL ஐ தொலை மேல்மேசையிலிருந்து பகிர்வு விருப்பங்கள் உரையாடலை க்ளிக் "
+"செய்யும் போது "
+"அது அனுப்பப்பட வேண்டிய மின்னஞ்சல் முகவரியை இந்த விசை குறிக்கிறது"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:27
+msgid "Lock the screen when last user disconnect"
+msgstr "கடைசி பயனர் இணைப்பை துண்டித்ததும் திரையை பூட்டுக"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:28
+msgid "If true, screen will be locked after the last remote client disconnect."
+msgstr ""
+"உண்மையானால் கடைசி தொலை சார்ந்தோன் இணைப்பை துண்டித்ததும் திரை பூட்டப்படும்."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:29
+msgid "When the status icon should be shown"
+msgstr "இருப்பு நிலை சின்னம் எப்போது காட்டப்பட வேண்டும்"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:30
+msgid ""
+"This key controls the behavior of the status icon. There are three options: "
+"\"always\" - The icon will be always there; \"client\" - You will see the "
+"icon only when there is someone connected, this is the default behavior; "
+"\"never\" - Never shows the icon."
+msgstr ""
+"இந்த விசை இருப்பு நிலை சின்னத்தின் நடத்தையை கட்டுப்படுத்துகிறது.  மூன்று "
+"தேர்வுகள் உள்ளன: "
+"\"எப்போதும் \" சின்னம் எப்போதும் இருக்கும்.\"சார்ந்தோன்\" யாராவது இணைப்பில் "
+"இருந்தால் "
+"மட்டுமே சின்னம் தென்படும். இதுவே முன்னிருப்பு \"எப்போதும் இல்லை\"  சின்னம் "
+"ஒருபோதும் "
+"காட்டப்படாது."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:31
+msgid "When true, disable the background on receive valid session"
+msgstr "உண்மையெனில், சரியான அமர்வை பெறும் போது பின்னணியை செயல்நீக்கு"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:32
+msgid "Whether we should use UPNP to forward the port in routers"
+msgstr "ரௌட்டர்களில் UPNPஐ பயன்படுத்தி முன்னனுப்ப வேண்டுமா"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:33
+msgid ""
+"If true, we will use UPNP protocol to automatically forward the port used by "
+"vino in the router."
+msgstr ""
+"உண்மையெனில் நாம் யூபிஎன்பி நடபடியை பயன்படுத்தி தானியங்கியாக வினோ ரூட்டரில் "
+"பயன்படுத்திய "
+"துறையை மேலனுப்புவோம். "
+
+#: ../common/org.gnome.Vino.gschema.xml.h:34
+msgid "Whether we should disable the XDamage extension of X.org"
+msgstr "எக்ஸ்.ஆர்க் இன் எக்ஸ்டேமேஜ் நீட்சியை செயல் நீக்க வேண்டுமா."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:35
+msgid ""
+"If true, we will not use the XDamage extension of X.org. This extension does "
+"not work properly on some video drivers when using 3D effects. Disabling it "
+"will make vino work on these environments with a slower rendering as side "
+"effect."
+msgstr ""
+"உண்மையெனில் நாம் எக்ஸ்.ஆர்க் இன் எக்ஸ்டேமேஜ் நீட்சியை பயன்படுத்த மாட்டோம். "
+"இந்த நீட்சிமுப்பரிமாண "
+"விளைவை பயன்படுத்தும்போது இது சில விடியோ இயக்கிகளுடன்தான் சரியாக வேலை "
+"செய்கிறது.செயல் "
+"நீக்குவது வினோ இந்த சூழல்களில் மெதுவாக வேலை செய்யும் பக்க விளைவுடன் வேலை "
+"செய்யும்."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:36
+msgid "Notify on connect"
+msgstr "இணைக்கும் போது அறிவிக்கவும்"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:37
+msgid "If true, we will notify, when the user connects to the system."
+msgstr "உண்மையென அமைத்தால் பயனர் கணினியுடம் இணைக்கும்போது நாங்கள் அறிவிப்போம்."
+
 #: ../capplet/vino-preferences.ui.h:1
-msgid "Al_ways"
-msgstr "_w எப்போதும்"
-
-#: ../capplet/vino-preferences.ui.h:2
-msgid "Allow other users to _view your desktop"
-msgstr "(_v)மற்ற பயனீட்டாளர் உங்கள் மேல் மேசையை பார்க்க அனுமதி"
-
-#: ../capplet/vino-preferences.ui.h:3
-msgid "Automatically _configure UPnP router to open and forward ports"
-msgstr "_c தானியங்கியாக யூபிஎன்பி திசைவியை திறக்கவும் துறைகளை மேலனுப்பவும் வடிவமை"
-
-#: ../capplet/vino-preferences.ui.h:4
 msgid "Desktop Sharing Preferences"
 msgstr "தொலை பகிர்வு விருப்பங்கள்"
 
-#: ../capplet/vino-preferences.ui.h:5
-msgid "Remote users are able to control your mouse and keyboard"
-msgstr "தொலைவிலிருக்கும் பயனர்கள் உங்கள் சுட்டி மற்றும் விசைப்பலகையை கட்டுப்படுத்த முடியும்"
-
-#: ../capplet/vino-preferences.ui.h:6
-msgid "Security"
-msgstr "பாதுகாப்பு"
-
-#: ../capplet/vino-preferences.ui.h:7
+#: ../capplet/vino-preferences.ui.h:2
 msgid "Sharing"
 msgstr "பகிர்வு"
 
-#: ../capplet/vino-preferences.ui.h:8
-msgid "Show Notification Area Icon"
-msgstr "அறிவிப்பு பகுதி சின்னத்தை காட்டுக"
-
-#: ../capplet/vino-preferences.ui.h:9
+#: ../capplet/vino-preferences.ui.h:3
 msgid "Some of these preferences are locked down"
 msgstr "இவற்றில் சில  விருப்பங்கள் பூட்டப்பட்டுள்ளன"
 
-#: ../capplet/vino-preferences.ui.h:10
-msgid "The router must have the UPnP feature enabled"
-msgstr "ரௌடர் UPnP வசதியை செயல்படுத்தப்பட வேண்டும்"
+#: ../capplet/vino-preferences.ui.h:4
+msgid "Allow other users to _view your desktop"
+msgstr "(_v)மற்ற பயனீட்டாளர் உங்கள் மேல் மேசையை பார்க்க அனுமதி"
 
-#: ../capplet/vino-preferences.ui.h:11
+#: ../capplet/vino-preferences.ui.h:5
 msgid "Your desktop will be shared"
 msgstr "உங்கள் பணிமேடை பகிர்ந்து கொள்ளப்படும்"
 
-#: ../capplet/vino-preferences.ui.h:12
+#: ../capplet/vino-preferences.ui.h:6
 msgid "_Allow other users to control your desktop"
 msgstr "(_A)பயனர் உங்கள் மேல் மேசையை கட்டுப்படுத்துவதை அனுமதிக்கவும்"
 
-#: ../capplet/vino-preferences.ui.h:13
-msgid "_Never"
-msgstr "_N எப்போதுமில்லை"
+#: ../capplet/vino-preferences.ui.h:7
+msgid "Remote users are able to control your mouse and keyboard"
+msgstr ""
+"தொலைவிலிருக்கும் பயனர்கள் உங்கள் சுட்டி மற்றும் விசைப்பலகையை கட்டுப்படுத்த "
+"முடியும்"
 
-#: ../capplet/vino-preferences.ui.h:14
-msgid "_Only when someone is connected"
-msgstr "_O யாரேனும் இணைந்தபோது"
+#: ../capplet/vino-preferences.ui.h:8
+msgid "Security"
+msgstr "பாதுகாப்பு"
 
-#: ../capplet/vino-preferences.ui.h:15
+#: ../capplet/vino-preferences.ui.h:9
+msgid "_You must confirm each access to this machine"
+msgstr "இந்த கணினியின் ஒவ்வொரு அணுகலையும் உறுதிப்படுத்தவும் (_Y)"
+
+#: ../capplet/vino-preferences.ui.h:10
 msgid "_Require the user to enter this password:"
 msgstr "(_R)பயனர் கடவுச்சொல்லை உள்ளிட வேண்டும்:"
 
+#: ../capplet/vino-preferences.ui.h:11
+msgid "Automatically _configure UPnP router to open and forward ports"
+msgstr ""
+"_c தானியங்கியாக யூபிஎன்பி திசைவியை திறக்கவும் துறைகளை மேலனுப்பவும் வடிவமை"
+
+#: ../capplet/vino-preferences.ui.h:12
+msgid "The router must have the UPnP feature enabled"
+msgstr "ரௌடர் UPnP வசதியை செயல்படுத்தப்பட வேண்டும்"
+
+#: ../capplet/vino-preferences.ui.h:13
+msgid "Show Notification Area Icon"
+msgstr "அறிவிப்பு பகுதி சின்னத்தை காட்டுக"
+
+#: ../capplet/vino-preferences.ui.h:14
+msgid "Al_ways"
+msgstr "_w எப்போதும்"
+
+#: ../capplet/vino-preferences.ui.h:15
+msgid "_Only when someone is connected"
+msgstr "_O யாரேனும் இணைந்தபோது"
+
 #: ../capplet/vino-preferences.ui.h:16
-msgid "_You must confirm each access to this machine"
-msgstr "இந்த கணினியின் ஒவ்வொரு அணுகலையும் உறுதிப்படுத்தவும் (_Y)"
+msgid "_Never"
+msgstr "_N எப்போதுமில்லை"
 
 #: ../server/smclient/eggdesktopfile.c:165
 #, c-format
@@ -211,22 +442,29 @@ msgid ""
 "Your XServer does not support the XTest extension - remote desktop access "
 "will be view-only\n"
 msgstr ""
-"உங்கள் Xசேவகன் XTest விரிவாக்கத்தை ஆதரிககது - தொலை மேல்மேசை அணுகலால் மட்டுமே பார்க்க "
+"உங்கள் Xசேவகன் XTest விரிவாக்கத்தை ஆதரிககது - தொலை மேல்மேசை அணுகலால் மட்டுமே "
+"பார்க்க "
 "முடியும்\n"
 
-#: ../server/vino-main.c:298
+#. Tube mode uses Telepathy's Tubes to share a user's desktop directly
+#. * with another IM contact. http://telepathy.freedesktop.org/wiki/Tubes
+#.
+#: ../server/vino-main.c:301
 msgid "Start in tube mode, for the ‘Share my Desktop’ feature"
-msgstr "'என் மேல் மேசையை பகிர்ந்துகொள்' அம்சத்துக்கு குழல் முறைமையில் துவக்கவும்."
+msgstr ""
+"'என் மேல் மேசையை பகிர்ந்துகொள்' அம்சத்துக்கு குழல் முறைமையில் துவக்கவும்."
 
-#: ../server/vino-main.c:304
+#: ../server/vino-main.c:307
 msgid "- VNC Server for GNOME"
 msgstr "க்னோமுக்கு -VNC சேவையகம் "
 
-#: ../server/vino-main.c:312
-msgid "Run 'vino-server --help' to see a full list of available command line options"
-msgstr "'vino-passwd --help'ஐ இயக்கி முழு கட்டளை வரி விருப்பங்கள் பட்டியலை பார்க்கவும்"
+#: ../server/vino-main.c:315
+msgid ""
+"Run 'vino-server --help' to see a full list of available command line options"
+msgstr ""
+"'vino-passwd --help'ஐ இயக்கி முழு கட்டளை வரி விருப்பங்கள் பட்டியலை பார்க்கவும்"
 
-#: ../server/vino-main.c:333
+#: ../server/vino-main.c:336
 msgid "GNOME Desktop Sharing"
 msgstr "GNOME  பணிமேடை பகிர்வு"
 
@@ -267,33 +505,34 @@ msgstr "ப்ராம்டை காட்டவேண்டிய திர�
 msgid ""
 "A user on the computer '%s' is trying to remotely view or control your "
 "desktop."
-msgstr "கணிப்பொறி '%s' இன் பயனர் உங்கள் மேல்மேசையை தொலைவிலிருந்து பார்க்க முயல்கிறார்"
+msgstr ""
+"கணிப்பொறி '%s' இன் பயனர் உங்கள் மேல்மேசையை தொலைவிலிருந்து பார்க்க முயல்கிறார்"
 
 #: ../server/vino-prompt.ui.h:1
-msgid ""
-"A user on another computer is trying to remotely view or control your "
-"desktop."
-msgstr "மற்ற பயனர் உங்கள் மேல் மேசையை பார்க்க முயல்கிறார்."
+msgid "Question"
+msgstr "கேள்வி"
 
 #: ../server/vino-prompt.ui.h:2
 msgid "Another user is trying to view your desktop."
 msgstr "மற்றொரு பயனர் உங்கள் மேல் மேசையை பார்க்க முயல்கிறார்."
 
 #: ../server/vino-prompt.ui.h:3
+msgid ""
+"A user on another computer is trying to remotely view or control your "
+"desktop."
+msgstr "மற்ற பயனர் உங்கள் மேல் மேசையை பார்க்க முயல்கிறார்."
+
+#: ../server/vino-prompt.ui.h:4
 msgid "Do you want to allow them to do so?"
 msgstr "அவரை அனுமதிக்க விரும்புகிறீர்களா?"
 
-#: ../server/vino-prompt.ui.h:4
-msgid "Question"
-msgstr "கேள்வி"
-
-#: ../server/vino-prompt.ui.h:5 ../server/vino-util.c:89
-msgid "_Allow"
-msgstr "(_A)அனுமதி"
-
-#: ../server/vino-prompt.ui.h:6 ../server/vino-util.c:90
+#: ../server/vino-prompt.ui.h:5 ../server/vino-util.c:90
 msgid "_Refuse"
 msgstr "(_R)மறுக்கவும்"
+
+#: ../server/vino-prompt.ui.h:6 ../server/vino-util.c:89
+msgid "_Allow"
+msgstr "(_A)அனுமதி"
 
 #: ../server/vino-server.c:162 ../server/vino-server.c:185
 #, c-format
@@ -376,7 +615,8 @@ msgstr "'%s'  ஐ துண்டிக்க நீங்கள் உறுத
 #: ../server/vino-status-icon.c:358
 #, c-format
 msgid "The remote user from '%s' will be disconnected. Are you sure?"
-msgstr "'%s'  இலிருந்து தொலை பயனர் துண்டிக்கப்படுவார். நீங்கள் உறுதியாக இருக்கிறீகளா?"
+msgstr ""
+"'%s'  இலிருந்து தொலை பயனர் துண்டிக்கப்படுவார். நீங்கள் உறுதியாக இருக்கிறீகளா?"
 
 #: ../server/vino-status-icon.c:364
 msgid "Are you sure you want to disconnect all clients?"
@@ -384,7 +624,8 @@ msgstr "எல்லா பயனர்களையும் துண்டி�
 
 #: ../server/vino-status-icon.c:366
 msgid "All remote users will be disconnected. Are you sure?"
-msgstr "எல்லா தொலை பயனர்களும் துண்டிக்கப்படுவார்கள். நீங்கள் உறுதியாக இருக்கிறீர்களா?"
+msgstr ""
+"எல்லா தொலை பயனர்களும் துண்டிக்கப்படுவார்கள். நீங்கள் உறுதியாக இருக்கிறீர்களா?"
 
 #: ../server/vino-status-icon.c:378 ../server/vino-status-tube-icon.c:246
 msgid "Disconnect"
@@ -436,7 +677,8 @@ msgstr "பயனர் உங்கள் மேல் மேசையை க�
 #: ../server/vino-status-icon.c:636
 #, c-format
 msgid "A user on the computer '%s' is remotely controlling your desktop."
-msgstr "'%s'  கணினியில் உள்ள மற்றொரு பயனர் உங்கள் மேல் மேசையை கட்டுப்படுத்துகிறார்"
+msgstr ""
+"'%s'  கணினியில் உள்ள மற்றொரு பயனர் உங்கள் மேல் மேசையை கட்டுப்படுத்துகிறார்"
 
 #: ../server/vino-status-icon.c:664 ../server/vino-status-tube-icon.c:437
 #, c-format
@@ -446,7 +688,9 @@ msgstr "அறிக்கை குமிழை காட்டுவதில�
 #: ../server/vino-status-tube-icon.c:235
 #, c-format
 msgid "The remote user '%s' will be disconnected. Are you sure?"
-msgstr "'%s'  இலிருந்து தொலை பயனர் துண்டிக்கப்படுவார். நீங்கள் உறுதியாக இருக்கிறீர்களா?"
+msgstr ""
+"'%s'  இலிருந்து தொலை பயனர் துண்டிக்கப்படுவார். நீங்கள் உறுதியாக "
+"இருக்கிறீர்களா?"
 
 #: ../server/vino-tube-server.c:220 ../server/vino-tube-server.c:249
 msgid "Share my desktop information"
@@ -493,9 +737,12 @@ msgid ""
 msgid_plural ""
 "ERROR: Maximum length of password is %d characters. Please, re-enter the "
 "password."
-msgstr[0] "பிழை: கடவுச்சொல்லின் அதிகபட்ச அளவு %d எழுத்து. கடவுச்சொல்லை மீண்டும் உள்ளிடவும்."
+msgstr[0] ""
+"பிழை: கடவுச்சொல்லின் அதிகபட்ச அளவு %d எழுத்து. கடவுச்சொல்லை மீண்டும் "
+"உள்ளிடவும்."
 msgstr[1] ""
-"பிழை: கடவுச்சொல்லின் அதிகபட்ச அளவு %d எழுத்துக்கள். கடவுச்சொல்லை மீண்டும் உள்ளிடவும்."
+"பிழை: கடவுச்சொல்லின் அதிகபட்ச அளவு %d எழுத்துக்கள். கடவுச்சொல்லை மீண்டும் "
+"உள்ளிடவும்."
 
 #: ../tools/vino-passwd.c:149
 #, c-format
@@ -534,7 +781,8 @@ msgid "- Updates Vino password"
 msgstr "- Vino கடவுச்சொல்லை மேம்படுத்துகிறது"
 
 #: ../tools/vino-passwd.c:201
-msgid "Run 'vino-passwd --help' to see a full list of available command line options"
+msgid ""
+"Run 'vino-passwd --help' to see a full list of available command line options"
 msgstr "'vino-passwd --help'ஐ இயக்கி முழு கட்டளை வரி விருப்பங்களை பார்க்கவும்"
 
 #: ../tools/vino-passwd.c:208
@@ -546,173 +794,6 @@ msgstr "VINO பதிப்பு %s\n"
 #, c-format
 msgid "ERROR: You do not have enough permissions to change Vino password.\n"
 msgstr "ERROR: உங்களுக்கு Vino கடவுச்சொல்லை மாற்ற அனுமதி இல்லை.\n"
-
-#~ msgid "Allowed authentication methods"
-#~ msgstr "அனுமதி முறைமையை அனுமதி"
-
-#~ msgid "Alternative port number"
-#~ msgstr "மாற்று துறை எண்"
-
-#~ msgid "E-mail address to which the remote desktop URL should be sent"
-#~ msgstr "தொலை கணினி URL அனுப்பவ் வேண்டிய மின்னஞ்சல் முகவரி "
-
-#~ msgid "Enable remote access to the desktop"
-#~ msgstr " மேல்மேசை தொலை அணுகலுக்கு செயலாக்கு"
-
-#~ msgid ""
-#~ "If not set, the server will listen on all network interfaces. Set this if "
-#~ "you want that accept connections only from some specific network "
-#~ "interface. eg: eth0, wifi0, lo, ..."
-#~ msgstr ""
-#~ "அமைக்கவில்லையானால் சேவையகம் எல்லா  வலைப்பின்னல் இடையகங்களிலும்செவிசாய்க்கும்.குறிப்பிட்ட "
-#~ "வலைப்பின்னல் இடையகத்துக்கு செவிசாய்க்க இதை அமைக்கவும்.  எ-டு: eth0, wifi0, lo, ..."
-
-#~ msgid ""
-#~ "If true, allows remote access to the desktop via the RFB protocol. Users "
-#~ "on remote machines may then connect to the desktop using a VNC viewer."
-#~ msgstr ""
-#~ "உண்மையெனில், RFB நெறிமுறைபடி மேல்மேசையை அனுக அனுமதிக்கிறது. அதன் பின் தொலை "
-#~ "கணினி பயனர்கள்  vncviewer வழியாக மேல்மேசையை இணைக்க முடியும்"
-
-#~ msgid ""
-#~ "If true, remote users accessing the desktop are not allowed access until "
-#~ "the user on the host machine approves the connection. Recommended "
-#~ "especially when access is not password protected."
-#~ msgstr ""
-#~ "உண்மையெனில், தொலை பயனர் மேல் மேசையை பார்க்க அனுமதி இல்லை. பயனர் அனுமதிக்கும் வரை "
-#~ "காத்திருக்க வேண்டும்."
-
-#~ msgid ""
-#~ "If true, remote users accessing the desktop are only allowed to view the "
-#~ "desktop. Remote users will not be able to use the mouse or keyboard."
-#~ msgstr ""
-#~ "உண்மையானால் மேல்மேசையை அணுகும்  தொலை பயனர்கள் மேல்மேசையை பார்க்க மட்டுமே அனுமதிக்கப் "
-#~ "படுவார்கள். அவர்கள் சொடுக்கியையோ விசைப் பலகையையோ பயன்படுத்த இயலாது."
-
-#~ msgid ""
-#~ "If true, remote users accessing the desktop are required to support "
-#~ "encryption. It is highly recommended that you use a client which supports "
-#~ "encryption unless the intervening network is trusted."
-#~ msgstr ""
-#~ "உண்மையானால் மேல்மேசையை அணுகும்  தொலை பயனர்கள் குறியாக்கத்தை ஆதரிக்க வேண்டுமென "
-#~ "கட்டாயப்படுத்தப்படுவார்கள். இடைமறிக்கும் பிணையத்தை முழுதும் நம்பினால் ஒழிய "
-#~ "குறியாக்கத்தை ஆதரிக்கும் சார்ந்தோனை பயன்படுத்த வேண்டும் என பலமாக பரிந்துரைக்கப் "
-#~ "படுகிறது."
-
-#~ msgid ""
-#~ "If true, screen will be locked after the last remote client disconnect."
-#~ msgstr "உண்மையானால் கடைசி தொலை சார்ந்தோன் இணைப்பை துண்டித்ததும் திரை பூட்டப்படும்."
-
-#~ msgid ""
-#~ "If true, the server will listen to another port, instead of the default "
-#~ "(5900). The port must be specified in the 'alternative-port' key."
-#~ msgstr ""
-#~ "உண்மையானால் சேவையகம் (5900) முன்னிருப்பை விட்டு வேறு ஒரு துறையில் செவி சாய்க்கும். "
-#~ "அந்த துறையை 'alternative-port'  விசையில் குறிப்பிட வேண்டும்."
-
-#~ msgid ""
-#~ "If true, we will not use the XDamage extension of X.org. This extension "
-#~ "does not work properly on some video drivers when using 3D effects. "
-#~ "Disabling it will make vino work on these environments with a slower "
-#~ "rendering as side effect."
-#~ msgstr ""
-#~ "உண்மையெனில் நாம் எக்ஸ்.ஆர்க் இன் எக்ஸ்டேமேஜ் நீட்சியை பயன்படுத்த மாட்டோம். இந்த "
-#~ "நீட்சிமுப்பரிமாண விளைவை பயன்படுத்தும்போது இது சில விடியோ இயக்கிகளுடன்தான் சரியாக "
-#~ "வேலை செய்கிறது.செயல் நீக்குவது வினோ இந்த சூழல்களில் மெதுவாக வேலை செய்யும் பக்க "
-#~ "விளைவுடன் வேலை செய்யும்."
-
-#~ msgid "If true, we will notify, when the user connects to the system."
-#~ msgstr "உண்மையென அமைத்தால் பயனர் கணினியுடம் இணைக்கும்போது நாங்கள் அறிவிப்போம்."
-
-#~ msgid ""
-#~ "If true, we will use UPNP protocol to automatically forward the port used "
-#~ "by vino in the router."
-#~ msgstr ""
-#~ "உண்மையெனில் நாம் யூபிஎன்பி நடபடியை பயன்படுத்தி தானியங்கியாக வினோ ரூட்டரில் "
-#~ "பயன்படுத்திய துறையை மேலனுப்புவோம். "
-
-#~ msgid "Listen on an alternative port"
-#~ msgstr "மாற்று துறையில் செவி சாய்க்கவும்"
-
-#~ msgid ""
-#~ "Lists the authentication methods with which remote users may access the "
-#~ "desktop. There are two possible authentication methods; \"vnc\" causes "
-#~ "the remote user to be prompted for a password (the password is specified "
-#~ "by the vnc-password key) before connecting and \"none\" which allows any "
-#~ "remote user to connect."
-#~ msgstr ""
-#~ "மேல் மேசையை அணுக அனுமதி முறைமைகளின் பட்டியல். ; \"vnc\" கடவுச்சொல்லோடு உள்நுழைய "
-#~ "(vnc-password விசையால் கடவுச்சொல் குறிக்கப்படும்) \"none\" அனைவரையும் சுலபமாக "
-#~ "அனுமதிக்கும்"
-
-#~ msgid "Lock the screen when last user disconnect"
-#~ msgstr "கடைசி பயனர் இணைப்பை துண்டித்ததும் திரையை பூட்டுக"
-
-#~ msgid "Network interface for listening"
-#~ msgstr "கேட்பதற்கு பிணைய முகப்பு"
-
-#~ msgid "Notify on connect"
-#~ msgstr "இணைக்கும் போது அறிவிக்கவும்"
-
-#~ msgid "Only allow remote users to view the desktop"
-#~ msgstr "பயனர் மேல்மேசையை மட்டும் பார்க்க அனுமதி"
-
-#~ msgid "Password required for \"vnc\" authentication"
-#~ msgstr "\"vnc\" அனுமதிக்கான கடவுச்சொல் தேவை"
-
-#~ msgid "Prompt the user before completing a connection"
-#~ msgstr "இணைப்பை முடிக்க பயனருக்கு நினைவூட்டு"
-
-#~ msgid "Require encryption"
-#~ msgstr "குறிமுறையாக்கம் தேவை"
-
-#~ msgid ""
-#~ "The password which the remote user will be prompted for if the \"vnc\" "
-#~ "authentication method is used. The password specified by the key is "
-#~ "base64 encoded. The special value of 'keyring' (which is not valid "
-#~ "base64) means that the password is stored in the GNOME keyring."
-#~ msgstr ""
-#~ "\"vnc\" அனுமதி முறை கடவுச்சொல்லை கேட்க பயன்பட்டிருக்கிறது. கடவுச்சொல் base64 "
-#~ "குறிமுறையாக்கப்பட்டுள்ளது. விசைவளையத்தின்' சிறப்பு மதிப்பு (இது செல்லுபடியாகும் "
-#~ "base64 இல்லை) எனில் கடவுச்சொல் விசை வளையத்தில் சேமிக்கப்பட்டுள்ளது."
-
-#~ msgid ""
-#~ "The port which the server will listen to if the 'use-alternative-port' "
-#~ "key is set to true. Valid values are in the range from 5000 to 50000."
-#~ msgstr ""
-#~ "'use-alternative-port' விசை உண்மை என அமைத்த போது சேவையகம் செவி சாய்க்கும் துறை. "
-#~ "செல்லுபடியாகும் மதிப்புகள் 5000 முதல் 50000."
-
-#~ msgid ""
-#~ "This key controls the behavior of the status icon. There are three "
-#~ "options: \"always\" - The icon will be always there; \"client\" - You "
-#~ "will see the icon only when there is someone connected, this is the "
-#~ "default behavior; \"never\" - Never shows the icon."
-#~ msgstr ""
-#~ "இந்த விசை இருப்பு நிலை சின்னத்தின் நடத்தையை கட்டுப்படுத்துகிறது.  மூன்று தேர்வுகள் "
-#~ "உள்ளன: \"எப்போதும் \" சின்னம் எப்போதும் இருக்கும்.\"சார்ந்தோன்\" யாராவது இணைப்பில் "
-#~ "இருந்தால் மட்டுமே சின்னம் தென்படும். இதுவே முன்னிருப்பு \"எப்போதும் இல்லை\"  சின்னம் "
-#~ "ஒருபோதும் காட்டப்படாது."
-
-#~ msgid ""
-#~ "This key specifies the e-mail address to which the remote desktop URL "
-#~ "should be sent if the user clicks on the URL in the Desktop Sharing "
-#~ "preferences dialog."
-#~ msgstr ""
-#~ "பயனர் URL ஐ தொலை மேல்மேசையிலிருந்து பகிர்வு விருப்பங்கள் உரையாடலை க்ளிக் செய்யும் "
-#~ "போது அது அனுப்பப்பட வேண்டிய மின்னஞ்சல் முகவரியை இந்த விசை குறிக்கிறது"
-
-#~ msgid "When the status icon should be shown"
-#~ msgstr "இருப்பு நிலை சின்னம் எப்போது காட்டப்பட வேண்டும்"
-
-#~ msgid "When true, disable the background on receive valid session"
-#~ msgstr "உண்மையெனில், சரியான அமர்வை பெறும் போது பின்னணியை செயல்நீக்கு"
-
-#~ msgid "Whether we should disable the XDamage extension of X.org"
-#~ msgstr "எக்ஸ்.ஆர்க் இன் எக்ஸ்டேமேஜ் நீட்சியை செயல் நீக்க வேண்டுமா."
-
-#~ msgid "Whether we should use UPNP to forward the port in routers"
-#~ msgstr "ரௌட்டர்களில் UPNPஐ பயன்படுத்தி முன்னனுப்ப வேண்டுமா"
 
 #~ msgid "Remote Desktop"
 #~ msgstr "தொலை பணிமேடை"
