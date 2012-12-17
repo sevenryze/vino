@@ -1522,7 +1522,8 @@ rfbSendBell(rfbScreenInfoPtr rfbScreen)
 
 
 /*
- * rfbSendServerCutText sends a ServerCutText message to all the clients.
+ * rfbSendServerCutText sends a ServerCutText message to all the authenticated
+ * clients.
  */
 
 void
@@ -1534,6 +1535,10 @@ rfbSendServerCutText(rfbScreenInfoPtr rfbScreen,char *str, int len)
 
     iterator = rfbGetClientIterator(rfbScreen);
     while ((cl = rfbClientIteratorNext(iterator)) != NULL) {
+        /* Client is not authenticated, ignore. See GNOME bug 678434. */
+        if (cl->state != RFB_NORMAL)
+            continue;
+
         sct.type = rfbServerCutText;
         sct.length = Swap32IfLE(len);
         if (WriteExact(cl, (char *)&sct,
