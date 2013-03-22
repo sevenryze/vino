@@ -82,7 +82,7 @@
         specified by the vnc-password key) before connecting and "none"
         which allows any remote user to connect.
       </description>
-      <default>[]</default>
+      <default>['none']</default>
     </key>
 
     <key name='vnc-password' type='s'>
