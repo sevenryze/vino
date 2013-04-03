@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: vino 3.7.x\n"
+"Project-Id-Version: vino 3.8.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-27 18:08+0100\n"
-"PO-Revision-Date: 2013-02-27 18:12+0100\n"
+"POT-Creation-Date: 2013-04-03 13:55+0200\n"
+"PO-Revision-Date: 2013-04-03 13:55+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -177,7 +177,8 @@ msgid ""
 msgstr ""
 "Tjeneren vil lytte på alle nettverksgrensesnitt hvis denne ikke er satt.\n"
 "\n"
-"Sett denne hvis du vil godta tilkoblinger kun fra spesifikke nettverksgrensesnitt som eth0, wifi0, lo osv."
+"Sett denne hvis du vil godta tilkoblinger kun fra spesifikke "
+"nettverksgrensesnitt som eth0, wifi0, lo osv."
 
 #: ../common/org.gnome.Vino.gschema.xml.h:11
 msgid "Listen on an alternative port"
@@ -199,7 +200,9 @@ msgstr "Portnummer for alternativ port"
 msgid ""
 "The port which the server will listen to if the 'use-alternative-port' key "
 "is set to true. Valid values are in the range of 5000 to 50000."
-msgstr "Porten som tjeneren vil lytte på hvis «use-alternative-port»-nøkkelen er satt til «true». Gyldige verdier er i området fra 5000 til 50000."
+msgstr ""
+"Porten som tjeneren vil lytte på hvis «use-alternative-port»-nøkkelen er "
+"satt til «true». Gyldige verdier er i området fra 5000 til 50000."
 
 #: ../common/org.gnome.Vino.gschema.xml.h:15
 msgid "Require encryption"
@@ -291,7 +294,11 @@ msgid ""
 "\"always\" - the icon will always be present; \"client\" - the icon will "
 "only be present when someone is connected (this is the default behavior); "
 "\"never\" - the icon will not be present."
-msgstr "Denne nøkkelen kontrollerer oppførsel for statusikonet. Det finnes tre alternativer: «always» - Ikonet vises hele tiden; «client» - Ikonet vises kun når noen er tilkoblet; dette er forvalgt oppførsel; «never» - Ikonet vises aldri."
+msgstr ""
+"Denne nøkkelen kontrollerer oppførsel for statusikonet. Det finnes tre "
+"alternativer: «always» - Ikonet vises hele tiden; «client» - Ikonet vises "
+"kun når noen er tilkoblet; dette er forvalgt oppførsel; «never» - Ikonet "
+"vises aldri."
 
 #: ../common/org.gnome.Vino.gschema.xml.h:31
 msgid "Whether to disable the desktop background when a user is connected"
@@ -322,7 +329,11 @@ msgid ""
 "If true, do not use the XDamage extension of X.org. This extension does not "
 "work properly on some video drivers when using 3D effects. Disabling it will "
 "make Vino work in these environments, with slower rendering as a side effect."
-msgstr "Hvis denne settes til «true» så vil ikke XDamage-utvidelsen i X.org brukes. Utvidelsen fungerer ikke korrekt med noen grafikkdrivere når 3D-effekter brukes. Hvis du slå dette av vil Vino fungere på disse systemene, men dog med tregere grafikk."
+msgstr ""
+"Hvis denne settes til «true» så vil ikke XDamage-utvidelsen i X.org brukes. "
+"Utvidelsen fungerer ikke korrekt med noen grafikkdrivere når 3D-effekter "
+"brukes. Hvis du slå dette av vil Vino fungere på disse systemene, men dog "
+"med tregere grafikk."
 
 #: ../common/org.gnome.Vino.gschema.xml.h:37
 msgid "Notify on connect"
@@ -492,7 +503,7 @@ msgstr "Avslå"
 msgid "Accept"
 msgstr "Godta"
 
-#: ../server/vino-server.c:164 ../server/vino-server.c:187
+#: ../server/vino-server.c:166 ../server/vino-server.c:189
 #, c-format
 msgid "Failed to open connection to bus: %s\n"
 msgstr "Kunne ikke åpne tilkobling til buss: %s\n"
