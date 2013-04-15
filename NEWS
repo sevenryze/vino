@@ -1,3 +1,23 @@
+Vino 3.8.1
+==========
+
+Andika Triwidada (1):
+      Updated Indonesian translation
+
+Daniel Korostil (1):
+      Update uk translation
+
+Daniel Mustieles (1):
+      Fixed syntax in translation of Keywords string
+
+David King (3):
+      Post-release version bump to 3.8.1
+      Back out "authentication-method" setting change
+      Update NEWS for 3.8.1 release
+
+Kjartan Maraas (1):
+      Updated Norwegian bokmål translation
+
 Vino 3.8.0
 ==========
 
