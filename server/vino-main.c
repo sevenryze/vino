@@ -36,12 +36,12 @@
 #include "vino-dbus-listener.h"
 #include "eggsmclient.h"
 
-#ifdef VINO_HAVE_GNUTLS
-#include <gnutls/gnutls.h>
-
 #ifdef VINO_HAVE_TELEPATHY_GLIB
 static gboolean tube = FALSE;
 #endif
+
+#ifdef VINO_HAVE_GNUTLS
+#include <gnutls/gnutls.h>
 
 # ifdef GNOME_ENABLE_DEBUG
 static void
