@@ -387,7 +387,8 @@ rfbProcessClientMessage(rfbClientPtr cl)
         rfbAuthProcessClientMessage(cl);
         return;
     case RFB_AUTH_DEFERRED:
-	rfbLog("Authentication deferred - ignoring client message\n");
+	rfbLog("Authentication deferred for this client - closing connection\n");
+	rfbCloseClient(cl);
 	return;
     case RFB_INITIALISATION:
         rfbProcessClientInitMessage(cl);
