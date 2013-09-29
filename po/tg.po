@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=vino&keywords=I18N+L10N&component=Preferences Dialog\n"
 "POT-Creation-Date: 2013-09-23 19:45+0000\n"
-"PO-Revision-Date: 2013-09-29 14:12+0500\n"
+"PO-Revision-Date: 2013-09-29 17:16+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tajik\n"
@@ -142,7 +142,7 @@ msgstr ""
 
 #: ../common/org.gnome.Vino.gschema.xml.h:21
 msgid "Password required for \"vnc\" authentication"
-msgstr ""
+msgstr "Барои санҷиши ҳаққонияти \"vnc\" парол лозим аст"
 
 #: ../common/org.gnome.Vino.gschema.xml.h:22
 msgid ""
@@ -308,6 +308,7 @@ msgstr ""
 #: ../server/vino-main.c:301
 msgid "Start in tube mode, for the ‘Share my Desktop’ feature"
 msgstr ""
+"Оғозидан дар ҳолати қубур барои хусусияти ‘Мубодила кардани мизи кории ман’"
 
 #: ../server/vino-main.c:307
 msgid "- VNC Server for GNOME"
@@ -354,7 +355,7 @@ msgstr "Экран"
 
 #: ../server/vino-prompt.c:145
 msgid "The screen on which to display the prompt"
-msgstr ""
+msgstr "Экран барои намоиши пешниҳод"
 
 #: ../server/vino-prompt.c:263 ../server/vino-status-icon.c:598
 #: ../server/vino-status-tube-icon.c:389
@@ -368,6 +369,7 @@ msgid ""
 "A user on the computer '%s' is trying to remotely view or control your "
 "desktop."
 msgstr ""
+"Корбаре компютери '%s' мехоҳад мизи кории шуморо тамошо ва идора кунад."
 
 #: ../server/vino-prompt.c:285
 msgid "Another user is trying to view your desktop."
@@ -384,7 +386,7 @@ msgstr "Қабул кардан"
 #: ../server/vino-server.c:166 ../server/vino-server.c:189
 #, c-format
 msgid "Failed to open connection to bus: %s\n"
-msgstr ""
+msgstr "Кушоиши пайваст ба гузаргоҳ қатъ шудааст: %s\n"
 
 #: ../server/vino-server.desktop.in.in.h:1
 msgid "Desktop Sharing"
