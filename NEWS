@@ -1,3 +1,20 @@
+Vino 3.10.1
+===========
+
+Antoine Jacoutot (1):
+      remove dependency on libsoup
+
+David King (1):
+      Post-release version bump to 3.10.1
+
+Kjartan Maraas (1):
+      Updated Norwegian bokmål translation
+
+Victor Ibragimov (3):
+      Tajik translation updated
+      Tajik translation updated
+      Tajik translation updated
+
 Vino 3.10.0
 ===========
 
