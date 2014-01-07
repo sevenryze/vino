@@ -294,7 +294,7 @@ static void
 vino_background_draw (gboolean status)
 {
   static GSettings *background_settings;
-  gsize initialised;
+  static gsize initialised;
 
   if (g_once_init_enter (&initialised))
     {
