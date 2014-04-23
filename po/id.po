@@ -3,131 +3,23 @@
 # This file is distributed under the same license as the vino package.
 #
 # Mohammad DAMT <mdamt@bisnisweb.com>, 2004, 2006.
-# Dirgita <dirgitadevina@yahoo.co.id>, 2011, 2012.
-# Andika Triwidada <andika@gmail.com>, 2010, 2011, 2012, 2013.
+# Dirgita <dirgitadevina@yahoo.co.id>, 2011, 2012, 2014.
+# Andika Triwidada <andika@gmail.com>, 2010, 2011, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: vino master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=vino&keywords=I18N+L10N&component=Preferences Dialog\n"
-"POT-Creation-Date: 2013-03-13 22:48+0000\n"
-"PO-Revision-Date: 2013-03-16 06:09+0700\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
-"Language-Team: Indonesian <gnome@i15n.org>\n"
+"POT-Creation-Date: 2014-04-05 11:29+0000\n"
+"PO-Revision-Date: 2014-04-08 11:56+0700\n"
+"Last-Translator: Dirgita <dirgitadevina@yahoo.co.id>\n"
+"Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.5\n"
-
-#: ../capplet/vino-message-box.c:55
-#, c-format
-msgid "There was an error showing the URL \"%s\""
-msgstr "Ada kesalahan menampilkan URL \"%s\""
-
-#: ../capplet/vino-preferences.c:245
-#, c-format
-msgid ""
-"There was an error displaying help:\n"
-"%s"
-msgstr ""
-"Ada kesalahan menampilkan bantuan: \n"
-"%s"
-
-#: ../capplet/vino-preferences.c:278
-msgid "Checking the connectivity of this machine..."
-msgstr "Memeriksa ketersambungan mesin ini..."
-
-#: ../capplet/vino-preferences.c:298
-msgid "Your desktop is only reachable over the local network."
-msgstr "Desktop Anda hanya dapat dicapai melalui jaringan lokal."
-
-#: ../capplet/vino-preferences.c:311
-msgid " or "
-msgstr " atau "
-
-#: ../capplet/vino-preferences.c:315
-#, c-format
-msgid "Others can access your computer using the address %s."
-msgstr "Pihak lain dapat mengakses komputer Anda memakai alamat %s."
-
-#: ../capplet/vino-preferences.c:324
-msgid "Nobody can access your desktop."
-msgstr "Tak seorangpun dapat mengakses desktop Anda."
-
-#: ../capplet/vino-preferences.desktop.in.in.h:1
-#: ../server/vino-server.desktop.in.in.h:1
-msgid "Desktop Sharing"
-msgstr "Berbagi Desktop"
-
-#: ../capplet/vino-preferences.desktop.in.in.h:2
-msgid "Choose how other users can remotely view your desktop"
-msgstr "Pilih bagaimana pengguna lain dapat melihat desktop Anda jarak jauh"
-
-#: ../capplet/vino-preferences.ui.h:1
-msgid "Desktop Sharing Preferences"
-msgstr "Preferensi Desktop Jauh"
-
-#: ../capplet/vino-preferences.ui.h:2
-msgid "Sharing"
-msgstr "Berbagi"
-
-#: ../capplet/vino-preferences.ui.h:3
-msgid "Some of these preferences are locked down"
-msgstr "Beberapa preferensi di bawah ini telah dikunci"
-
-#: ../capplet/vino-preferences.ui.h:4
-msgid "Allow other users to _view your desktop"
-msgstr "_Izinkan pengguna lainnya melihat desktop Anda"
-
-#: ../capplet/vino-preferences.ui.h:5
-msgid "Your desktop will be shared"
-msgstr "Desktop Anda akan dipakai bersama"
-
-#: ../capplet/vino-preferences.ui.h:6
-msgid "_Allow other users to control your desktop"
-msgstr "Izink_an pengguna lainnya mengambil alih desktop Anda"
-
-#: ../capplet/vino-preferences.ui.h:7
-msgid "Remote users are able to control your mouse and keyboard"
-msgstr "Pengguna jauh dapat mengendalikan tetikus dan papan tik Anda"
-
-#: ../capplet/vino-preferences.ui.h:8
-msgid "Security"
-msgstr "Keamanan"
-
-#: ../capplet/vino-preferences.ui.h:9
-msgid "_You must confirm each access to this machine"
-msgstr "Anda _mesti mengkonfirmasi setiap akses ke mesin ini"
-
-#: ../capplet/vino-preferences.ui.h:10
-msgid "_Require the user to enter this password:"
-msgstr "Pengguna ha_rus memasukkan sandi:"
-
-#: ../capplet/vino-preferences.ui.h:11
-msgid "Automatically _configure UPnP router to open and forward ports"
-msgstr "Otomatis _menata router UPnP untuk membuka dan meneruskan port"
-
-#: ../capplet/vino-preferences.ui.h:12
-msgid "The router must have the UPnP feature enabled"
-msgstr "Fitur UPnP router mesti diaktifkan"
-
-#: ../capplet/vino-preferences.ui.h:13
-msgid "Show Notification Area Icon"
-msgstr "Tunjukkan Ikon Area Notifikasi"
-
-#: ../capplet/vino-preferences.ui.h:14
-msgid "Al_ways"
-msgstr "S_elalu"
-
-#: ../capplet/vino-preferences.ui.h:15
-msgid "_Only when someone is connected"
-msgstr "Hanya bila ketika sese_orang terhubung"
-
-#: ../capplet/vino-preferences.ui.h:16
-msgid "_Never"
-msgstr "Janga_n Pernah"
+"X-Generator: Lokalize 1.5\n"
 
 #: ../common/org.gnome.Vino.gschema.xml.h:1
 msgid "Enable remote access to the desktop"
@@ -138,7 +30,7 @@ msgid ""
 "If true, allows remote access to the desktop via the RFB protocol. Users on "
 "remote machines may then connect to the desktop using a VNC viewer."
 msgstr ""
-"Jika ya, mengijinkan akses jauh ke desktop melalui protokol RFB. Pengguna "
+"Jika ya, mengizinkan akses jauh ke desktop melalui protokol RFB. Pengguna "
 "pada komputer jauh dapat menyambung ke desktop dengan menggunakan VNC viewer."
 
 #: ../common/org.gnome.Vino.gschema.xml.h:3
@@ -227,7 +119,7 @@ msgstr ""
 
 #: ../common/org.gnome.Vino.gschema.xml.h:17
 msgid "Allowed authentication methods"
-msgstr "Metode pengesahan yang diizinkan"
+msgstr "Metode pengesahan yang diIzinkan"
 
 #: ../common/org.gnome.Vino.gschema.xml.h:18
 msgid ""
@@ -352,10 +244,6 @@ msgid "If true, show a notification when a user connects to the system."
 msgstr ""
 "Bila bernilai true, menampilkan pemberitahuan ketika seorang pengguna "
 "menyambung ke sistem."
-
-#: ../common/vino-keyring.c:54 ../tools/vino-passwd.c:54
-msgid "Remote desktop sharing password"
-msgstr "Sandi berbagi desktop remote"
 
 #: ../server/smclient/eggdesktopfile.c:165
 #, c-format
@@ -517,6 +405,10 @@ msgstr "Terima"
 #, c-format
 msgid "Failed to open connection to bus: %s\n"
 msgstr "Gagal membuka koneksi ke bus: %s\n"
+
+#: ../server/vino-server.desktop.in.in.h:1
+msgid "Desktop Sharing"
+msgstr "Berbagi Desktop"
 
 #: ../server/vino-server.desktop.in.in.h:2
 msgid "GNOME Desktop Sharing Server"
@@ -701,7 +593,7 @@ msgstr "Menunggu '%s' menyambung ke layar."
 
 #: ../server/vino-util.c:89
 msgid "_Allow"
-msgstr "Ijink_an"
+msgstr "Izink_an"
 
 #: ../server/vino-util.c:90
 msgid "_Refuse"
@@ -711,72 +603,131 @@ msgstr "_Tolak"
 msgid "An error has occurred:"
 msgstr "Terjadi suatu kesalahan:"
 
-#: ../tools/vino-passwd.c:108
-#, c-format
-msgid "Cancelled"
-msgstr "Dibatalkan"
+#~ msgid "There was an error showing the URL \"%s\""
+#~ msgstr "Ada kesalahan menampilkan URL \"%s\""
 
-#: ../tools/vino-passwd.c:115
-#, c-format
-msgid ""
-"ERROR: Maximum length of password is %d character. Please, re-enter the "
-"password."
-msgid_plural ""
-"ERROR: Maximum length of password is %d characters. Please, re-enter the "
-"password."
-msgstr[0] ""
-"GALAT: Panjang sandi maksimum adalah %d karakter. Silakan masukkan ulang "
-"sandi,"
+#~ msgid ""
+#~ "There was an error displaying help:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Ada kesalahan menampilkan bantuan: \n"
+#~ "%s"
 
-#: ../tools/vino-passwd.c:149
-#, c-format
-msgid "Changing Vino password.\n"
-msgstr "Mengubah sandi Vino.\n"
+#~ msgid "Checking the connectivity of this machine..."
+#~ msgstr "Memeriksa ketersambungan mesin ini..."
 
-#: ../tools/vino-passwd.c:151
-msgid "Enter new Vino password: "
-msgstr "Masukkan sandi baru Vino: "
+#~ msgid "Your desktop is only reachable over the local network."
+#~ msgstr "Desktop Anda hanya dapat dicapai melalui jaringan lokal."
 
-#: ../tools/vino-passwd.c:154
-msgid "Retype new Vino password: "
-msgstr "Tik ulang sandi baru Vino: "
+#~ msgid " or "
+#~ msgstr " atau "
 
-#: ../tools/vino-passwd.c:160
-#, c-format
-msgid "vino-passwd: password updated successfully.\n"
-msgstr "vino-passwd: sandi sukses dimutakhirkan.\n"
+#~ msgid "Others can access your computer using the address %s."
+#~ msgstr "Pihak lain dapat mengakses komputer Anda memakai alamat %s."
 
-#: ../tools/vino-passwd.c:165
-#, c-format
-msgid "Sorry, passwords do not match.\n"
-msgstr "Maaf, sandi tak cocok.\n"
+#~ msgid "Nobody can access your desktop."
+#~ msgstr "Tak seorangpun dapat mengakses desktop Anda."
 
-#: ../tools/vino-passwd.c:166
-#, c-format
-msgid "vino-passwd: password unchanged.\n"
-msgstr "vino-passwd: sandi tak diubah.\n"
+#~ msgid "Choose how other users can remotely view your desktop"
+#~ msgstr "Pilih bagaimana pengguna lain dapat melihat desktop Anda jarak jauh"
 
-#: ../tools/vino-passwd.c:182
-msgid "Show Vino version"
-msgstr "Tampilkan versi Vino"
+#~ msgid "Desktop Sharing Preferences"
+#~ msgstr "Preferensi Desktop Jauh"
 
-#: ../tools/vino-passwd.c:191
-msgid "- Updates Vino password"
-msgstr "- Memutakhirkan sandi Vino"
+#~ msgid "Sharing"
+#~ msgstr "Berbagi"
 
-#: ../tools/vino-passwd.c:201
-msgid ""
-"Run 'vino-passwd --help' to see a full list of available command line options"
-msgstr ""
-"Jalankan 'vino-passwd --help' untuk melihat daftar lengkap dari opsi baris "
-"perintah yang tersedia"
+#~ msgid "Some of these preferences are locked down"
+#~ msgstr "Beberapa preferensi di bawah ini telah dikunci"
 
-#: ../tools/vino-passwd.c:208
-#, c-format
-msgid "VINO Version %s\n"
-msgstr "VINO Versi %s\n"
+#~ msgid "Allow other users to _view your desktop"
+#~ msgstr "_Izinkan pengguna lainnya melihat desktop Anda"
 
-#: ../tools/vino-passwd.c:219
-#, c-format
-msgid "ERROR: You do not have enough permissions to change Vino password.\n"
-msgstr "GALAT: Anda tak punya cukup hak untuk mengubah sandi Vino.\n"
+#~ msgid "Your desktop will be shared"
+#~ msgstr "Desktop Anda akan dipakai bersama"
+
+#~ msgid "_Allow other users to control your desktop"
+#~ msgstr "Izink_an pengguna lainnya mengambil alih desktop Anda"
+
+#~ msgid "Remote users are able to control your mouse and keyboard"
+#~ msgstr "Pengguna jauh dapat mengendalikan tetikus dan papan tik Anda"
+
+#~ msgid "Security"
+#~ msgstr "Keamanan"
+
+#~ msgid "_You must confirm each access to this machine"
+#~ msgstr "Anda _mesti mengkonfirmasi setiap akses ke mesin ini"
+
+#~ msgid "_Require the user to enter this password:"
+#~ msgstr "Pengguna ha_rus memasukkan sandi:"
+
+#~ msgid "Automatically _configure UPnP router to open and forward ports"
+#~ msgstr "Otomatis _menata router UPnP untuk membuka dan meneruskan port"
+
+#~ msgid "The router must have the UPnP feature enabled"
+#~ msgstr "Fitur UPnP router mesti diaktifkan"
+
+#~ msgid "Show Notification Area Icon"
+#~ msgstr "Tunjukkan Ikon Area Notifikasi"
+
+#~ msgid "Al_ways"
+#~ msgstr "S_elalu"
+
+#~ msgid "_Only when someone is connected"
+#~ msgstr "Hanya bila ketika sese_orang terhubung"
+
+#~ msgid "_Never"
+#~ msgstr "Janga_n Pernah"
+
+#~ msgid "Remote desktop sharing password"
+#~ msgstr "Sandi berbagi desktop remote"
+
+#~ msgid "Cancelled"
+#~ msgstr "Dibatalkan"
+
+#~ msgid ""
+#~ "ERROR: Maximum length of password is %d character. Please, re-enter the "
+#~ "password."
+#~ msgid_plural ""
+#~ "ERROR: Maximum length of password is %d characters. Please, re-enter the "
+#~ "password."
+#~ msgstr[0] ""
+#~ "GALAT: Panjang sandi maksimum adalah %d karakter. Silakan masukkan ulang "
+#~ "sandi,"
+
+#~ msgid "Changing Vino password.\n"
+#~ msgstr "Mengubah sandi Vino.\n"
+
+#~ msgid "Enter new Vino password: "
+#~ msgstr "Masukkan sandi baru Vino: "
+
+#~ msgid "Retype new Vino password: "
+#~ msgstr "Tik ulang sandi baru Vino: "
+
+#~ msgid "vino-passwd: password updated successfully.\n"
+#~ msgstr "vino-passwd: sandi sukses dimutakhirkan.\n"
+
+#~ msgid "Sorry, passwords do not match.\n"
+#~ msgstr "Maaf, sandi tak cocok.\n"
+
+#~ msgid "vino-passwd: password unchanged.\n"
+#~ msgstr "vino-passwd: sandi tak diubah.\n"
+
+#~ msgid "Show Vino version"
+#~ msgstr "Tampilkan versi Vino"
+
+#~ msgid "- Updates Vino password"
+#~ msgstr "- Memutakhirkan sandi Vino"
+
+#~ msgid ""
+#~ "Run 'vino-passwd --help' to see a full list of available command line "
+#~ "options"
+#~ msgstr ""
+#~ "Jalankan 'vino-passwd --help' untuk melihat daftar lengkap dari opsi "
+#~ "baris perintah yang tersedia"
+
+#~ msgid "VINO Version %s\n"
+#~ msgstr "VINO Versi %s\n"
+
+#~ msgid "ERROR: You do not have enough permissions to change Vino password.\n"
+#~ msgstr "GALAT: Anda tak punya cukup hak untuk mengubah sandi Vino.\n"
