@@ -426,7 +426,7 @@ msgstr "GNOME Masaüstü Paylaşım Sunucusu"
 
 #: ../server/vino-server.desktop.in.in.h:3
 msgid "vnc;share;remote;"
-msgstr "vnc;share;remote;paylaşım;uzakbağlantı"
+msgstr "vnc;share;remote;paylaşım;uzakbağlantı;"
 
 #: ../server/vino-status-icon.c:97 ../server/vino-status-tube-icon.c:90
 msgid "Desktop sharing is enabled"
