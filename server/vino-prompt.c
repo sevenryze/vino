@@ -255,6 +255,13 @@ vino_prompt_handle_response (NotifyNotification *notification,
   vino_prompt_process_pending_clients (prompt);
 }
 
+static void
+vino_prompt_handle_close (NotifyNotification *notification,
+			  gpointer            user_data)
+{
+  vino_prompt_handle_response (notification, "close", user_data);
+}
+
 static gboolean
 vino_prompt_setup_dialog (VinoPrompt *prompt)
 {
@@ -298,6 +305,9 @@ vino_prompt_display (VinoPrompt   *prompt,
 				  vino_prompt_handle_response,
 				  prompt,
 				  NULL);
+  g_signal_connect (prompt->priv->notification, "closed",
+		    G_CALLBACK (vino_prompt_handle_close), prompt);
+
 
   g_free (host_label);
 
