@@ -252,6 +252,11 @@ main (int argc, char **argv)
       { NULL }
     };
 
+    /* Call this before parsing options, as that triggers creation of an SM
+     * client. Creating the client in a disabled state, and then switching to
+     * the real state later, avoids a critical warning on startup. */
+    egg_sm_client_set_mode (EGG_SM_CLIENT_MODE_DISABLED);
+
     context = g_option_context_new (_("- VNC Server for GNOME"));
     g_option_context_add_group (context, gtk_get_option_group (TRUE));
     g_option_context_add_group (context, egg_sm_client_get_option_group ());
