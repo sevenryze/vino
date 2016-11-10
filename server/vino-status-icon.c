@@ -354,10 +354,10 @@ vino_status_icon_disconnect_confirm (VinoStatusIconNotify *a)
     {
       primary_msg   = g_strdup_printf
           /* Translators: %s is a hostname */
-          (_("Are you sure you want to disconnect '%s'?"),
+          (_("Are you sure you want to disconnect “%s”?"),
           vino_client_get_hostname (client));
       secondary_msg = g_strdup_printf
-          (_("The remote user from '%s' will be disconnected. Are you sure?"),
+          (_("The remote user from “%s” will be disconnected. Are you sure?"),
           vino_client_get_hostname (client));
     }
   else
@@ -624,7 +624,7 @@ vino_status_icon_show_new_client_notification (gpointer user_data)
       /* Translators: %s is a hostname */
       summary = _("Another user is viewing your desktop");
       body = g_strdup_printf
-          (_("A user on the computer '%s' is remotely viewing your desktop."),
+          (_("A user on the computer “%s” is remotely viewing your desktop."),
           vino_client_get_hostname (client));
     }
   else
@@ -632,7 +632,7 @@ vino_status_icon_show_new_client_notification (gpointer user_data)
       /* Translators: %s is a hostname */
       summary = _("Another user is controlling your desktop");
       body = g_strdup_printf
-          (_("A user on the computer '%s' is remotely controlling "
+          (_("A user on the computer “%s” is remotely controlling "
           "your desktop."), vino_client_get_hostname (client));
     }
 

@@ -228,10 +228,10 @@ vino_status_tube_icon_disconnect_confirm (VinoStatusTubeIcon *icon)
 
   primary_msg   = g_strdup_printf
       /* Translators: %s is the alias of the telepathy contact */
-      (_("Are you sure you want to disconnect '%s'?"),
+      (_("Are you sure you want to disconnect “%s”?"),
       vino_tube_server_get_alias (icon->priv->server));
   secondary_msg = g_strdup_printf
-      (_("The remote user '%s' will be disconnected. Are you sure?"),
+      (_("The remote user “%s” will be disconnected. Are you sure?"),
       vino_tube_server_get_alias (icon->priv->server));
 
   icon->priv->disconnect_dialog = gtk_message_dialog_new (NULL,

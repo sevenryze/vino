@@ -221,11 +221,11 @@ vino_tube_server_invalidated_cb (TpProxy *proxy,
 
   if (self->priv->state == TP_TUBE_CHANNEL_STATE_REMOTE_PENDING)
       /* Translators: '%s' is the name of a contact, buddy coming from Empathy */
-      body = g_strdup_printf (_("'%s' rejected the desktop sharing invitation."),
+      body = g_strdup_printf (_("“%s” rejected the desktop sharing invitation."),
 			      vino_tube_server_get_alias (self));
   else
       /* Translators: '%s' is the name of a contact, buddy coming from Empathy */
-      body = g_strdup_printf (_("'%s' disconnected"),
+      body = g_strdup_printf (_("“%s” disconnected"),
 			      vino_tube_server_get_alias (self));
 
   vino_status_tube_icon_show_notif (self->priv->icon_tube, summary,
@@ -252,7 +252,7 @@ vino_tube_server_state_changed (TpChannel *channel,
     {
       case TP_TUBE_CHANNEL_STATE_OPEN:
         /* Translators: '%s' is the name of a contact, buddy coming from Empathy */
-        body = g_strdup_printf (_("'%s' is remotely controlling your desktop."),
+        body = g_strdup_printf (_("“%s” is remotely controlling your desktop."),
 				vino_tube_server_get_alias (server));
         vino_status_tube_icon_show_notif (server->priv->icon_tube, summary,
             (const gchar*) body, FALSE);
@@ -261,7 +261,7 @@ vino_tube_server_state_changed (TpChannel *channel,
         break;
       case TP_TUBE_CHANNEL_STATE_REMOTE_PENDING:
         /* Translators: '%s' is the name of a contact, buddy coming from Empathy */
-        body =  g_strdup_printf (_("Waiting for '%s' to connect to the screen."),
+        body =  g_strdup_printf (_("Waiting for “%s” to connect to the screen."),
 				 vino_tube_server_get_alias (server));
         vino_status_tube_icon_show_notif (server->priv->icon_tube, summary,
             (const gchar*) body, FALSE);

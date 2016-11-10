@@ -286,7 +286,7 @@ vino_prompt_display (VinoPrompt   *prompt,
   if (!vino_prompt_setup_dialog (prompt))
     return FALSE;
 
-  host_label = g_strdup_printf (_("A user on the computer '%s' is trying to remotely view or control your desktop."),
+  host_label = g_strdup_printf (_("A user on the computer “%s” is trying to remotely view or control your desktop."),
 				rfb_client->host);
 
   prompt->priv->notification = notify_notification_new (_("Another user is trying to view your desktop."),

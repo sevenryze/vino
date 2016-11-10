@@ -151,7 +151,7 @@ name_acquired (GDBusConnection *connection,
    * listeners.
    */
   if ((view_only = !vino_input_init (vino->display)))
-    g_warning (_("Your XServer does not support the XTest extension - "
+    g_warning (_("Your XServer does not support the XTest extension — "
                  "remote desktop access will be view-only\n"));
 
   for (i = 0; i < vino->n_screens; i++)
@@ -247,7 +247,7 @@ main (int argc, char **argv)
         /* Tube mode uses Telepathy's Tubes to share a user's desktop directly
          * with another IM contact. http://telepathy.freedesktop.org/wiki/Tubes
          */
-        N_("Start in tube mode, for the ‘Share my Desktop’ feature"),
+        N_("Start in tube mode, for the “Share my Desktop” feature"),
         NULL },
 #endif
       { NULL }
@@ -258,7 +258,7 @@ main (int argc, char **argv)
      * the real state later, avoids a critical warning on startup. */
     egg_sm_client_set_mode (EGG_SM_CLIENT_MODE_DISABLED);
 
-    context = g_option_context_new (_("- VNC Server for GNOME"));
+    context = g_option_context_new (_("— VNC Server for GNOME"));
     g_option_context_add_group (context, gtk_get_option_group (TRUE));
     g_option_context_add_group (context, egg_sm_client_get_option_group ());
     g_option_context_add_main_entries (context, options, GETTEXT_PACKAGE);
@@ -266,7 +266,7 @@ main (int argc, char **argv)
     if (!g_option_context_parse (context, &argc, &argv, &error))
       {
         g_print ("%s\n%s\n", error->message,
-                 _("Run 'vino-server --help' to see a full list of "
+                 _("Run “vino-server --help” to see a full list of "
                    "available command line options"));
         g_error_free (error);
         return 1;
