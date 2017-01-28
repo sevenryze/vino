@@ -226,8 +226,8 @@ vino_status_tube_icon_disconnect_confirm (VinoStatusTubeIcon *icon)
     return;
   }
 
-  /* Translators: %s is the alias of the telepathy contact */
   primary_msg   = g_strdup_printf
+      /* Translators: %s is the alias of the telepathy contact */
       (_("Are you sure you want to disconnect '%s'?"),
       vino_tube_server_get_alias (icon->priv->server));
   secondary_msg = g_strdup_printf

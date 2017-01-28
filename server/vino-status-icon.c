@@ -352,8 +352,8 @@ vino_status_icon_disconnect_confirm (VinoStatusIconNotify *a)
 
   if (client != NULL)
     {
-      /* Translators: %s is a hostname */
       primary_msg   = g_strdup_printf
+          /* Translators: %s is a hostname */
           (_("Are you sure you want to disconnect '%s'?"),
           vino_client_get_hostname (client));
       secondary_msg = g_strdup_printf
