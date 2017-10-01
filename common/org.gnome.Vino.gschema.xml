@@ -1,5 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <schemalist>
-  <schema id='org.gnome.Vino' path='/org/gnome/desktop/remote-access/'>
+  <schema id='org.gnome.Vino' path='/org/gnome/desktop/remote-access/' gettext-domain='vino'>
     <key name='prompt-enabled' type='b'>
       <summary>Prompt the user before completing a connection</summary>
       <description>
