@@ -156,7 +156,7 @@ vino_server_lock_screen (VinoServer *server)
   connection = g_bus_get_sync (G_BUS_TYPE_SESSION, NULL, &error);
   if (!connection)
     {
-      dprintf (DBUS, _("Failed to open connection to bus: %s\n"), error->message);
+      dprintf (DBUS, "Failed to open connection to bus: %s\n", error->message);
       g_error_free (error);
       return;
     }
@@ -179,7 +179,7 @@ vino_server_unlock_screen (void)
   connection = g_bus_get_sync (G_BUS_TYPE_SESSION, NULL, &error);
   if (!connection)
     {
-      dprintf (DBUS, _("Failed to open connection to bus: %s\n"), error->message);
+      dprintf (DBUS, "Failed to open connection to bus: %s\n", error->message);
       g_error_free (error);
       return;
     }

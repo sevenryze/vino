@@ -151,8 +151,8 @@ name_acquired (GDBusConnection *connection,
    * listeners.
    */
   if ((view_only = !vino_input_init (vino->display)))
-    g_warning (_("Your XServer does not support the XTest extension - "
-                 "remote desktop access will be view-only\n"));
+    g_warning ("Your XServer does not support the XTest extension - "
+                 "remote desktop access will be view-only\n");
 
   for (i = 0; i < vino->n_screens; i++)
     {

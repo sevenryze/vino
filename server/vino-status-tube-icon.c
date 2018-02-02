@@ -393,7 +393,7 @@ vino_status_tube_icon_show_notif (VinoStatusTubeIcon *icon,
 
   if (!notify_is_initted () &&  !notify_init (g_get_application_name ()))
     {
-      g_printerr (_("Error initializing libnotify\n"));
+      g_printerr ("Error initializing libnotify\n");
       return;
     }
 
@@ -427,7 +427,7 @@ vino_status_tube_icon_show_notif (VinoStatusTubeIcon *icon,
   error = NULL;
   if (!notify_notification_show (icon->priv->new_client_notification, &error))
     {
-      g_printerr (_("Error while displaying notification bubble: %s\n"),
+      g_printerr ("Error while displaying notification bubble: %s\n",
                   error->message);
       g_error_free (error);
     }

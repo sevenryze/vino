@@ -141,8 +141,8 @@ vino_prompt_class_init (VinoPromptClass *klass)
   g_object_class_install_property (gobject_class,
 				   PROP_SCREEN,
 				   g_param_spec_object ("screen",
-							_("Screen"),
-							_("The screen on which to display the prompt"),
+							"Screen",
+							"The screen on which to display the prompt",
 							GDK_TYPE_SCREEN,
 							G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
 
@@ -267,7 +267,7 @@ vino_prompt_setup_dialog (VinoPrompt *prompt)
 {
   if (!notify_is_initted () &&  !notify_init (g_get_application_name ()))
     {
-      g_printerr (_("Error initializing libnotify\n"));
+      g_printerr ("Error initializing libnotify\n");
       return FALSE;
     }
 

@@ -108,7 +108,7 @@ vino_prefs_create_server (GdkScreen *screen)
 static void
 vino_prefs_sighandler (int sig)
 {
-  g_message (_("Received signal %d, exiting."), sig);
+  g_message ("Received signal %d, exiting.", sig);
   vino_mdns_shutdown ();
   vino_prefs_shutdown ();
   exit (0);

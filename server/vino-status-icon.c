@@ -601,7 +601,7 @@ vino_status_icon_show_new_client_notification (gpointer user_data)
 
   if (!notify_is_initted () &&  !notify_init (g_get_application_name ()))
     {
-      g_printerr (_("Error initializing libnotify\n"));
+      g_printerr ("Error initializing libnotify\n");
       g_free (user_data);
       return FALSE;
     }
@@ -654,7 +654,7 @@ vino_status_icon_show_new_client_notification (gpointer user_data)
   error = NULL;
   if (vino_server_get_notify_on_connect (icon->priv->server) && !notify_notification_show (icon->priv->new_client_notification, &error))
     {
-      g_printerr (_("Error while displaying notification bubble: %s\n"),
+      g_printerr ("Error while displaying notification bubble: %s\n",
                   error->message);
       g_error_free (error);
     }
