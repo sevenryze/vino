@@ -28,6 +28,7 @@
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 #include <locale.h>
+#include <gdk/gdkx.h>
 
 #include "vino-input.h"
 #include "vino-mdns.h"
@@ -272,6 +273,12 @@ main (int argc, char **argv)
       }
     g_option_context_free (context);
   }
+
+  if (!GDK_IS_X11_DISPLAY (gdk_display_get_default ()))
+    {
+      g_printerr ("X11 is not detected\n");
+      return 1;
+    }
 
   /* GSettings */
   vino.settings = g_settings_new ("org.gnome.Vino");
