@@ -970,6 +970,9 @@ vino_server_init_io_channels(VinoServer *server)
     {
       dprintf (RFB, "%d ", rfb_screen->rfbListenSock[i]);
 
+      if (rfb_screen->rfbListenSock[i] == -1)
+        continue;
+
       server->priv->io_channel[i] = g_io_channel_unix_new (rfb_screen->rfbListenSock[i]);
       server->priv->io_watch[i]   = g_io_add_watch (server->priv->io_channel[i],
                                                     G_IO_IN|G_IO_PRI,

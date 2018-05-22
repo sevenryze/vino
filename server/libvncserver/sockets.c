@@ -152,9 +152,13 @@ rfbInitListenSock(rfbScreenInfoPtr rfbScreen)
     char *netIface = (char*)rfbScreen->netIface;
     int i;
 
-    if(netIface == NULL || if_nametoindex(netIface) == 0) {
-      if(netIface != NULL)
-        rfbLog("WARNING: This (%s) a invalid network interface, set to all\n", netIface);
+    if(netIface != NULL && strlen(netIface) > 0) {
+      if(if_nametoindex(netIface) == 0) {
+        rfbLog("(%s) is an invalid network interface\n", netIface);
+        return;
+      }
+    }
+    else {
       netIface = NULL;
     }
 
@@ -748,9 +752,11 @@ rfbSetNetworkInterface(rfbScreenInfoPtr rfbScreen, const char *netIface)
      rfbScreen->netIface = netIface;
   }
   else {
-     rfbScreen->netIface = NULL;
-     if(netIface != NULL)
-        rfbLog("WARNING: This (%s) a invalid network interface, set to all\n", netIface);
+    rfbScreen->netIface = NULL;
+    if(netIface != NULL && strlen(netIface) > 0) {
+      rfbLog("(%s) is an invalid network interface\n", netIface);
+      return FALSE;
+    }
   }
 
   rfbLog("Re-binding socket to listen for VNC connections on TCP port %d in (%s) interface\n",
