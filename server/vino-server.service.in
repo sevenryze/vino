@@ -5,4 +5,4 @@ Description=Vino VNC server
 Type=dbus
 BusName=org.gnome.Vino
 ExecStart=@libexecdir@/vino-server
-Restart=on-failure
+Restart=on-abnormal
