@@ -229,11 +229,13 @@ server/vino-enums.h: $(vino_enum_headers)
 server/vino-server.desktop.in: server/vino-server.desktop.in.in
 	$(AM_V_GEN)$(SED) -e "s|\@LIBEXECDIR\@|$(libexecdir)|" $< > $@
 
+if VINO_HAVE_TELEPATHY_GLIB
 servicedir = $(datadir)/dbus-1/services
 nodist_service_DATA = server/org.freedesktop.Telepathy.Client.Vino.service
 
 server/org.freedesktop.Telepathy.Client.Vino.service: server/org.freedesktop.Telepathy.Client.Vino.service.in
 	$(AM_V_GEN)$(SED) -e "s|[@]libexecdir[@]|$(libexecdir)|" $< > $@
+endif
 
 if INSTALL_USER_UNITS
 systemdservicedir = $(systemduserunitdir)
