@@ -748,12 +748,9 @@ rfbSetNetworkInterface(rfbScreenInfoPtr rfbScreen, const char *netIface)
     rfbScreen->rfbListenSockTotal = 0;
   }
 
-  if(netIface != NULL && strlen(netIface) > 0 && if_nametoindex(netIface) > 0) {
-     rfbScreen->netIface = netIface;
-  }
-  else {
-    rfbScreen->netIface = NULL;
-    if(netIface != NULL && strlen(netIface) > 0) {
+  if(netIface != NULL && strlen(netIface) > 0) {
+    rfbScreen->netIface = netIface;
+    if (if_nametoindex(netIface) == 0) {
       rfbLog("(%s) is an invalid network interface\n", netIface);
       return FALSE;
     }
