@@ -963,8 +963,6 @@ vino_server_init_io_channels(VinoServer *server)
   rfbScreenInfoPtr rfb_screen = server->priv->rfb_screen;
   int              i;
 
-  vino_server_deinit_io_channels (server);
-
   dprintf (RFB, "Creating watch for listening socket [ ");
   for (i=0; i < rfb_screen->rfbListenSockTotal; i++)
     {
@@ -1085,6 +1083,7 @@ vino_server_init_from_screen (VinoServer *server,
 
   vino_server_update_security_types (server);
 
+  vino_server_deinit_io_channels (server);
   vino_server_init_io_channels (server);
 
   vino_mdns_add_service ("_rfb._tcp", rfb_screen->rfbPort);
@@ -1624,7 +1623,12 @@ vino_server_set_network_interface (VinoServer *server,
     server->priv->network_interface = NULL;
 
   if (server->priv->rfb_screen != NULL)
-    rfbSetNetworkInterface (server->priv->rfb_screen, server->priv->network_interface);
+    {
+      vino_server_deinit_io_channels (server);
+      rfbSetNetworkInterface (server->priv->rfb_screen, server->priv->network_interface);
+      vino_server_init_io_channels (server);
+      vino_server_control_upnp (server);
+    }
 
   g_object_notify (G_OBJECT (server), "network-interface");
 }
@@ -1651,6 +1655,8 @@ vino_server_set_use_alternative_port (VinoServer *server,
 
       if (server->priv->rfb_screen)
         {
+          vino_server_deinit_io_channels (server);
+
           if (server->priv->use_alternative_port)
             rfbSetPort (server->priv->rfb_screen,
                         server->priv->alternative_port);
@@ -1688,6 +1694,7 @@ vino_server_set_alternative_port (VinoServer *server,
       if (server->priv->rfb_screen &&
           server->priv->use_alternative_port)
 	{
+          vino_server_deinit_io_channels (server);
 	  rfbSetPort (server->priv->rfb_screen, server->priv->alternative_port);
 	  vino_server_init_io_channels (server);
 	  vino_server_control_upnp (server);
