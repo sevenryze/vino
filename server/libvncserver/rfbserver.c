@@ -192,6 +192,7 @@ rfbNewClient(rfbScreenInfoPtr rfbScreen,
       if (fcntl(sock, F_SETFL, O_NONBLOCK) < 0) {
 	rfbLogPerror("fcntl failed");
 	close(sock);
+	free(cl);
 	return NULL;
       }
 #endif
@@ -200,6 +201,7 @@ rfbNewClient(rfbScreenInfoPtr rfbScreen,
 		     (char *)&one, sizeof(one)) < 0) {
 	rfbLogPerror("setsockopt failed");
 	close(sock);
+	free(cl);
 	return NULL;
       }
 
@@ -1089,6 +1091,7 @@ rfbSendFramebufferUpdate(rfbClientPtr cl,
             int h = rect.y2 - y;
 	    nUpdateRegionRects += (((h-1) / (ZLIB_MAX_SIZE( w ) / w)) + 1);
 	}
+	sraRgnReleaseIterator(i);
 #ifdef VINO_HAVE_JPEG
     } else if (cl->preferredEncoding == rfbEncodingTight) {
 	nUpdateRegionRects = 0;
@@ -1140,6 +1143,8 @@ rfbSendFramebufferUpdate(rfbClientPtr cl,
     cl->ublen = sz_rfbFramebufferUpdateMsg;
 
     UNLOCK(cl->cursorMutex);
+
+   i = NULL;
 
    if (sendCursorShape) {
 	cl->cursorWasChanged = FALSE;
@@ -1287,6 +1292,8 @@ rfbSendCopyRegion(rfbClientPtr cl,
 	+= sz_rfbFramebufferUpdateRectHeader + sz_rfbCopyRect;
 
     }
+
+    sraRgnReleaseIterator(i);
 
     return TRUE;
 }

@@ -149,9 +149,9 @@ rfbInitOneRGBTable24 (uint8_t *table, int inMax, int outMax, int outShift,
       *(uint32_t *)&table[3*i] = outValue;
       if(!rfbEndianTest)
 	memmove(table+3*i,table+3*i+1,3);
-        if (swap) {
-	  c = table[3*i]; table[3*i] = table[3*i+2];
-	  table[3*i+2] = c;
-        }
+      if (swap) {
+	c = table[3*i]; table[3*i] = table[3*i+2];
+	table[3*i+2] = c;
+      }
     }
 }

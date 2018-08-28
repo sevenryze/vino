@@ -625,12 +625,12 @@ ListenOnTCPPort(rfbScreenInfoPtr rfbScreen, int port, const char *netIface)
       rfbLog("Listening IPv4://0.0.0.0:%d\n", port);
 
 #ifdef VINO_ENABLE_IPV6
-    if(sock6 > 0) {
+    if(sock6 >= 0) {
        psock[*ptot] = sock6;
       *ptot        += 1;
     }
 #endif
-    if(sock > 0) {
+    if(sock >= 0) {
        psock[*ptot] = sock;
       *ptot        += 1;
     }
@@ -683,7 +683,7 @@ ListenOnTCPPort(rfbScreenInfoPtr rfbScreen, int port, const char *netIface)
     }
 #endif       
 
-    if(sock > 0) {
+    if(sock >= 0) {
        psock[*ptot] = sock;
       *ptot        += 1;
        sock         = -1;

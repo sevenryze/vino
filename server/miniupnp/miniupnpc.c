@@ -402,6 +402,7 @@ struct UPNPDev * upnpDiscover(int delay, const char * multicastif,
 #endif
 	{
 		PRINT_SOCKET_ERROR("setsockopt");
+		closesocket(sudp);
 		return NULL;
 	}
 
